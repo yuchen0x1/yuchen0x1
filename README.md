@@ -15,6 +15,10 @@
   <img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell" />
   <img src="https://img.shields.io/badge/AI%20Vision-6F42C1?style=flat-square&logo=openai&logoColor=white" alt="AI Vision" />
   <img src="https://img.shields.io/badge/MCP-000000?style=flat-square" alt="MCP" />
+  <img src="https://img.shields.io/badge/Gitee-C71D23?style=flat-square&logo=gitee&logoColor=white" alt="Gitee" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Vue.js-42B883?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue.js" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" />
 
 </div>
 
@@ -28,6 +32,10 @@
 - 🛠️ 3X-UI 面板二次开发：Bug 修复、UI 升级、Reality 增强
 - 🤖 给不支持视觉的大模型装上眼睛：Auto Vision Bridge + 免费视觉 MCP
 - 📱 手机远程控制 Windows 上的 Codex（ChatGPT Win）
+- 🧩 为 Codex 补齐 Gitee 仓库、项目上传与 Pull Request 工作流
+- 📊 聚合 OpenAI / Anthropic / OpenRouter / DeepSeek 的官方用量数据
+- 🌾 多账号 QQ 农场自动托管、可视化看板与 19 渠道告警
+- 🎬 短视频无水印解析、批量任务与版本化 API
 - 📝 把踩过的坑写成别人也能照着做的教程
 
 <table>
@@ -46,14 +54,47 @@
 面板      3X-UI 3.5.0
 AI/中转   Auto Vision Bridge / MCP
 跨端      Android / WPF / CDP
-后端      Go / Python / Shell / Node.js
-前端      React / TypeScript / Ant Design
-运维      systemd / ufw / iptables</code></pre>
+插件      Codex Plugin / Gitee MCP
+后端      Go / Python / PHP / Shell / Node.js
+前端      React / Vue / TypeScript / Ant Design
+运维      Docker / systemd / ufw / iptables</code></pre>
     </td>
   </tr>
 </table>
 
 ## 📚 作品
+
+<a href="https://github.com/nhzhongguo/codex-gitee-marketplace">
+  <img align="right" width="170" src="https://img.shields.io/badge/Codex%20Gitee-Plugin-C71D23?style=for-the-badge&logo=gitee&logoColor=white" alt="Codex Gitee Plugin" />
+</a>
+
+### [豫晨 Gitee Codex 插件市场 🆕](https://github.com/nhzhongguo/codex-gitee-marketplace)
+
+让 Codex 通过本地 MCP 服务操作 Gitee：查看和创建仓库、管理分支、预览并上传本地项目，以及创建 Pull Request。访问令牌仅从本机环境变量读取；远程写操作必须先预览确认，上传前会拦截敏感文件，同时支持 Gitee / GitHub 双源安装。
+
+<a href="https://github.com/nhzhongguo/usage-atlas">
+  <img align="right" width="170" src="https://img.shields.io/badge/Usage%20Atlas-Token%20Dashboard-009688?style=for-the-badge&logo=chartdotjs&logoColor=white" alt="Usage Atlas" />
+</a>
+
+### [Usage Atlas — 多平台 Token 账本 🆕](https://github.com/nhzhongguo/usage-atlas)
+
+本地优先的 API 用量仪表盘，通过官方接口汇总 OpenAI、Anthropic、OpenRouter、DeepSeek 与自定义兼容平台的 Token、请求、费用、限额或余额。明确区分官方数据、本地预算和平台未开放指标，密钥不落盘，并为自定义平台请求设置严格的 SSRF 防护边界。
+
+<a href="https://github.com/nhzhongguo/qushuiyin-jiexi">
+  <img align="right" width="170" src="https://img.shields.io/badge/Video%20Parser-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="Video Parser" />
+</a>
+
+### [去水印解析 — 短视频无水印工具 🆕](https://github.com/nhzhongguo/qushuiyin-jiexi)
+
+基于 5ime/video_spider 二次开发，覆盖抖音、快手、B 站、小红书、视频号等主流平台。重做网页视觉与交互，补齐单个 / 批量解析、历史记录、版本化 API 和 OpenAPI 文档，并加入请求限流、媒体代理、可选 API 鉴权及输入校验。
+
+<a href="https://github.com/nhzhongguo/qq-farm-bot">
+  <img align="right" width="170" src="https://img.shields.io/badge/QQ%20Farm-Automation-42B883?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="QQ Farm Bot" />
+</a>
+
+### [QQ Farm Bot — 多账号自动化托管平台](https://github.com/nhzhongguo/qq-farm-bot)
+
+面向长期挂机场景的自托管系统：每个农场账号由独立 Worker 驱动，提供自动农活、好友互动、收益趋势、任务调度和移动端适配的 Vue 3 面板。支持 19 种告警渠道、原子写入与自动备份、诊断和审计脱敏，并提供 Docker 部署与完整测试链路。
 
 <a href="https://github.com/nhzhongguo/auto-vision-bridge">
   <img align="right" width="170" src="https://img.shields.io/badge/Auto%20Vision%20Bridge-AI%20Vision-6F42C1?style=for-the-badge&logo=openai&logoColor=white" alt="Auto Vision Bridge" />
@@ -101,7 +142,11 @@ AI/中转   Auto Vision Bridge / MCP
 
 | 时间 | 事件 |
 |------|------|
+| 2026-08 | 豫晨 Gitee Codex 插件市场开源：仓库、分支、上传与 PR 工作流 |
+| 2026-08 | Usage Atlas 开源：多平台官方 API 用量、费用与余额仪表盘 |
+| 2026-08 | 去水印解析二次开发：多平台批量解析 + 版本化 API |
 | 2026-08 | Auto Vision Bridge 开源：零依赖视觉中转层 + 7 家免费视觉模型 MCP |
+| 2026-07 | QQ Farm Bot：多账号自动托管 + Web 看板 + 19 渠道告警 |
 | 2026-07 | ChatGPT Win：手机远程控制 Windows 上的 Codex（CDP + Android） |
 | 2026-07 | Online Testing Account：账号存活与 Codex 额度检测 |
 | 2026-07 | VLESS+Reality 节点搭建，服务器与路由器联动 |
