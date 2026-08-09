@@ -14,6 +14,8 @@
     <a href="https://github.com/yuchen0x1?tab=repositories">全部项目</a>
     ·
     <a href="https://github.com/yuchen0x1/yuchen0x1/issues">交流与反馈</a>
+    ·
+    <a href="https://t.me/lenmoC">Telegram</a>
   </p>
 
   <p>
@@ -23,6 +25,11 @@
     <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" />
     <img src="https://img.shields.io/badge/Vue.js-42B883?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue.js" />
     <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  </p>
+
+  <p>
+    <img src="https://img.shields.io/badge/QQ交流群-1016190748-12B7F5?style=flat-square&logo=tencentqq&logoColor=white" alt="QQ 交流群 1016190748" />
+    <a href="https://t.me/lenmoC"><img src="https://img.shields.io/badge/Telegram-@lenmoC-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram @lenmoC" /></a>
   </p>
 
 </div>
@@ -39,6 +46,7 @@
 - [精选项目](#精选项目)
 - [技术栈](#技术栈)
 - [工程原则](#工程原则)
+- [项目来源与归属](#项目来源与归属)
 - [近期记录](#近期记录)
 - [参与方式](#参与方式)
 
@@ -59,25 +67,25 @@
 
 | 项目 | 解决的问题 | 技术与特点 |
 | --- | --- | --- |
-| [Usage Atlas](https://github.com/yuchen0x1/usage-atlas) | 统一查看多个模型平台的官方用量、费用、限额与余额 | React / TypeScript；本地优先，密钥不落盘，明确区分官方数据与本地预算 |
-| [Auto Vision Bridge](https://github.com/yuchen0x1/vision-adapter-bridge) | 为不支持视觉的模型自动补齐看图能力 | Node.js；零依赖启动、同图缓存、交互式配置、视觉 MCP 配置 |
-| [豫晨 Gitee Codex 插件市场](https://github.com/yuchen0x1/codex-gitee-marketplace) | 让 Codex 通过本地 MCP 服务完成 Gitee 仓库工作流 | 插件 / MCP；支持仓库、分支、上传、预览与 Pull Request |
-| [ChatGPT Win](https://github.com/yuchen0x1/chatgpt-win) | 将 Windows 上的 Codex Desktop 安全地桥接到手机 | Android / WPF / CDP；扫码连接、任务同步、图片发送与局域网直连 |
+| [Usage Atlas](https://github.com/yuchen0x1/usage-atlas) | 统一查看多个模型平台的官方用量、费用、限额与余额 | React / TypeScript；实时更新、玻璃风格控制台、自定义兼容平台与严格密钥边界 |
+| [Auto Vision Bridge](https://github.com/yuchen0x1/vision-adapter-bridge) | 为不支持视觉的模型自动补齐看图能力 | Node.js；技能模式、透明代理、一键卸载、本地视觉后端、三类图片通道与 20+ 免费视觉模型 |
+| [豫晨 Gitee Codex 插件市场](https://github.com/yuchen0x1/codex-gitee-marketplace) | 让 Codex 通过本地 MCP 服务完成 Gitee 仓库工作流 | 插件 / MCP；安全上传预览、敏感文件拦截、AI 一键安装与 Pull Request 流程 |
+| [Codex Remote Bridge](https://github.com/yuchen0x1/chatgpt-win) | 将 Windows 上的 Codex Desktop 安全地桥接到手机 | Android / WPF / CDP；全文检索、定时任务时区、P50/P95 延迟、线程 TTL 与局域网直连 |
 
 ### 自动化与运营
 
 | 项目 | 解决的问题 | 技术与特点 |
 | --- | --- | --- |
-| [QQ Farm Bot](https://github.com/yuchen0x1/qq-farm-bot) | 多账号农场自动托管、任务调度和运行告警 | Vue 3 / Node.js；独立 Worker、19 类告警、备份审计与 Docker 部署 |
-| [Online Testing Account](https://github.com/yuchen0x1/online-testing-account) | 检查账号存活状态与 Codex 周期额度 | TypeScript / Windows / Android；串行验证、批量清理与局域网 API 网关 |
-| [去水印解析](https://github.com/yuchen0x1/short-video-no-watermark-downloader) | 统一处理短视频解析、批量任务与媒体地址获取 | PHP；多平台解析、历史记录、版本化 API、限流与输入校验 |
+| [QQ Farm Bot](https://github.com/yuchen0x1/qq-farm-bot) | 多账号农场自动托管、任务调度和运行告警 | Vue 3 / Node.js；独立 Worker、19 类告警、日报/周报/对比报告、登录安全加固与 Docker 部署 |
+| [Online Testing Account](https://github.com/yuchen0x1/online-testing-account) | 检查账号存活状态与 Codex 周期额度 | TypeScript / Windows / Android；2.0 桌面端、安卓局域网 API、上游轮询容错、模型发现与真实连接测试 |
+| [去水印解析](https://github.com/yuchen0x1/short-video-no-watermark-downloader) | 统一处理短视频解析、批量任务与媒体地址获取 | PHP；多平台解析、历史记录、批量停止/重试、版本化 API、限流与媒体代理 |
 
 ### 网络与二次开发
 
 | 项目 | 解决的问题 | 技术与特点 |
 | --- | --- | --- |
-| [3X-UI Fork](https://github.com/yuchen0x1/3x-ui) | 修复面板真实使用中的配置问题并提升操作效率 | Go / Vue；Reality 校验、默认值优化、布局升级与快捷复制 |
-| [JDCloud RE-CP-02 OpenWrt Guide](https://github.com/yuchen0x1/jdcloud-re-cp-02-openwrt-guide) | 降低刷机、救砖、扩容和家庭网络配置的试错成本 | OpenWrt；刷机前校验、设备风险说明、配置记录与常见问题 |
+| [3X-UI Fork](https://github.com/yuchen0x1/3x-ui) | 修复面板真实使用中的配置问题并提升操作效率 | Go / Vue；玻璃 UI 主题、Reality 表单修复、默认值标记、配置校验与快捷复制 |
+| [JDCloud RE-CP-02 OpenWrt Guide](https://github.com/yuchen0x1/jdcloud-re-cp-02-openwrt-guide) | 降低刷机、救砖、扩容和家庭网络配置的试错成本 | OpenWrt；刷机前校验、设备风险说明、全局访问备份流程与常见问题 |
 
 ## 技术栈
 
@@ -116,11 +124,25 @@
 4. **界面服务于工作**：减少装饰性层级，把重点放在扫描、比较、批量操作和错误恢复。
 5. **二次开发要尊重上游**：保留许可证与来源说明，尽量让改动独立、清晰、可合并。
 
+## 项目来源与归属
+
+以下项目是在上游开源项目基础上的二次开发或重写，使用、分发和再次修改时请同时遵守对应许可证，并保留原作者信息。
+
+| 项目 | 上游项目 | 原作者 | 说明 |
+| --- | --- | --- | --- |
+| [3X-UI Fork](https://github.com/yuchen0x1/3x-ui) | [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui)；最初源自 [FranzKafkaYu/x-ui](https://github.com/FranzKafkaYu/x-ui) | MHSanaei；Franz Kafka Yu | GPL-3.0 维护分支，持续进行 UI、Reality 和配置体验改进 |
+| [QQ Farm Bot](https://github.com/yuchen0x1/qq-farm-bot) | [cxw521/qq-farm-automation-bot](https://github.com/cxw521/qq-farm-automation-bot) | cxw521 | 在上游代码基础上进行产品化重构与功能扩展，许可证以双方仓库实际声明为准 |
+| [去水印解析](https://github.com/yuchen0x1/short-video-no-watermark-downloader) | [5ime/video_spider](https://github.com/5ime/video_spider) | 5ime | AGPL-3.0 项目基础上的多平台解析、批量任务和 API 二次开发 |
+| [Codex Remote Bridge](https://github.com/yuchen0x1/chatgpt-win) | [CoimgRain/Codex-Mini](https://github.com/CoimgRain/Codex-Mini) | CoimgRain | 参考上游本地桥接思路，重写 Windows 控制层并新增 Android 客户端 |
+
+Usage Atlas、Auto Vision Bridge、豫晨 Gitee Codex 插件市场、Online Testing Account 和 JDCloud RE-CP-02 OpenWrt Guide 为本账号自主开发项目；其中使用到的第三方依赖、协议和数据源仍以各自许可证及官方条款为准。
+
 ## 近期记录
 
 | 时间 | 进展 |
 | --- | --- |
 | 2026-08 | 重构个人主页信息架构，统一项目入口与技术方向说明 |
+| 2026-08 | 多个项目连续升级：玻璃 UI、真实连接测试、报告系统、视觉技能模式与远程桥接能力持续完善 |
 | 2026-08 | 发布 Gitee Codex 插件市场，补齐仓库、上传与 Pull Request 工作流 |
 | 2026-08 | 发布 Usage Atlas，聚合多个平台的官方 API 用量与费用数据 |
 | 2026-08 | 完善 Auto Vision Bridge，加入缓存、配置向导与视觉 MCP 配置 |
@@ -135,6 +157,9 @@
 - 发现问题：提交 [Issue](https://github.com/yuchen0x1/yuchen0x1/issues)，附上系统、版本、复现步骤和日志片段。
 - 想贡献代码：先在对应项目创建 Issue 说明方案，再提交范围清晰的 Pull Request。
 - 需要 Gitee 镜像：访问 [Gitee 主页](https://gitee.com/yuchen0x1) 查看同步仓库。
+- QQ 交流群：`1016190748`
+- Telegram：[https://t.me/lenmoC](https://t.me/lenmoC)
+- 加群或私聊反馈时，请备注：项目名称、问题摘要、原项目地址（如属于二次开发项目）以及当前版本。
 
 涉及账号、网络、代理或自动化的项目，请遵守所在地法律法规、平台服务条款和上游项目许可证。示例配置中的密钥、Cookie、Token 和个人数据均不应直接复用。
 
