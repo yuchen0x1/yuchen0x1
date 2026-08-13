@@ -44,6 +44,7 @@
 
 - [现在在做什么](#现在在做什么)
 - [精选项目](#精选项目)
+- [更多公开项目](#更多公开项目)
 - [技术栈](#技术栈)
 - [工程原则](#工程原则)
 - [项目来源与归属](#项目来源与归属)
@@ -57,6 +58,7 @@
 | 家庭网络 | OpenWrt、ImmortalWrt、Xray、Reality、旁路由与长期稳定性 | 可复现教程、配置经验、维护分支 |
 | AI 工具链 | API 用量、视觉能力补齐、模型中转、Codex 工作流 | 本地工具、MCP、桌面端与网关 |
 | 自动化平台 | 多账号托管、任务调度、告警、审计与备份 | Web 控制台、Worker、Docker 部署 |
+| 管理系统与业务工具 | 账号权限、运营后台、上下文管理与桌面数据工具 | 可运行项目、升级分支、测试与部署说明 |
 | 二次开发 | 在成熟开源项目上修复真实问题，补齐安全边界与用户体验 | Fork、补丁、文档与可回滚升级 |
 
 ## 精选项目
@@ -87,6 +89,35 @@
 | [3X-UI Fork](https://github.com/yuchen0x1/3x-ui) | 修复面板真实使用中的配置问题并提升操作效率 | Go / Vue；玻璃 UI 主题、Reality 表单修复、默认值标记、配置校验与快捷复制 |
 | [JDCloud RE-CP-02 OpenWrt Guide](https://github.com/yuchen0x1/jdcloud-re-cp-02-openwrt-guide) | 降低刷机、救砖、扩容和家庭网络配置的试错成本 | OpenWrt；刷机前校验、设备风险说明、全局访问备份流程与常见问题 |
 
+## 更多公开项目
+
+除了上面的重点项目，以下项目也已对外开放，覆盖 AI 服务、运营后台、上下文管理和桌面业务工具。
+
+### AI 服务与开发工具
+
+| 项目 | 解决的问题 | 技术与特点 |
+| --- | --- | --- |
+| [Sub3API Relay](https://github.com/yuchen0x1/sub3api-relay) | 为个人或内部使用提供统一的 AI API 接入、账号调度与用量记录 | Go / PostgreSQL / Redis；兼容 API 转发、账号健康度、限流、并发控制与 Docker 部署 |
+| [Codex2API](https://github.com/yuchen0x1/codex2api) | 将 Codex 账号池整理为可观测、可调度的兼容 API 网关 | Go / React；OpenAI 与 Anthropic 兼容接口、账号冷却恢复、用量统计、代理池与管理后台 |
+| [AI Context Manager](https://github.com/yuchen0x1/ai-context-manager) | 在有限上下文预算中保留更有价值的对话内容 | Python；token 估算、历史裁剪、在线或离线摘要、OpenAI 兼容 API 与零依赖降级 |
+
+### 管理系统与桌面业务工具
+
+| 项目 | 解决的问题 | 技术与特点 |
+| --- | --- | --- |
+| [Vue Antd Admin](https://github.com/yuchen0x1/vue-antd-admin) | 提供可继续定制的运营管理后台基础 | Vue / Ant Design Vue；登录、权限、运营看板、订单处理、图表、地图、主题与 Mock API |
+| [MyAdmin 升级版](https://github.com/yuchen0x1/cdfan-my-admin) | 为传统后台系统补上现代化前端并保留后续迁移空间 | Vue 3 / Vite / Element Plus；登录、仪表盘、审计与任务入口、API 代理、测试与 Docker Compose |
+| [Smart Student Information System](https://github.com/yuchen0x1/smart-student-information-system) | 管理学生、教师、课程和成绩等校园基础数据 | Java Swing / MySQL；账号认证、成绩事务、CSV 批处理、操作审计、Maven 构建与集成测试 |
+
+### 上游同步与改造
+
+| 项目 | 说明 |
+| --- | --- |
+| [Clash Verge Rev](https://github.com/yuchen0x1/clash-verge-rev) | 基于 Clash Verge Rev 的跨平台桌面客户端改造版，侧重节点管理、配置编辑、批量操作与界面体验。 |
+| [DeepSeek Harness](https://github.com/yuchen0x1/deepseek-harness) | DeepSeek AI 开源的插件化智能体运行框架 Fork，用于跟进和研究其快速迭代的开发预览版本。 |
+
+完整项目列表请访问 [GitHub 仓库页](https://github.com/yuchen0x1?tab=repositories)。
+
 ## 技术栈
 
 <table>
@@ -98,14 +129,14 @@
     </td>
     <td width="50%" valign="top">
       <h3>服务与数据</h3>
-      <p>Go · Node.js · Python · PHP · Shell · PostgreSQL · Redis</p>
+      <p>Go · Node.js · Python · PHP · Java · PostgreSQL · MySQL · Redis</p>
       <p>偏好清晰的边界、可回滚的变更、最小权限和适合长期运行的任务模型。</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3>网络与运维</h3>
-      <p>OpenWrt · ImmortalWrt · Xray-core · Reality · Docker · systemd</p>
+      <p>OpenWrt · ImmortalWrt · Xray-core · Reality · Docker · systemd · Tauri</p>
       <p>围绕家庭网络、VPS、代理节点、备份、日志和故障排查建立可复现流程。</p>
     </td>
     <td width="50%" valign="top">
@@ -134,13 +165,20 @@
 | [QQ Farm Bot](https://github.com/yuchen0x1/qq-farm-bot) | [cxw521/qq-farm-automation-bot](https://github.com/cxw521/qq-farm-automation-bot) | cxw521 | 在上游代码基础上进行产品化重构与功能扩展，许可证以双方仓库实际声明为准 |
 | [去水印解析](https://github.com/yuchen0x1/short-video-no-watermark-downloader) | [5ime/video_spider](https://github.com/5ime/video_spider) | 5ime | AGPL-3.0 项目基础上的多平台解析、批量任务和 API 二次开发 |
 | [Codex Remote Bridge](https://github.com/yuchen0x1/chatgpt-win) | [CoimgRain/Codex-Mini](https://github.com/CoimgRain/Codex-Mini) | CoimgRain | 参考上游本地桥接思路，重写 Windows 控制层并新增 Android 客户端 |
+| [Codex2API](https://github.com/yuchen0x1/codex2api) | [james-6-23/codex2api](https://github.com/james-6-23/codex2api) | james-6-23 | 在上游基础上维护版本、修复账号冷却恢复问题，并补充中文说明 |
+| [Vue Antd Admin](https://github.com/yuchen0x1/vue-antd-admin) | [biubiubiu01/vue-antd-admin](https://github.com/biubiubiu01/vue-antd-admin) | biubiubiu01 | 持续升级的运营管理平台，重做界面、权限、工作台和个人中心 |
+| [MyAdmin 升级版](https://github.com/yuchen0x1/cdfan-my-admin) | [cdfan/my-admin](https://github.com/cdfan/my-admin) | cdfan | 保留原有后端与 Vue 2 前端，并新增 Vue 3 管理端作为后续迁移基础 |
+| [Smart Student Information System](https://github.com/yuchen0x1/smart-student-information-system) | [chaserw/Student-Information-Management-System](https://github.com/chaserw/Student-Information-Management-System) | chaserw | 在原有业务模型上升级界面、认证、数据访问、审计与自动化测试 |
+| [Clash Verge Rev](https://github.com/yuchen0x1/clash-verge-rev) | [clash-verge-rev/clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)；最初源自 [zzzgydi/clash-verge](https://github.com/zzzgydi/clash-verge) | clash-verge-rev 社区；zzzgydi | GPL-3.0 二次修改版，保留上游署名与许可证 |
+| [DeepSeek Harness](https://github.com/yuchen0x1/deepseek-harness) | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | DeepSeek AI | MIT 许可的上游 Fork，用于跟进和研究插件化智能体框架 |
 
-Usage Atlas、Auto Vision Bridge、豫晨 Gitee Codex 插件市场、Online Testing Account 和 JDCloud RE-CP-02 OpenWrt Guide 为本账号自主开发项目；其中使用到的第三方依赖、协议和数据源仍以各自许可证及官方条款为准。
+Usage Atlas、Auto Vision Bridge、豫晨 Gitee Codex 插件市场、Online Testing Account、JDCloud RE-CP-02 OpenWrt Guide、Sub3API Relay 和 AI Context Manager 为本账号自主开发项目；其中使用到的第三方依赖、协议和数据源仍以各自许可证及官方条款为准。
 
 ## 近期记录
 
 | 时间 | 进展 |
 | --- | --- |
+| 2026-08 | 新增公开 AI 服务、上下文管理、运营后台与学生信息系统项目，并补齐上游来源说明 |
 | 2026-08 | 重构个人主页信息架构，统一项目入口与技术方向说明 |
 | 2026-08 | 多个项目连续升级：玻璃 UI、真实连接测试、报告系统、视觉技能模式与远程桥接能力持续完善 |
 | 2026-08 | 发布 Gitee Codex 插件市场，补齐仓库、上传与 Pull Request 工作流 |
