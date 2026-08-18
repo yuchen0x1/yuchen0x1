@@ -49,7 +49,10 @@
 ## Tech Radar
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=ts,go,python,nodejs,vue,react,php,java,openwrt,docker,postgres,redis,tauri,androidstudio&perline=7" alt="Technology stack" />
+  <img src="https://skillicons.dev/icons?i=ts,go,python,nodejs,vue,react,php&perline=7" alt="Technology stack row one" />
+  <br />
+  <img src="https://skillicons.dev/icons?i=java,docker,postgres,redis,tauri,androidstudio&perline=6" alt="Technology stack row two" />
+  <img src="./assets/openwrt-icon.svg" width="48" height="48" alt="OpenWrt" align="middle" />
 </div>
 
 ## 最新项目 · `NEW SIGNAL`
