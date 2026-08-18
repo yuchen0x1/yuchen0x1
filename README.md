@@ -52,7 +52,7 @@
   <img src="https://skillicons.dev/icons?i=ts,go,python,nodejs,vue,react,php&perline=7" alt="Technology stack row one" />
   <br />
   <img src="https://skillicons.dev/icons?i=java,docker,postgres,redis,tauri,androidstudio&perline=6" alt="Technology stack row two" />
-  <img src="./assets/openwrt-icon.svg" width="48" height="48" alt="OpenWrt" align="middle" />
+  <img src="./assets/openwrt-icon.svg" width="60" height="60" alt="OpenWrt" align="top" />
 </div>
 
 ## 最新项目 · `NEW SIGNAL`
