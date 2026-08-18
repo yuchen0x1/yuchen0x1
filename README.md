@@ -39,8 +39,10 @@
 
 <table>
   <tr>
-    <td width="50%"><img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=yuchen0x1&show_icons=true&include_all_commits=true&count_private=false&hide_border=true&bg_color=0b1220&title_color=7dd3fc&icon_color=f59e0b&text_color=94a3b8&custom_title=BUILD%20TELEMETRY" alt="GitHub statistics" /></td>
-    <td width="50%"><img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=yuchen0x1&layout=compact&langs_count=8&hide_border=true&bg_color=0b1220&title_color=7dd3fc&text_color=94a3b8&custom_title=LANGUAGE%20MIX" alt="Top languages" /></td>
+    <td width="25%" align="center"><a href="https://github.com/yuchen0x1?tab=repositories"><img src="https://img.shields.io/github/repos/yuchen0x1?style=for-the-badge&label=PUBLIC%20REPOS&labelColor=0b1220&color=0ea5e9" alt="public repositories" /></a></td>
+    <td width="25%" align="center"><a href="https://github.com/yuchen0x1?tab=followers"><img src="https://img.shields.io/github/followers/yuchen0x1?style=for-the-badge&label=FOLLOWERS&labelColor=0b1220&color=7dd3fc" alt="followers" /></a></td>
+    <td width="25%" align="center"><a href="https://github.com/yuchen0x1?tab=stars"><img src="https://img.shields.io/github/stars/yuchen0x1?style=for-the-badge&label=TOTAL%20STARS&labelColor=0b1220&color=f59e0b" alt="total stars" /></a></td>
+    <td width="25%" align="center"><a href="https://github.com/yuchen0x1/yuchen0x1/commits/main/"><img src="https://img.shields.io/github/last-commit/yuchen0x1/yuchen0x1?style=for-the-badge&label=LAST%20BUILD&labelColor=0b1220&color=22c55e" alt="last build" /></a></td>
   </tr>
 </table>
 
