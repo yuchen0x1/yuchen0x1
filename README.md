@@ -1,50 +1,73 @@
 <div align="center">
-
   <a href="https://github.com/yuchen0x1">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&pause=1200&color=0969DA&center=true&vCenter=true&width=720&lines=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%98%AF%E8%B1%AB%E6%99%A8;%E5%AE%B6%E5%BA%AD%E7%BD%91%E7%BB%9C+%C2%B7+AI+%E5%B7%A5%E5%85%B7%E9%93%BE+%C2%B7+%E5%BC%80%E6%BA%90%E5%AE%9E%E8%B7%B5;%E6%8A%8A%E7%9C%9F%E5%AE%9E%E9%97%AE%E9%A2%98%E5%81%9A%E6%88%90%E5%8F%AF%E5%A4%8D%E7%8E%B0%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" alt="豫晨：家庭网络、AI 工具链与开源实践" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b1220,50:0ea5e9,100:f59e0b&height=230&section=header&text=YUCHEN0X1&fontSize=48&fontAlignY=38&fontColor=ffffff&desc=AI%20TOOLCHAIN%20%2F%2F%20HOME%20NETWORK%20%2F%2F%20OPEN%20SOURCE&descAlignY=61&descSize=16&animation=twinkling" alt="YUCHEN0X1：AI 工具链、家庭网络与开源实践" />
   </a>
 
-  <p><strong>冷漠不是神</strong> · 独立开发者 · 家庭网络与 AI 工具链实践者</p>
-  <p>把踩过的坑整理成文档，把重复的工作做成工具，把能复现的方案分享给需要的人。</p>
-
+  <p><strong>冷漠不是神</strong> · 独立开发者 · 把真实问题做成可复现的解决方案</p>
   <p>
-    <a href="https://github.com/yuchen0x1?tab=repositories"><strong>项目仓库</strong></a>
-    ·
-    <a href="https://gitee.com/yuchen0x1"><strong>Gitee 镜像</strong></a>
-    ·
-    <a href="https://github.com/yuchen0x1/yuchen0x1/issues"><strong>交流反馈</strong></a>
-    ·
+    <a href="https://github.com/yuchen0x1?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-18-0ea5e9?style=for-the-badge&labelColor=0b1220" alt="18 projects" /></a>
+    <a href="https://github.com/yuchen0x1/yuchen0x1"><img src="https://img.shields.io/github/last-commit/yuchen0x1/yuchen0x1?style=for-the-badge&label=UPDATED&labelColor=0b1220&color=f59e0b" alt="last updated" /></a>
+    <a href="https://github.com/yuchen0x1"><img src="https://komarev.com/ghpvc/?username=yuchen0x1&style=for-the-badge&color=0ea5e9&label=PROFILE+VIEWS" alt="profile views" /></a>
+  </p>
+  <p>
+    <a href="https://gitee.com/yuchen0x1"><strong>Gitee</strong></a> ·
+    <a href="https://github.com/yuchen0x1/yuchen0x1/issues"><strong>交流反馈</strong></a> ·
     <a href="https://t.me/lenmoC"><strong>Telegram</strong></a>
   </p>
-
-  <p>
-    <img src="https://img.shields.io/badge/OpenWrt-00A3E0?style=flat-square&logo=openwrt&logoColor=white" alt="OpenWrt" />
-    <img src="https://img.shields.io/badge/AI%20Tooling-0969DA?style=flat-square&logo=openai&logoColor=white" alt="AI Tooling" />
-    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-    <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" />
-    <img src="https://img.shields.io/badge/Vue.js-42B883?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue.js" />
-    <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-  </p>
-
 </div>
 
----
+<div align="center">
+  <sub><code>STATUS: BUILDING</code> · <code>MODE: LOCAL-FIRST</code> · <code>FOCUS: USEFUL SOFTWARE</code></sub>
+</div>
 
-## 当前方向
+<br />
 
-| 家庭网络 | AI 工具链 | 自动化平台 | 产品化改造 |
-| :--- | :--- | :--- | :--- |
-| OpenWrt、旁路由、Xray、Reality 与长期稳定性 | 模型接入、视觉补齐、上下文、Codex 与智能体工作流 | 多账号托管、任务调度、告警、审计与备份 | 管理后台、桌面工具、权限、安全边界与部署体验 |
+<table>
+  <tr>
+    <td width="25%" valign="top"><strong>01 / AI SYSTEMS</strong><br /><sub>模型接入、视觉补齐、上下文、Agent 与 MCP 工作流</sub></td>
+    <td width="25%" valign="top"><strong>02 / NETWORK LAB</strong><br /><sub>OpenWrt、旁路由、Xray、Reality 与长期稳定性</sub></td>
+    <td width="25%" valign="top"><strong>03 / AUTOMATION</strong><br /><sub>任务调度、多账号托管、告警、审计与备份</sub></td>
+    <td width="25%" valign="top"><strong>04 / PRODUCT UX</strong><br /><sub>管理后台、桌面工具、权限、安全边界与部署体验</sub></td>
+  </tr>
+</table>
 
-## 最新项目
+## Signal Console
 
-### [DeepSeekYC](https://github.com/yuchen0x1/deepseek-harness-public)
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yuchen0x1&bg_color=0b1220&color=7dd3fc&line=f59e0b&point=ffffff&area_color=0e7490&area=true&hide_border=true&custom_title=OPEN%20SOURCE%20SIGNAL%20FLOW" alt="GitHub activity graph" />
+</div>
 
-基于 DeepSeek Harness 持续维护的开源桌面 AI Agent 工作台，面向 Windows 10/11。支持 DeepSeek、OpenAI 兼容、Anthropic 兼容与自定义模型服务，并整合项目会话、Agent 预设、浏览器辅助、代码记忆、插件市场和多 Agent 协作。
+<table>
+  <tr>
+    <td width="50%"><img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=yuchen0x1&show_icons=true&include_all_commits=true&count_private=false&hide_border=true&bg_color=0b1220&title_color=7dd3fc&icon_color=f59e0b&text_color=94a3b8&custom_title=BUILD%20TELEMETRY" alt="GitHub statistics" /></td>
+    <td width="50%"><img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=yuchen0x1&layout=compact&langs_count=8&hide_border=true&bg_color=0b1220&title_color=7dd3fc&text_color=94a3b8&custom_title=LANGUAGE%20MIX" alt="Top languages" /></td>
+  </tr>
+</table>
 
-`Electron` · `TypeScript` · `Windows` · `Local-first` · `MIT`
+## Tech Radar
 
-> 当前公开版本：`0.2.50`，发布于 2026-08-18。项目数据默认保存在本地，发行包可从 GitHub Releases 或 Gitee 镜像获取。
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=ts,go,python,nodejs,vue,react,php,java,openwrt,docker,postgres,redis,tauri,androidstudio&perline=7" alt="Technology stack" />
+</div>
+
+## 最新项目 · `NEW SIGNAL`
+
+<table>
+  <tr>
+    <td width="68%" valign="top">
+      <h3><a href="https://github.com/yuchen0x1/deepseek-harness-public">DeepSeekYC</a></h3>
+      <p>基于 DeepSeek Harness 持续维护的开源桌面 AI Agent 工作台，面向 Windows 10/11。支持 DeepSeek、OpenAI 兼容、Anthropic 兼容与自定义模型服务，并整合项目会话、Agent 预设、浏览器辅助、代码记忆、插件市场和多 Agent 协作。</p>
+      <p><code>Electron</code> <code>TypeScript</code> <code>Windows</code> <code>Local-first</code> <code>MIT</code></p>
+    </td>
+    <td width="32%" valign="top">
+      <img src="https://img.shields.io/badge/RELEASE-0.2.50-f59e0b?style=for-the-badge&labelColor=0b1220" alt="release 0.2.50" />
+      <br /><br />
+      <sub>Windows desktop agent<br />Local project memory<br />Provider discovery<br />Browser and plugin workflows</sub>
+    </td>
+  </tr>
+</table>
+
+> 项目数据默认保存在本地，发行包可从 [GitHub Releases](https://github.com/yuchen0x1/deepseek-harness-public/releases) 或 Gitee 镜像获取。
 
 ## 精选项目
 
