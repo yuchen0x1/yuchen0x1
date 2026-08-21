@@ -5,7 +5,7 @@
 
   <p><strong>冷漠不是神</strong> · 独立开发者 · 把真实问题做成可复现的解决方案</p>
   <p>
-    <a href="https://github.com/yuchen0x1?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-18-0ea5e9?style=for-the-badge&labelColor=0b1220" alt="18 projects" /></a>
+    <a href="https://github.com/yuchen0x1?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-28-0ea5e9?style=for-the-badge&labelColor=0b1220" alt="18 projects" /></a>
     <a href="https://github.com/yuchen0x1/yuchen0x1"><img src="https://img.shields.io/github/last-commit/yuchen0x1/yuchen0x1?style=for-the-badge&label=UPDATED&labelColor=0b1220&color=f59e0b" alt="last updated" /></a>
     <a href="https://github.com/yuchen0x1"><img src="https://komarev.com/ghpvc/?username=yuchen0x1&style=for-the-badge&color=0ea5e9&label=PROFILE+VIEWS" alt="profile views" /></a>
   </p>
