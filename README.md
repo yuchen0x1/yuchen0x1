@@ -27,6 +27,12 @@
 
 如果要让这份 README 直接显示在 GitHub 个人主页首页，需要将内容同步到公开的同名 profile 仓库 `yuchen0x1/yuchen0x1`。当前仓库 remote 指向 `yuchen0x1/github-personal-homepage-yuchen0x1`。
 
+## 项目标签
+
+`github-profile` · `profile-readme` · `readme` · `markdown` · `personal-homepage` · `portfolio` · `developer-profile` · `documentation`
+
+这些标签同时配置在 GitHub 仓库 Topics 中，用于帮助仓库检索和说明项目用途。
+
 ## 公开项目导航
 
 以下列表以当前 GitHub 公开仓库元数据为准。没有公开描述的仓库不补写功能说明，避免 README 与代码事实不一致。
