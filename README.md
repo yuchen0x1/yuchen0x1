@@ -7,14 +7,14 @@
 <p>
   <a href="https://github.com/yuchen0x1?tab=repositories"><img src="https://img.shields.io/github/repos/yuchen0x1?style=for-the-badge&label=PUBLIC%20REPOS&labelColor=0b1220&color=0ea5e9" alt="public repositories" /></a>
   <a href="https://github.com/yuchen0x1?tab=followers"><img src="https://img.shields.io/github/followers/yuchen0x1?style=for-the-badge&label=FOLLOWERS&labelColor=0b1220&color=7dd3fc" alt="followers" /></a>
-  <a href="https://github.com/yuchen0x1/github-personal-homepage-yuchen0x1/commits/main"><img src="https://img.shields.io/github/last-commit/yuchen0x1/github-personal-homepage-yuchen0x1?style=for-the-badge&label=UPDATED&labelColor=0b1220&color=f59e0b" alt="last updated" /></a>
+  <a href="https://github.com/yuchen0x1/yuchen0x1/commits/main"><img src="https://img.shields.io/github/last-commit/yuchen0x1/yuchen0x1?style=for-the-badge&label=UPDATED&labelColor=0b1220&color=f59e0b" alt="last updated" /></a>
   <a href="https://github.com/yuchen0x1"><img src="https://komarev.com/ghpvc/?username=yuchen0x1&style=for-the-badge&color=0ea5e9&label=PROFILE+VIEWS" alt="profile views" /></a>
 </p>
 
 <p>
   <a href="https://github.com/yuchen0x1"><strong>GitHub</strong></a> ·
   <a href="https://gitee.com/yuchen0x1"><strong>Gitee</strong></a> ·
-  <a href="https://github.com/yuchen0x1/github-personal-homepage-yuchen0x1/issues"><strong>反馈</strong></a>
+  <a href="https://github.com/yuchen0x1/yuchen0x1/issues"><strong>反馈</strong></a>
 </p>
 
 </div>
@@ -25,7 +25,7 @@
 
 当前仓库不是一个可运行的应用项目。仓库内没有源码入口、包管理文件、构建脚本、运行脚本、API 服务、CLI 工具、Docker 配置或环境变量模板。
 
-如果要让这份 README 直接显示在 GitHub 个人主页首页，需要将内容同步到公开的同名 profile 仓库 `yuchen0x1/yuchen0x1`。当前仓库 remote 指向 `yuchen0x1/github-personal-homepage-yuchen0x1`。
+这份 README 直接维护在公开的同名 profile 仓库 `yuchen0x1/yuchen0x1` 中，推送到 `main` 后即可显示在 GitHub 个人主页首页。
 
 ## 项目标签
 
@@ -42,29 +42,29 @@
 | 项目 | 公开描述 | 主要语言 | 状态 |
 | --- | --- | --- | --- |
 | [AI-Novel-Writing-Assistant](https://github.com/yuchen0x1/AI-Novel-Writing-Assistant) | AI 小说创作工作台：AI 驱动的长篇小说创作辅助工具，包括全流程规划、章节生成、自动导演和知识库检索 | TypeScript | 正常更新 |
-| [usage-atlas](https://github.com/yuchen0x1/usage-atlas) | 本地优先的多平台 AI API 用量、Token、费用、余额与预算分析桌面应用 | JavaScript | 正常更新 |
+| [AI-API-Usage-Analytics-Dashboard](https://github.com/yuchen0x1/AI-API-Usage-Analytics-Dashboard) | 本地优先的多平台 AI API 用量、Token、费用、余额与预算分析桌面应用 | JavaScript | 正常更新 |
 | [llm-usage-stats-desktop-widget](https://github.com/yuchen0x1/llm-usage-stats-desktop-widget) | LLM 用量统计桌面浮窗 | TypeScript | 正常更新 |
 | [personal-ai-api-gateway-sub3api](https://github.com/yuchen0x1/personal-ai-api-gateway-sub3api) | 个人 AI API 网关 Sub3API | 未识别 | 正常更新 |
-| [RelayVerify](https://github.com/yuchen0x1/RelayVerify) | AI API relay authenticity and quality detector for Anthropic, OpenAI, and Gemini-compatible services | Python | 正常更新 |
-| [yiyuyan-ai-plugin](https://github.com/yuchen0x1/yiyuyan-ai-plugin) | 易语言 AI 插件，支持 ZCode / Claude Code 插件市场导入和 dist 脚本装入多种 AI 编辑器 | PowerShell | 正常更新 |
+| [AI-API-Relay-Authenticity-Detector](https://github.com/yuchen0x1/AI-API-Relay-Authenticity-Detector) | AI API relay authenticity and quality detector for Anthropic, OpenAI, and Gemini-compatible services | Python | 正常更新 |
+| [yiyuyan-ai-auto-dev-plugin](https://github.com/yuchen0x1/yiyuyan-ai-auto-dev-plugin) | 易语言 AI 自动开发插件，通过 ZCode / Claude 控制易语言 IDE，生成、保存并编译易语言程序 | PowerShell | 正常更新 |
 
 ### 数据、内容与业务工具
 
 | 项目 | 公开描述 | 主要语言 | 状态 |
 | --- | --- | --- | --- |
-| [QQ-Space-Restoration](https://github.com/yuchen0x1/QQ-Space-Restoration) | 本地运行的开源 QQ 空间备份工具，将动态、照片、视频和互动记录保存到本地 | Rust | 正常更新 |
-| [intelligent-meteorological-warning-analysis-system](https://github.com/yuchen0x1/intelligent-meteorological-warning-analysis-system) | 智能气象问答预警分析系统，整合天气态势、风险研判、地图分析、AI 问答、告警订阅与管理后台 | Python | 正常更新 |
+| [QQ-Space-Restoration](https://github.com/yuchen0x1/Qzone-Archive) | 本地运行的开源 QQ 空间备份工具，将动态、照片、视频和互动记录保存到本地 | Rust | 正常更新 |
+| [Intelligent-Meteorological-QA-Warning-Analysis-System](https://github.com/yuchen0x1/Intelligent-Meteorological-QA-Warning-Analysis-System) | 智能气象问答预警分析系统，整合天气态势、风险研判、地图分析、AI 问答、告警订阅与管理后台 | Python | 正常更新 |
 | [xianyu-seller-console](https://github.com/yuchen0x1/xianyu-seller-console) | 闲鱼卖家运营控制台，面向自有账号的本地化运营工具 | Java | 正常更新 |
 | [student-information-management-system](https://github.com/yuchen0x1/student-information-management-system) | 学生信息管理系统 | Java | 正常更新 |
-| [short-video-watermark-removal-tool](https://github.com/yuchen0x1/short-video-watermark-removal-tool) | GitHub 未设置公开描述 | JavaScript | 正常更新 |
+| [short-video-watermark-remover](https://github.com/yuchen0x1/short-video-watermark-remover) | 短视频去水印解析与下载工具 | JavaScript | 正常更新 |
 
 ### 网络、系统与主页维护
 
 | 项目 | 公开描述 | 主要语言 | 状态 |
 | --- | --- | --- | --- |
 | [OpenWrt-Flashing-Guide-RE-CP02](https://github.com/yuchen0x1/OpenWrt-Flashing-Guide-RE-CP02) | OpenWrt 刷机指南 RE-CP02 | JavaScript | 正常更新 |
-| [Xray-server-management-panel](https://github.com/yuchen0x1/Xray-server-management-panel) | GitHub 未设置公开描述 | Go | 正常更新 |
-| [github-personal-homepage-yuchen0x1](https://github.com/yuchen0x1/github-personal-homepage-yuchen0x1) | 当前个人主页 README 维护仓库 | Markdown | 正常更新 |
+| [Xray-server-management-panel](https://github.com/yuchen0x1/Xray-server-management-panel) | Xray 服务器管理面板 | Go | 正常更新 |
+| [yuchen0x1](https://github.com/yuchen0x1/yuchen0x1) | 当前个人主页 README 维护仓库 | Markdown | 正常更新 |
 
 完整列表见 [GitHub Repositories](https://github.com/yuchen0x1?tab=repositories)。
 
@@ -91,8 +91,8 @@
 ## 快速维护
 
 ```bash
-git clone https://github.com/yuchen0x1/github-personal-homepage-yuchen0x1.git
-cd github-personal-homepage-yuchen0x1
+git clone https://github.com/yuchen0x1/yuchen0x1.git
+cd yuchen0x1
 ```
 
 维护步骤：
@@ -135,13 +135,9 @@ cd github-personal-homepage-yuchen0x1
 
 仓库中没有 `.env`、配置模板或读取环境变量的代码，因此当前没有需要配置的环境变量。
 
-### 为什么有些项目显示“GitHub 未设置公开描述”？
-
-这些仓库在 GitHub API 中没有公开 description。README 不替它们补写功能说明，避免把未经代码确认的信息写成事实。
-
 ### GitHub 个人主页没有显示这份 README 怎么办？
 
-GitHub profile README 需要一个公开仓库，仓库名必须与用户名完全一致，也就是 `yuchen0x1/yuchen0x1`。如果使用当前仓库维护内容，需要再同步到同名 profile 仓库。
+GitHub profile README 需要一个公开仓库，仓库名必须与用户名完全一致，也就是 `yuchen0x1/yuchen0x1`。确认文件位于该仓库的默认分支 `main` 后，GitHub 会自动显示。
 
 ### 图片或徽章不显示怎么办？
 
@@ -151,7 +147,7 @@ GitHub profile README 需要一个公开仓库，仓库名必须与用户名完�
 
 - GitHub 主页：[github.com/yuchen0x1](https://github.com/yuchen0x1)
 - Gitee 主页：[gitee.com/yuchen0x1](https://gitee.com/yuchen0x1)
-- README 问题反馈：[github-personal-homepage-yuchen0x1/issues](https://github.com/yuchen0x1/github-personal-homepage-yuchen0x1/issues)
+- README 问题反馈：[yuchen0x1/issues](https://github.com/yuchen0x1/yuchen0x1/issues)
 
 提交 README 修改时，请保持范围清晰：更新项目链接、修复失效描述、补充已公开且可验证的信息，避免一次提交混入无关格式化或不可验证宣传内容。
 
