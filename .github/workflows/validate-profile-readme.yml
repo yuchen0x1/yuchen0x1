@@ -1,0 +1,30 @@
+name: Validate Profile README
+
+on:
+  push:
+    paths:
+      - README.md
+      - scripts/validate-readme.ps1
+      - .github/workflows/validate-profile-readme.yml
+  pull_request:
+    paths:
+      - README.md
+      - scripts/validate-readme.ps1
+      - .github/workflows/validate-profile-readme.yml
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: README health check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate README and repository links
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./scripts/validate-readme.ps1 -CheckLinks
