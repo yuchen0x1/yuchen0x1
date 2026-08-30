@@ -13,17 +13,16 @@ if ([string]::IsNullOrWhiteSpace($readme)) {
 }
 
 $lines = @($readme -split "`r?`n")
-$projectRowPattern = '^\| \[[^\]]+\]\(https://github\.com/yuchen0x1/[A-Za-z0-9_.-]+\) \| .+ \| [^|]+ \| 正常更新 \|$'
-$projectRows = @($lines | Where-Object { $_ -match $projectRowPattern })
+$projectItemPattern = '^[-*] \*\*\[[^\]]+\]\(https://github\.com/yuchen0x1/[A-Za-z0-9_.-]+\)\*\* — .+ · `[^`]+` · 正常更新$'
+$projectItems = @($lines | Where-Object { $_ -match $projectItemPattern })
 
-if ($projectRows.Count -lt 1) {
-    throw 'No project rows with the expected format were found.'
+if ($projectItems.Count -lt 1) {
+    throw 'No project items with the expected format were found.'
 }
 
-$statusRows = @($lines | Where-Object { $_ -match '^\| \[' })
-$invalidStatusRows = @($statusRows | Where-Object { $_ -notmatch '\| 正常更新 \|$' })
-if ($invalidStatusRows.Count -gt 0) {
-    throw "Found project rows without the 正常更新 status: $($invalidStatusRows -join '; ')"
+$statusCount = ([regex]::Matches($readme, ' · 正常更新$','Multiline')).Count
+if ($statusCount -ne $projectItems.Count) {
+    throw "Project item/status count mismatch: $($projectItems.Count) items, $statusCount statuses."
 }
 
 if ($readme -match '暂停功能开发|暂停开发|停止开发|归档保留') {
@@ -31,7 +30,7 @@ if ($readme -match '暂停功能开发|暂停开发|停止开发|归档保留') 
 }
 
 $urls = @(
-    [regex]::Matches($readme, 'https?://[^\s)<>]+') |
+    [regex]::Matches($readme, 'https?://[^\s)<>\"]+') |
         ForEach-Object { $_.Value.TrimEnd('.', ',', ';') } |
         Sort-Object -Unique
 )
@@ -48,6 +47,16 @@ $githubSlugs = @(
         ForEach-Object { $_.Groups[1].Value -replace '\.git$', '' } |
         Sort-Object -Unique
 )
+
+$bannerPath = Join-Path (Split-Path -Parent $resolvedReadme) 'assets\profile-banner.svg'
+if (-not (Test-Path -LiteralPath $bannerPath)) {
+    throw "Profile banner is missing: $bannerPath"
+}
+$bannerXml = [System.Xml.XmlDocument]::new()
+$bannerXml.Load((Resolve-Path -LiteralPath $bannerPath).Path)
+if ($bannerXml.DocumentElement.Name -ne 'svg') {
+    throw "Profile banner is not a valid SVG: $bannerPath"
+}
 
 if ($CheckLinks) {
     $apiHeaders = @{
@@ -79,7 +88,7 @@ if ($CheckLinks) {
     }
 }
 
-Write-Output "README validation passed: $($projectRows.Count) project rows, $($githubSlugs.Count) GitHub repository links."
+Write-Output "README validation passed: $($projectItems.Count) project items, $($githubSlugs.Count) GitHub repository links."
 if ($CheckLinks) {
     Write-Output 'GitHub repository link health checks passed.'
 }
