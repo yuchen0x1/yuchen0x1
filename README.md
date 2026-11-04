@@ -4,7 +4,7 @@
   <br />
   <strong>冷漠不是神 · 独立开发者</strong>
   <br />
-  <sub>把真实问题，做成可复现、可交付的解决方案。</sub>
+  <sub>把真实需求做成顺手可用的产品：从桌面端到自托管服务。</sub>
   <br />
   <br />
   <a href="https://github.com/yuchen0x1">GitHub</a>
@@ -26,44 +26,23 @@
 
 ## 02 / What I Build
 
-- **AI Systems** — AI Agent、个人 AI API 网关、API 用量与费用分析
-- **Product Tools** — LLM 用量浮窗、跨平台桌面工具、低干扰交互
-- **Business Software** — 电商运营、信息管理、数据处理与任务调度
-- **Infrastructure** — OpenWrt、代理服务管理、服务器与系统服务
+- **Business Tools** — 电商与二手交易运营：自动发货、消息处理、多账号管理
+- **Desktop Apps** — 跨平台桌面端：播放、下载与本地化工具
+- **Self-hosted Web** — 可自部署的在线应用：实时协作、PWA、Docker 部署
 
 ## 03 / Selected Projects
 
 当前展示的精选项目均处于正常更新状态。
 
-### AI 与开发工具
-
-- **[AI-Novel-Writing-Assistant](https://github.com/yuchen0x1/AI-Novel-Writing-Assistant)** — AI 长篇小说创作辅助工作台 · `TypeScript` · 正常更新
-- **[AI-API-Usage-Analytics-Dashboard](https://github.com/yuchen0x1/AI-API-Usage-Analytics-Dashboard)** — 多平台 AI API 用量、费用与预算分析桌面应用 · `JavaScript` · 正常更新
-- **[llm-usage-stats-desktop-widget](https://github.com/yuchen0x1/llm-usage-stats-desktop-widget)** — LLM 用量统计桌面浮窗 · `TypeScript` · 正常更新
-- **[personal-ai-api-gateway-sub3api](https://github.com/yuchen0x1/personal-ai-api-gateway-sub3api)** — 个人 AI API 网关 · `Go` · 正常更新
-- **[AI-API-Relay-Authenticity-Detector](https://github.com/yuchen0x1/AI-API-Relay-Authenticity-Detector)** — AI API 中继真实性与质量检测器 · `Python` · 正常更新
-- **[yiyuyan-ai-auto-dev-plugin](https://github.com/yuchen0x1/yiyuyan-ai-auto-dev-plugin)** — 易语言 AI 自动开发插件 · `PowerShell` · 正常更新
-
-### 数据、内容与业务工具
-
-- **[Qzone-Archive](https://github.com/yuchen0x1/Qzone-Archive)** — QQ 空间内容本地备份与检索工具 · `Rust` · 正常更新
-- **[Intelligent-Meteorological-QA-Warning-Analysis-System](https://github.com/yuchen0x1/Intelligent-Meteorological-QA-Warning-Analysis-System)** — 智能气象问答预警分析系统 · `Python` · 正常更新
-- **[xianyu-seller-console](https://github.com/yuchen0x1/xianyu-seller-console)** — 闲鱼卖家运营控制台 · `Java` · 正常更新
-- **[student-information-management-system](https://github.com/yuchen0x1/student-information-management-system)** — 学生信息管理系统 · `Java` · 正常更新
-- **[short-video-watermark-remover](https://github.com/yuchen0x1/short-video-watermark-remover)** — 短视频去水印解析与下载工具 · `JavaScript` · 正常更新
-
-### 系统、网络与主页
-
-- **[OpenWrt-Flashing-Guide-RE-CP02](https://github.com/yuchen0x1/OpenWrt-Flashing-Guide-RE-CP02)** — OpenWrt 刷机指南 · `JavaScript` · 正常更新
-- **[Xray-server-management-panel](https://github.com/yuchen0x1/Xray-server-management-panel)** — Xray 服务器管理面板 · `Go` · 正常更新
+- **[Xianyu-Assistant](https://github.com/yuchen0x1/Xianyu-Assistant)** — 闲鱼卖家运营控制台：账号连接、商品管理、消息处理、自动回复、自动发货、卡密库存、任务调度与运行监控，支持多账号 · `Java` · 正常更新
+- **[HongGuo-PC](https://github.com/yuchen0x1/HongGuo-PC)** — 红果短剧 Windows/Mac 桌面端：播放与下载（GPL-3.0 二次开发版） · `JavaScript` · 正常更新
+- **[JukeboxRoom](https://github.com/yuchen0x1/JukeboxRoom)** — 多人音乐房间与个人音乐工作区（Web / Windows / Android） · `TypeScript` · 正常更新
 
 [查看全部 GitHub 项目 →](https://github.com/yuchen0x1?tab=repositories)
 
 ## 04 / Stack
 
-`TypeScript` · `Python` · `Go` · `Rust` · `Java` · `JavaScript` · `PowerShell`
-
-`React` · `Vue` · `Vite` · `MCP` · `PostgreSQL` · `Redis` · `Docker` · `OpenWrt` · `Xray`
+`Java` · `Spring Boot` · `Vue` · `TypeScript` · `React` · `JavaScript` · `Electron` · `Vite` · `Express` · `Socket.IO` · `Tailwind CSS` · `Docker` · `PWA`
 
 ## 05 / Contact
 
