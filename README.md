@@ -27,22 +27,32 @@
 ## 02 / What I Build
 
 - **Business Tools** — 电商与二手交易运营：自动发货、消息处理、多账号管理
-- **Desktop Apps** — 跨平台桌面端：播放、下载与本地化工具
-- **Self-hosted Web** — 可自部署的在线应用：实时协作、PWA、Docker 部署
+- **Cross-platform Apps** — 桌面与移动端：媒体播放下载、开发者协作工具
+- **Self-hosted Web** — 可自部署的在线服务：实时协作、内容解析、PWA、Docker 部署
 
 ## 03 / Selected Projects
 
 当前展示的精选项目均处于正常更新状态。
 
-- **[Xianyu-Assistant](https://github.com/yuchen0x1/Xianyu-Assistant)** — 闲鱼卖家运营控制台：账号连接、商品管理、消息处理、自动回复、自动发货、卡密库存、任务调度与运行监控，支持多账号 · `Java` · 正常更新
+### 桌面与移动应用
+
 - **[HongGuo-PC](https://github.com/yuchen0x1/HongGuo-PC)** — 红果短剧 Windows/Mac 桌面端：播放与下载（GPL-3.0 二次开发版） · `JavaScript` · 正常更新
+- **[Gitee-Android](https://github.com/yuchen0x1/Gitee-Android)** — Gitee 安卓客户端：仓库动态、Issue 回复与 PR 审阅的移动协作，直连官方 API，无自建后端 · `Dart` · 正常更新
+
+### 业务与运营工具
+
+- **[Xianyu-Assistant](https://github.com/yuchen0x1/Xianyu-Assistant)** — 闲鱼卖家运营控制台：账号连接、商品管理、消息处理、自动回复、自动发货、卡密库存、任务调度与运行监控，支持多账号 · `Java` · 正常更新
+
+### 自托管服务
+
 - **[JukeboxRoom](https://github.com/yuchen0x1/JukeboxRoom)** — 多人音乐房间与个人音乐工作区（Web / Windows / Android） · `TypeScript` · 正常更新
+- **[Short-Video-Analysis](https://github.com/yuchen0x1/Short-Video-Analysis)** — 短视频无水印解析与下载（抖音 / B站 / 快手 / TikTok），支持自托管 · `PHP` · 正常更新
 
 [查看全部 GitHub 项目 →](https://github.com/yuchen0x1?tab=repositories)
 
 ## 04 / Stack
 
-`Java` · `Spring Boot` · `Vue` · `TypeScript` · `React` · `JavaScript` · `Electron` · `Vite` · `Express` · `Socket.IO` · `Tailwind CSS` · `Docker` · `PWA`
+`Java` · `Spring Boot` · `Vue` · `TypeScript` · `React` · `JavaScript` · `Dart` · `PHP` · `Electron` · `Flutter` · `Capacitor` · `Vite` · `Express` · `Socket.IO` · `Docker` · `PWA`
 
 ## 05 / Contact
 
