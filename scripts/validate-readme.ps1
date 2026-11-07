@@ -12,15 +12,14 @@ if ([string]::IsNullOrWhiteSpace($readme)) {
     throw "README is empty: $resolvedReadme"
 }
 
-$lines = @($readme -split "`r?`n")
-$projectItemPattern = '^[-*] \*\*\[[^\]]+\]\(https://github\.com/yuchen0x1/[A-Za-z0-9_.-]+\)\*\* — .+ · `[^`]+` · 正常更新$'
-$projectItems = @($lines | Where-Object { $_ -match $projectItemPattern })
+$projectItemPattern = '<a href="https://github\.com/yuchen0x1/[A-Za-z0-9_.-]+"'
+$projectItems = @([regex]::Matches($readme, $projectItemPattern))
 
 if ($projectItems.Count -lt 1) {
     throw 'No project items with the expected format were found.'
 }
 
-$statusCount = ([regex]::Matches($readme, ' · 正常更新$','Multiline')).Count
+$statusCount = ([regex]::Matches($readme, '正常更新')).Count
 if ($statusCount -ne $projectItems.Count) {
     throw "Project item/status count mismatch: $($projectItems.Count) items, $statusCount statuses."
 }
