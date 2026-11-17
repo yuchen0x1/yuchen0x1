@@ -4,11 +4,15 @@ on:
   push:
     paths:
       - README.md
+      - repo-descriptions.md
+      - assets/**
       - scripts/validate-readme.ps1
       - .github/workflows/validate-profile-readme.yml
   pull_request:
     paths:
       - README.md
+      - repo-descriptions.md
+      - assets/**
       - scripts/validate-readme.ps1
       - .github/workflows/validate-profile-readme.yml
 

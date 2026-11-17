@@ -1,50 +1,73 @@
-共 18 个仓库 · 描述总计 4051 字 · 最短 151 字 · 最长 284 字 · 全部 ≤ 300 字
+# 公开仓库索引
 
+截至 **2026-11-17**，共 **28 个公开仓库**：27 个项目（含 2 个 Fork、2 个已归档项目）及本主页。
+
+状态依据 GitHub 的归档与 Fork 标记，主要语言为 GitHub 检测结果；功能与平台以各仓库当前 README 为准。
 
 ### AI 与智能工具
 
-| 仓库 | 一句话定位 | 技术栈 | 形态 | 协议 | 描述字数 |
-|---|---|---|---|---|---|
-| **Pagekin** | 开源免费的 AI 小说写作桌面软件，为长篇/网文连载设计；本地向量知识库 + 大纲人物卡时间线 | `React 19 · Electron · TypeScript · LanceDB · SQLite` | Windows / macOS | GPL-3.0 | 230 |
-| **aa-browser** | 为 AI Agent 而生的桌面浏览器；MCP 接入读取结构化快照，不看截图不猜坐标 | `Electron · TypeScript · React · MCP` | Windows 桌面 | MIT | 280 |
-| **AI-generates-E-language-code** | 易语言 AI 一体化工作台；纯文本源码 ⇄ 易语言工程，IDE 内停靠预览 | `Python · Electron · DeepSeek Harness · 插件` | Windows / 编辑器插件 | MIT | 201 |
-| **sub3api-relay** | AI API 网关；多供应商中转、账号池调度、用量计费与运维管理 | `Go · Gin · Ent · PostgreSQL · Redis · Vue 3 · Tauri` | Web + 桌面控制台 | MulanPSL-2.0 | 232 |
+| 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
+|---|---|---|---|---|
+| [**Novel-Writer-master**](https://github.com/yuchen0x1/Novel-Writer-master) | AI 小说写作桌面软件：本地知识库、大纲人物卡与从章节创作到审稿修稿的工作流 | `TypeScript` | Windows / macOS | 未归档 |
+| [**aa-browser**](https://github.com/yuchen0x1/aa-browser) | 为 Agent 而生的桌面浏览器：MCP 接入、结构化快照与网络抓包 | `TypeScript` | Windows 桌面 | 未归档 |
+| [**mind-bench**](https://github.com/yuchen0x1/mind-bench) | 本地 AI 模型评测工作台：多模型对比、规则评分、AI 裁判与评测报告 | `JavaScript` | 本地 Web | 未归档 |
+| [**PROJECT-NEXUS**](https://github.com/yuchen0x1/PROJECT-NEXUS) | Windows AI 仓库运营工作台：仓库监控与开发流程管理；当前为开发预览版 | `JavaScript` | Windows | 未归档 |
+| [**sub3api-relay**](https://github.com/yuchen0x1/sub3api-relay) | AI API 网关与管理平台：多供应商中转、账号调度、用量计费与运维监控 | `Go` | Web；附实验性桌面控制台 | 未归档 |
 
 ### 桌面与移动应用
 
-| 仓库 | 一句话定位 | 技术栈 | 形态 | 协议 | 描述字数 |
-|---|---|---|---|---|---|
-| **HongGuo-PC** | 红果短剧桌面端；搜索、播放、下载、追剧与合并导出 | `Electron 44 · React · Vite` | Windows x64 / macOS | GPL-3.0 | 151 |
-| **Gitee-Android** | Gitee 非官方客户端；手机刷动态、读代码、回 Issue、审 PR | `Flutter · Dart · Gitee Open API v5` | Android | MIT | 228 |
-| **Base64-encode-encoding** | 极客工具箱；Base64 编解码等高频操作，完全离线 | `Electron · Vue 3 · Vite · JSON 工具清单` | Windows / macOS / Android / iOS | MIT | 165 |
-| **Codex-Remote-Bridge** | 手机遥控电脑 Codex Desktop；局域网直连，聊天数据不出本地网络 | `Node.js · CDP · WPF · Android` | Windows + 手机 / Android | MulanPSL-2.0 | 243 |
-| **Qzone-Archive** | QQ 空间本地备份；动态相册留言全量归档，可检索可导出 | `Rust · Tauri 2 · Vue 3 · SQLite` | Windows / macOS / Linux | GPL-3.0 | 237 |
+| 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
+|---|---|---|---|---|
+| [**apkstart**](https://github.com/yuchen0x1/apkstart) | Windows 安卓应用运行器：APK 双击安装、独立窗口运行、运行时管理与在线更新 | `JavaScript` | Windows x64 | 未归档 |
+| [**HongGuo-PC**](https://github.com/yuchen0x1/HongGuo-PC) | 红果短剧 Windows 桌面端：搜索、播放、下载、追剧与合并导出（GPL-3.0 二次开发版） | `JavaScript` | Windows x64 | 未归档 |
+| [**Gitee-Android**](https://github.com/yuchen0x1/Gitee-Android) | Gitee 非官方安卓客户端：仓库动态、代码浏览、Issue 回复与 PR 审阅 | `Dart` | Android | 未归档 |
+| [**LINUX-DO**](https://github.com/yuchen0x1/LINUX-DO) | LINUX DO 非官方 Android 客户端：话题、发帖回复、私信通知、书签与代理设置 | `Dart` | Android | 未归档 |
+| [**Base64-encode-encoding**](https://github.com/yuchen0x1/Base64-encode-encoding) | 跨端离线工具集：Base64 编解码等日常操作，数据保存在本机 | `JavaScript` | Web / PWA / Windows；附 macOS / Android / iOS 工程 | 未归档 |
+| [**Audio-Studio**](https://github.com/yuchen0x1/Audio-Studio) | 音频处理工具：格式转换、批量处理、剪辑合并、元数据与封面编辑 | `TypeScript` | Web / Windows | 未归档 |
+| [**Internet-Speed-Test**](https://github.com/yuchen0x1/Internet-Speed-Test) | Windows 网络测速与诊断：多协议测速、网络质量分析、网卡监控与历史报告 | `Rust` | Windows | 未归档 |
+| [**Scan-the-computer-for-viruses**](https://github.com/yuchen0x1/Scan-the-computer-for-viruses) | Windows 安全管家：接入 Microsoft Defender，提供安全检查、系统维护与本地报告 | `C#` | Windows | 未归档 |
+| [**Doomsday-Survival-Guide**](https://github.com/yuchen0x1/Doomsday-Survival-Guide) | 离线优先的生存知识检索与物资管理系统，提供图鉴、清单与计算器 | `TypeScript` | Web / PWA / Windows / Android | 未归档 |
+| [**GitHub-Achievement-Hub**](https://github.com/yuchen0x1/GitHub-Achievement-Hub) | GitHub 成就勋章百科：获取条件、等级门槛、可信来源与进度追踪 | `TypeScript` | Web / Windows；移动外壳为实验性 | 未归档 |
 
 ### 业务与运营工具
 
-| 仓库 | 一句话定位 | 技术栈 | 形态 | 协议 | 描述字数 |
-|---|---|---|---|---|---|
-| **Xianyu-Assistant** | 闲鱼卖家运营控制台；账号商品消息发货库存任务一体化，多账号 | `Java · Spring Boot · Vue 3 · SQLite · Flutter` | Web + 桌面 + 移动 | Apache-2.0 | 228 |
-| **AI-QQ-Bot** | 多账号 QQ 机器人平台；官方机器人通道，不扫码不模拟协议 | `Python · FastAPI · SQLAlchemy 2 · Vue 3` | Linux 服务器 + Web | MIT | 263 |
+| 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
+|---|---|---|---|---|
+| [**Xianyu-Assistant**](https://github.com/yuchen0x1/Xianyu-Assistant) | 闲鱼卖家运营控制台：多账号、商品消息、自动回复发货与卡密库存，电脑手机均可用浏览器访问 | `Java` | Web / 自托管 | 未归档 |
+| [**AI-QQ-Bot**](https://github.com/yuchen0x1/AI-QQ-Bot) | QBot 多账号 QQ 机器人平台：官方机器人与 OneBot 兼容通道、AI 对话、群管理与自动审核 | `Python` | Web / Linux 服务器 | 未归档 |
 
 ### 自托管服务
 
-| 仓库 | 一句话定位 | 技术栈 | 形态 | 协议 | 描述字数 |
-|---|---|---|---|---|---|
-| **JukeboxRoom** | 多人实时在线点歌；队列与播放进度实时同步到所有成员 | `React 19 · Node.js · Express · Socket.IO · Tailwind` | Web / Windows / Android | MIT | 232 |
-| **Short-Video-Analysis** | 短视频去水印解析；12 平台一键解析视频图集封面与作者信息 | `Laravel · PHP · Vue 3 · Electron · Capacitor · Flutter` | Web / 桌面 / 移动 / HTTP API | AGPL-3.0 | 196 |
-| **Xray-server-management-panel** | Xray-core 一体化管理后台；入站订阅节点路由告警监控全在一个页面 | `Go · Gin · GORM · React · Ant Design` | Web / Docker | NOASSERTION | 284 |
-| **baidu-tieba-yunqiandao** | 贴吧云签到；计划任务自动签到、失败复签、凭据健康检查 | `PHP 8.2 · MariaDB · Docker Compose` | Web / Docker | NOASSERTION | 192 |
+| 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
+|---|---|---|---|---|
+| [**JukeboxRoom**](https://github.com/yuchen0x1/JukeboxRoom) | 多人音乐房间与个人音乐工作区：点歌队列、播放进度同步、歌词与聊天 | `TypeScript` | Web / Windows；Android 独立播放器 | 未归档 |
+| [**Short-Video-Analysis**](https://github.com/yuchen0x1/Short-Video-Analysis) | 短视频解析与下载工具：视频、图集、封面与作者信息，支持自托管及 HTTP API | `PHP` | Web / 桌面 / 移动 / HTTP API | 未归档 |
+| [**Xray-server-management-panel**](https://github.com/yuchen0x1/Xray-server-management-panel) | Xray 服务器管理面板：入站订阅、多节点同步、路由规则、流量监控与多渠道告警 | `Go` | Web / Docker | 未归档 |
+| [**baidu-tieba-yunqiandao**](https://github.com/yuchen0x1/baidu-tieba-yunqiandao) | 百度贴吧云签到：计划任务签到、失败复签、凭据健康检查与通知推送 | `PHP` | Web / Docker | 未归档 |
+| [**Family-Genealogy-of-Hundreds-of-Clans**](https://github.com/yuchen0x1/Family-Genealogy-of-Hundreds-of-Clans) | 中华姓氏文化与家族族谱平台：姓氏知识库、家族树、亲属关系图与 GEDCOM 数据导入导出 | `TypeScript` | Web / 自托管 | 未归档 |
 
 ### 开发辅助与调试
 
-| 仓库 | 一句话定位 | 技术栈 | 形态 | 协议 | 描述字数 |
-|---|---|---|---|---|---|
-| **OpenWrt-Flashing-Guide-RE-CP02** | 京东云无线宝 RE-CP-02 刷 OpenWrt 图文教程 + 家庭网关全套配置 | `Shell · Lua · LuCI · JS · OpenWrt 25.12` | 文档 / 路由器 | MIT | 249 |
-| **linuxdoAndroid** | linux.do Android CDP 调试脚本集；表达式求值与 Cookie 提取 | `Node.js 原生 · Chrome DevTools Protocol` | 脚本工具 | MIT | 196 |
+| 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
+|---|---|---|---|---|
+| [**OpenWrt-Flashing-Guide-RE-CP02**](https://github.com/yuchen0x1/OpenWrt-Flashing-Guide-RE-CP02) | 京东云无线宝 RE-CP-02 刷 OpenWrt 图文教程、自制 LuCI 应用与 OTA 更新源 | `JavaScript` | 文档 / 路由器 | 未归档 |
+
+### Fork 项目
+
+| 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
+|---|---|---|---|---|
+| [**GFPGAN**](https://github.com/yuchen0x1/GFPGAN) | GFPGAN 维护版：兼容现代 PyTorch 与 torchvision 的真实人脸修复，支持 CPU 与纯 PyTorch 回退 | `Python` | Python / 图像修复 | Fork |
+| [**themes**](https://github.com/yuchen0x1/themes) | Radix Themes 组件库 Fork：面向快速开发、易维护与可访问性的 React 组件库 | `TypeScript` | React / UI 组件库 | Fork |
+
+### 已归档项目
+
+| 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
+|---|---|---|---|---|
+| [**Codex-Remote-Bridge**](https://github.com/yuchen0x1/Codex-Remote-Bridge) | 手机与电脑 Codex Desktop 的本地桥接；v4.2.0 为最终版本，已停止维护 | `JavaScript` | Windows / macOS / Android / 浏览器 | 已归档 |
+| [**Qzone-Archive**](https://github.com/yuchen0x1/Qzone-Archive) | 本地 QQ 空间归档工具：动态、相册与互动记录备份；v1.3.5 为最后版本，已停止维护 | `Rust` | 桌面应用 | 已归档 |
 
 ### 个人主页
 
-| 仓库 | 一句话定位 | 技术栈 | 形态 | 协议 | 描述字数 |
-|---|---|---|---|---|---|
-| **yuchen0x1** | 独立开发者主页；汇总全部项目、开发状态与技术栈 | `Markdown · PowerShell · SVG` | GitHub Profile | — | 244 |
+| 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
+|---|---|---|---|---|
+| [**yuchen0x1**](https://github.com/yuchen0x1/yuchen0x1) | 独立开发者主页：汇总公开项目、技术栈、Fork 与归档状态 | `PowerShell` | GitHub Profile | 未归档 |

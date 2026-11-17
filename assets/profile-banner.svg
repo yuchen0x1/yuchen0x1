@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title description">
   <title id="title">YUCHEN0X1</title>
-  <desc id="description">Obsidian and gold profile banner for YUCHEN0X1, an independent builder of cross-platform apps, business tools and self-hosted services.</desc>
+  <desc id="description">Obsidian and gold profile banner for YUCHEN0X1, an independent builder of AI tools, cross-platform apps, business tools and self-hosted services. 28 public repositories, 27 projects including 2 fork projects and 2 archived projects, 4 domains and 9 languages. Updated 2026-11-17.</desc>
 
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -88,12 +88,12 @@
   </g>
 
   <text x="962" y="248" fill="#6E7480" font-family="'Cascadia Mono',Consolas,ui-monospace,monospace" font-size="12" letter-spacing="3">EST. 2026</text>
-  <text x="962" y="278" fill="#6E7480" font-family="'Cascadia Mono',Consolas,ui-monospace,monospace" font-size="12" letter-spacing="3">18 REPOSITORIES</text>
+  <text x="962" y="278" fill="#6E7480" font-family="'Cascadia Mono',Consolas,ui-monospace,monospace" font-size="12" letter-spacing="3">28 REPOSITORIES</text>
 
   <line x1="72" y1="356" x2="1146" y2="356" stroke="url(#gold)" stroke-width="1" />
 
   <g font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif">
-    <text x="72" y="404" fill="#E8C87A" font-size="34" font-weight="800">17</text>
+    <text x="72" y="404" fill="#E8C87A" font-size="34" font-weight="800">27</text>
     <text x="122" y="404" fill="#7E838C" font-size="12" font-weight="600" letter-spacing="4">PROJECTS</text>
 
     <line x1="300" y1="372" x2="300" y2="414" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1" />
@@ -101,12 +101,12 @@
     <text x="386" y="404" fill="#7E838C" font-size="12" font-weight="600" letter-spacing="4">DOMAINS</text>
 
     <line x1="562" y1="372" x2="562" y2="414" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1" />
-    <text x="598" y="404" fill="#E8C87A" font-size="34" font-weight="800">08</text>
+    <text x="598" y="404" fill="#E8C87A" font-size="34" font-weight="800">09</text>
     <text x="648" y="404" fill="#7E838C" font-size="12" font-weight="600" letter-spacing="4">LANGUAGES</text>
 
     <line x1="800" y1="372" x2="800" y2="414" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1" />
-    <text x="836" y="404" fill="#E8C87A" font-size="34" font-weight="800">03</text>
-    <text x="886" y="404" fill="#7E838C" font-size="12" font-weight="600" letter-spacing="4">PLATFORMS</text>
+    <text x="836" y="404" fill="#E8C87A" font-size="34" font-weight="800">02</text>
+    <text x="886" y="404" fill="#7E838C" font-size="12" font-weight="600" letter-spacing="4">ARCHIVED</text>
   </g>
 
   <rect x="0.5" y="0.5" width="1199" height="439" fill="none" stroke="#E8C87A" stroke-opacity="0.14" stroke-width="1" />
