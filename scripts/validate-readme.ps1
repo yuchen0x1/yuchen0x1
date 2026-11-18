@@ -125,16 +125,31 @@ if ($domainCount -eq 0 -or $languages.Count -eq 0 -or @($languages | Sort-Object
     throw 'WHAT I BUILD or STACK has missing or duplicate entries.'
 }
 $archivedCount = @($projectRows | Where-Object Status -eq '○ 已归档').Count
+$forkCount = @($projectRows | Where-Object Status -eq '⑂ Fork').Count
 $expectedMetrics = @{
     PROJECTS = $projectRows.Count
     REPOSITORIES = $projectRows.Count + 1
     DOMAINS = $domainCount
     LANGUAGES = $languages.Count
-    ARCHIVED = $archivedCount
+    FORKS = $forkCount
 }
 foreach ($label in $expectedMetrics.Keys) {
     $actual = Get-BannerMetric $label
     if ($actual -ne $expectedMetrics[$label]) { throw "Banner $label mismatch: $actual shown, $($expectedMetrics[$label]) expected." }
+}
+
+# The curated Markdown index must cover exactly the same repositories as the profile.
+$indexPath = Join-Path $readmeRoot 'repo-descriptions.md'
+$index = Get-Content -LiteralPath $indexPath -Raw -Encoding UTF8
+$indexSlugs = @([regex]::Matches($index, '\]\(https://github\.com/yuchen0x1/(?<slug>[A-Za-z0-9_.-]+)\)') | ForEach-Object { $_.Groups['slug'].Value })
+$uniqueIndexSlugs = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
+foreach ($slug in $indexSlugs) {
+    if (-not $uniqueIndexSlugs.Add($slug)) { throw "Duplicate repository in repo-descriptions.md: $slug" }
+}
+$missingFromIndex = @($projectRows | Where-Object { -not $uniqueIndexSlugs.Contains($_.Slug) } | ForEach-Object Slug)
+$extraInIndex = @($indexSlugs | Where-Object { $_ -ine 'yuchen0x1' -and -not $seenSlugs.Contains($_) })
+if ($missingFromIndex.Count -gt 0 -or $extraInIndex.Count -gt 0) {
+    throw "Repository index differs from README. Missing: $($missingFromIndex -join ', '); extra: $($extraInIndex -join ', ')."
 }
 
 if ($CheckLinks) {
@@ -179,5 +194,5 @@ if ($CheckLinks) {
     }
 }
 
-Write-Output "README validation passed: $($projectRows.Count) unique projects, $archivedCount archived, $($checkedImages.Count) local images; banner metrics match."
+Write-Output "README validation passed: $($projectRows.Count) unique projects, $forkCount forks, $archivedCount archived, $($checkedImages.Count) local images; banner and index match."
 if ($CheckLinks) { Write-Output "GitHub public repository coverage and statuses passed: $($publicRepositories.Count) repositories." }

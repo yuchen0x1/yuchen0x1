@@ -1,6 +1,9 @@
 name: Validate Profile README
 
 on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 3 * * 1'
   push:
     paths:
       - README.md
@@ -8,6 +11,7 @@ on:
       - assets/**
       - scripts/validate-readme.ps1
       - .github/workflows/validate-profile-readme.yml
+      - docs/**
   pull_request:
     paths:
       - README.md
@@ -15,6 +19,7 @@ on:
       - assets/**
       - scripts/validate-readme.ps1
       - .github/workflows/validate-profile-readme.yml
+      - docs/**
 
 permissions:
   contents: read

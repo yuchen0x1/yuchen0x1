@@ -1,0 +1,3029 @@
+[
+  {
+    "url": "https://github.com/abhisheknaiidu/awesome-github-profile-readme",
+    "nameWithOwner": "abhisheknaiidu/awesome-github-profile-readme",
+    "description": "😎 A curated list of awesome GitHub Profile which updates in real time ",
+    "stargazerCount": 31634,
+    "forkCount": 4565,
+    "updatedAt": "2026-11-18T09:49:39Z",
+    "pushedAt": "2026-09-11T23:08:19Z",
+    "licenseInfo": {
+      "spdxId": "CC0-1.0"
+    },
+    "primaryLanguage": null,
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-09-11T23:08:19Z",
+              "messageHeadline": "Merge pull request #1763 from dahan8473/add-snake-and-commits"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 92,
+      "nodes": [
+        {
+          "title": "Error:",
+          "updatedAt": "2026-11-09T14:47:51Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "assets",
+          "type": "tree"
+        },
+        {
+          "name": "contributing.md",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/Ileriayo/markdown-badges",
+    "nameWithOwner": "Ileriayo/markdown-badges",
+    "description": "The largest curated collection of markdown badges for your personal developer branding, profile, and projects.",
+    "stargazerCount": 17205,
+    "forkCount": 1794,
+    "updatedAt": "2026-11-18T13:21:37Z",
+    "pushedAt": "2026-10-23T18:13:42Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "SCSS"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-10-23T18:13:42Z",
+              "messageHeadline": "HTB + Tor Badge (#1015)"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": ".prettierrc",
+          "type": "blob"
+        },
+        {
+          "name": ".unibeautifyrc.json",
+          "type": "blob"
+        },
+        {
+          "name": "CONTRIBUTING.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "_config.yml",
+          "type": "blob"
+        },
+        {
+          "name": "assets",
+          "type": "tree"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/alexandresanlim/Badges4-README.md-Profile",
+    "nameWithOwner": "alexandresanlim/Badges4-README.md-Profile",
+    "description": ":octocat: Improve your README.md profile with these amazing badges.",
+    "stargazerCount": 13606,
+    "forkCount": 1678,
+    "updatedAt": "2026-11-18T05:40:13Z",
+    "pushedAt": "2026-11-12T11:31:41Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "Markdown"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-11-12T11:31:41Z",
+              "messageHeadline": "docs: match copied badge URLs to their previews (#837)"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 55,
+      "nodes": [
+        {
+          "title": "README.md",
+          "updatedAt": "2026-11-16T08:27:06Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".gitattributes",
+          "type": "blob"
+        },
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "sponsors",
+          "type": "tree"
+        },
+        {
+          "name": "website",
+          "type": "tree"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/rzashakeri/beautify-github-profile",
+    "nameWithOwner": "rzashakeri/beautify-github-profile",
+    "description": "This repository will assist you in creating a more beautiful and appealing github profile, and you will have access to a comprehensive range of tools and tutorials for beautifying your github profile.  🪄 ⭐  ",
+    "stargazerCount": 12626,
+    "forkCount": 682,
+    "updatedAt": "2026-11-18T05:40:18Z",
+    "pushedAt": "2026-11-17T09:50:29Z",
+    "licenseInfo": {
+      "spdxId": "CC0-1.0"
+    },
+    "primaryLanguage": null,
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-11-17T09:50:28Z",
+              "messageHeadline": "Add website link to README"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 2,
+      "nodes": [
+        {
+          "title": "Move AI-Atlas (#112) from the outdated section to the active list",
+          "updatedAt": "2026-11-07T18:25:58Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": "CODE_OF_CONDUCT.md",
+          "type": "blob"
+        },
+        {
+          "name": "CONTRIBUTING.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "cover-repo.jpg",
+          "type": "blob"
+        },
+        {
+          "name": "git-wrapped-rzashakeri.png",
+          "type": "blob"
+        },
+        {
+          "name": "my-badges.png",
+          "type": "blob"
+        },
+        {
+          "name": "name.png",
+          "type": "blob"
+        },
+        {
+          "name": "readme-fa.md",
+          "type": "blob"
+        },
+        {
+          "name": "readme.md",
+          "type": "blob"
+        },
+        {
+          "name": "readme.png",
+          "type": "blob"
+        },
+        {
+          "name": "result(4).png",
+          "type": "blob"
+        },
+        {
+          "name": "spotify-data-card.svg",
+          "type": "blob"
+        },
+        {
+          "name": "state.png",
+          "type": "blob"
+        },
+        {
+          "name": "terminal.gif",
+          "type": "blob"
+        },
+        {
+          "name": "todoist-stat.png",
+          "type": "blob"
+        },
+        {
+          "name": "vaunt-achievements.png",
+          "type": "blob"
+        },
+        {
+          "name": "vaunt-card.png",
+          "type": "blob"
+        },
+        {
+          "name": "vaunt-contributors.png",
+          "type": "blob"
+        },
+        {
+          "name": "wrapped.png",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": false
+  },
+  {
+    "url": "https://github.com/ryo-ma/github-profile-trophy",
+    "nameWithOwner": "ryo-ma/github-profile-trophy",
+    "description": "🏆 Add dynamically generated GitHub Stat Trophies  on your readme",
+    "stargazerCount": 6685,
+    "forkCount": 2252,
+    "updatedAt": "2026-11-17T10:20:27Z",
+    "pushedAt": "2026-10-27T10:11:32Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-10-27T10:11:32Z",
+              "messageHeadline": "Add GitHub Trophy link by Jagrata Deb"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 1,
+      "nodes": [
+        {
+          "title": "My GitHub Mirror is now erroring out.",
+          "updatedAt": "2026-10-30T01:06:53Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": [
+        {
+          "tagName": "v1.0",
+          "publishedAt": "2026-01-27T08:16:53Z"
+        }
+      ]
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".editorconfig",
+          "type": "blob"
+        },
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": ".vercelignore",
+          "type": "blob"
+        },
+        {
+          "name": "CONTRIBUTING.md",
+          "type": "blob"
+        },
+        {
+          "name": "Dockerfile",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "action.yml",
+          "type": "blob"
+        },
+        {
+          "name": "api",
+          "type": "tree"
+        },
+        {
+          "name": "deno.json",
+          "type": "blob"
+        },
+        {
+          "name": "deps.ts",
+          "type": "blob"
+        },
+        {
+          "name": "docker-compose.yml",
+          "type": "blob"
+        },
+        {
+          "name": "env-example",
+          "type": "blob"
+        },
+        {
+          "name": "main.ts",
+          "type": "blob"
+        },
+        {
+          "name": "render_svg.ts",
+          "type": "blob"
+        },
+        {
+          "name": "src",
+          "type": "tree"
+        },
+        {
+          "name": "test",
+          "type": "tree"
+        },
+        {
+          "name": "vercel.json",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/Platane/snk",
+    "nameWithOwner": "Platane/snk",
+    "description": "🟩⬜ Generates a snake game from a github user contributions graph and output a screen capture as animated svg or gif",
+    "stargazerCount": 6188,
+    "forkCount": 2313,
+    "updatedAt": "2026-11-18T06:51:31Z",
+    "pushedAt": "2026-11-17T00:39:09Z",
+    "licenseInfo": null,
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-04-25T10:28:34Z",
+              "messageHeadline": "✨ demo background color"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 3,
+      "nodes": [
+        {
+          "title": "Request for a license",
+          "updatedAt": "2026-11-16T19:56:22Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": [
+        {
+          "tagName": "v3.5.0",
+          "publishedAt": "2026-04-25T00:16:03Z"
+        }
+      ]
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": ".nvmrc",
+          "type": "blob"
+        },
+        {
+          "name": "Dockerfile",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "action.yml",
+          "type": "blob"
+        },
+        {
+          "name": "bun.lock",
+          "type": "blob"
+        },
+        {
+          "name": "package.json",
+          "type": "blob"
+        },
+        {
+          "name": "packages",
+          "type": "tree"
+        },
+        {
+          "name": "svg-only",
+          "type": "tree"
+        },
+        {
+          "name": "tsconfig.json",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/vn7n24fzkq/github-profile-summary-cards",
+    "nameWithOwner": "vn7n24fzkq/github-profile-summary-cards",
+    "description": "A tool to generate your GitHub summary card for profile README",
+    "stargazerCount": 3701,
+    "forkCount": 522,
+    "updatedAt": "2026-11-17T17:16:09Z",
+    "pushedAt": "2026-11-05T06:55:16Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-10-25T18:02:48Z",
+              "messageHeadline": "feat: support exclude_repos on the productive-time card (#327)"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 2,
+      "nodes": [
+        {
+          "title": "[Feature request] Repositories check",
+          "updatedAt": "2026-11-04T17:35:40Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": [
+        {
+          "tagName": "v0.13.0",
+          "publishedAt": "2026-10-25T18:04:27Z"
+        }
+      ]
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".agents",
+          "type": "tree"
+        },
+        {
+          "name": ".claude",
+          "type": "tree"
+        },
+        {
+          "name": ".env.example",
+          "type": "blob"
+        },
+        {
+          "name": ".eslintignore",
+          "type": "blob"
+        },
+        {
+          "name": ".eslintrc.json",
+          "type": "blob"
+        },
+        {
+          "name": ".gitattributes",
+          "type": "blob"
+        },
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": ".node-version",
+          "type": "blob"
+        },
+        {
+          "name": ".prettierignore",
+          "type": "blob"
+        },
+        {
+          "name": ".prettierrc.json",
+          "type": "blob"
+        },
+        {
+          "name": "CODE_OF_CONDUCT.md",
+          "type": "blob"
+        },
+        {
+          "name": "CONTRIBUTING.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "RELEASE.md",
+          "type": "blob"
+        },
+        {
+          "name": "action.yml",
+          "type": "blob"
+        },
+        {
+          "name": "api",
+          "type": "tree"
+        },
+        {
+          "name": "babel.config.js",
+          "type": "blob"
+        },
+        {
+          "name": "devbox.json",
+          "type": "blob"
+        },
+        {
+          "name": "devbox.lock",
+          "type": "blob"
+        },
+        {
+          "name": "dist",
+          "type": "tree"
+        },
+        {
+          "name": "docs",
+          "type": "tree"
+        },
+        {
+          "name": "jest.config.js",
+          "type": "blob"
+        },
+        {
+          "name": "package-lock.json",
+          "type": "blob"
+        },
+        {
+          "name": "package.json",
+          "type": "blob"
+        },
+        {
+          "name": "scripts",
+          "type": "tree"
+        },
+        {
+          "name": "skills-lock.json",
+          "type": "blob"
+        },
+        {
+          "name": "src",
+          "type": "tree"
+        },
+        {
+          "name": "tests",
+          "type": "tree"
+        },
+        {
+          "name": "tmp",
+          "type": "blob"
+        },
+        {
+          "name": "tsconfig.json",
+          "type": "blob"
+        },
+        {
+          "name": "tsconfig.test.json",
+          "type": "blob"
+        },
+        {
+          "name": "vercel.json",
+          "type": "blob"
+        },
+        {
+          "name": "wiki",
+          "type": "tree"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub",
+    "nameWithOwner": "Anmol-Baranwal/Cool-GIFs-For-GitHub",
+    "description": "🤝 Awesome List of GIFs & avatars to use in GitHub.",
+    "stargazerCount": 2135,
+    "forkCount": 987,
+    "updatedAt": "2026-11-18T12:40:50Z",
+    "pushedAt": "2024-09-28T12:22:54Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "Markdown"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2024-09-28T12:22:53Z",
+              "messageHeadline": "chore: add more GIFs and remove laptop shade"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 3,
+      "nodes": [
+        {
+          "title": "54852218",
+          "updatedAt": "2026-10-02T14:42:52Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".gitattributes",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "index.html",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/yoshi389111/github-profile-3d-contrib",
+    "nameWithOwner": "yoshi389111/github-profile-3d-contrib",
+    "description": "This GitHub Action creates a GitHub contribution calendar on a 3D profile image.",
+    "stargazerCount": 1798,
+    "forkCount": 364,
+    "updatedAt": "2026-11-16T07:58:23Z",
+    "pushedAt": "2026-11-05T01:51:41Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-10-18T21:32:30Z",
+              "messageHeadline": "Merge pull request #175 from yoshi389111/dependabot/npm_and_yarn/babe…"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 2,
+      "nodes": [
+        {
+          "title": "Resource-heavy contribution queries fail with RESOURCE_LIMITS_EXCEEDED",
+          "updatedAt": "2026-07-22T18:28:15Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": [
+        {
+          "tagName": "v0.9.3",
+          "publishedAt": "2026-06-15T10:48:37Z"
+        }
+      ]
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".editorconfig",
+          "type": "blob"
+        },
+        {
+          "name": ".eslintrc.js",
+          "type": "blob"
+        },
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": ".prettierignore",
+          "type": "blob"
+        },
+        {
+          "name": ".prettierrc.json",
+          "type": "blob"
+        },
+        {
+          "name": "CHANGELOG.md",
+          "type": "blob"
+        },
+        {
+          "name": "CODE_OF_CONDUCT.md",
+          "type": "blob"
+        },
+        {
+          "name": "EXAMPLES.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "action.yml",
+          "type": "blob"
+        },
+        {
+          "name": "dist",
+          "type": "tree"
+        },
+        {
+          "name": "docs",
+          "type": "tree"
+        },
+        {
+          "name": "package-lock.json",
+          "type": "blob"
+        },
+        {
+          "name": "package.json",
+          "type": "blob"
+        },
+        {
+          "name": "sample-settings",
+          "type": "tree"
+        },
+        {
+          "name": "spec",
+          "type": "tree"
+        },
+        {
+          "name": "src",
+          "type": "tree"
+        },
+        {
+          "name": "tsconfig.eslint.json",
+          "type": "blob"
+        },
+        {
+          "name": "tsconfig.json",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/leviarista/github-profile-header-generator",
+    "nameWithOwner": "leviarista/github-profile-header-generator",
+    "description": "A header image generator for your Github profile Readme",
+    "stargazerCount": 1368,
+    "forkCount": 97,
+    "updatedAt": "2026-11-18T03:27:32Z",
+    "pushedAt": "2026-11-03T20:09:11Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-11-03T20:08:16Z",
+              "messageHeadline": "Merge branch 'development'"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 2,
+      "nodes": [
+        {
+          "title": "[Feature Request] i18n Localization Support",
+          "updatedAt": "2026-03-31T03:15:59Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": [
+        {
+          "tagName": "v2.1.0",
+          "publishedAt": "2025-09-12T23:19:03Z"
+        }
+      ]
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".dockerignore",
+          "type": "blob"
+        },
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": "Dockerfile",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "TESTING.md",
+          "type": "blob"
+        },
+        {
+          "name": "conf",
+          "type": "tree"
+        },
+        {
+          "name": "deploy",
+          "type": "tree"
+        },
+        {
+          "name": "docker-compose.yml",
+          "type": "blob"
+        },
+        {
+          "name": "eslint.config.js",
+          "type": "blob"
+        },
+        {
+          "name": "images",
+          "type": "tree"
+        },
+        {
+          "name": "index.html",
+          "type": "blob"
+        },
+        {
+          "name": "js",
+          "type": "tree"
+        },
+        {
+          "name": "package-lock.json",
+          "type": "blob"
+        },
+        {
+          "name": "package.json",
+          "type": "blob"
+        },
+        {
+          "name": "partials",
+          "type": "tree"
+        },
+        {
+          "name": "playwright.config.ts",
+          "type": "blob"
+        },
+        {
+          "name": "public",
+          "type": "tree"
+        },
+        {
+          "name": "social",
+          "type": "tree"
+        },
+        {
+          "name": "styles",
+          "type": "tree"
+        },
+        {
+          "name": "tests",
+          "type": "tree"
+        },
+        {
+          "name": "vite.config.js",
+          "type": "blob"
+        },
+        {
+          "name": "vitest.config.js",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/elangosundar/awesome-README-templates",
+    "nameWithOwner": "elangosundar/awesome-README-templates",
+    "description": "A collection of awesome readme templates to display on your github profile.",
+    "stargazerCount": 1133,
+    "forkCount": 580,
+    "updatedAt": "2026-11-17T05:23:32Z",
+    "pushedAt": "2024-03-12T00:19:23Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2020-10-11T08:49:53Z",
+              "messageHeadline": "added Sumanth-Talluri in tabular (#37)"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 9,
+      "nodes": [
+        {
+          "title": "Suggestion: Mini-Tools.uk Image Hosting for README screenshots and banners",
+          "updatedAt": "2026-05-26T14:29:08Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": [
+        {
+          "tagName": "V1.0.4",
+          "publishedAt": "2020-08-23T08:45:30Z"
+        }
+      ]
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "art",
+          "type": "tree"
+        },
+        {
+          "name": "awesome-github-profile.png",
+          "type": "blob"
+        },
+        {
+          "name": "code-styled",
+          "type": "tree"
+        },
+        {
+          "name": "creativity",
+          "type": "tree"
+        },
+        {
+          "name": "default",
+          "type": "tree"
+        },
+        {
+          "name": "dynamic-realtime",
+          "type": "tree"
+        },
+        {
+          "name": "elaborate",
+          "type": "tree"
+        },
+        {
+          "name": "flowcharts",
+          "type": "tree"
+        },
+        {
+          "name": "multimedia",
+          "type": "tree"
+        },
+        {
+          "name": "pie-charts",
+          "type": "tree"
+        },
+        {
+          "name": "short-and-sweet",
+          "type": "tree"
+        },
+        {
+          "name": "tabular",
+          "type": "tree"
+        },
+        {
+          "name": "website",
+          "type": "tree"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/VishwaGauravIn/github-profile-readme-maker",
+    "nameWithOwner": "VishwaGauravIn/github-profile-readme-maker",
+    "description": "🏆 Best Profile Generator, Create your perfect GitHub Profile ReadMe in the best possible way. Lots of features and tools included, all for free ! 💫",
+    "stargazerCount": 1025,
+    "forkCount": 184,
+    "updatedAt": "2026-11-14T21:04:16Z",
+    "pushedAt": "2026-04-12T17:19:11Z",
+    "licenseInfo": {
+      "spdxId": "GPL-3.0"
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-04-12T17:19:08Z",
+              "messageHeadline": "update visit count image source to new endpoint"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 6,
+      "nodes": [
+        {
+          "title": "Profile view",
+          "updatedAt": "2026-09-17T08:53:54Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".eslintrc.json",
+          "type": "blob"
+        },
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": "CODE_OF_CONDUCT.md",
+          "type": "blob"
+        },
+        {
+          "name": "CONTRIBUTING.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "components",
+          "type": "tree"
+        },
+        {
+          "name": "config",
+          "type": "tree"
+        },
+        {
+          "name": "data",
+          "type": "tree"
+        },
+        {
+          "name": "next.config.js",
+          "type": "blob"
+        },
+        {
+          "name": "package-lock.json",
+          "type": "blob"
+        },
+        {
+          "name": "package.json",
+          "type": "blob"
+        },
+        {
+          "name": "pages",
+          "type": "tree"
+        },
+        {
+          "name": "postcss.config.js",
+          "type": "blob"
+        },
+        {
+          "name": "public",
+          "type": "tree"
+        },
+        {
+          "name": "styles",
+          "type": "tree"
+        },
+        {
+          "name": "tailwind.config.js",
+          "type": "blob"
+        },
+        {
+          "name": "utils",
+          "type": "tree"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/czl9707/gh-space-shooter",
+    "nameWithOwner": "czl9707/gh-space-shooter",
+    "description": "Visualizes GitHub contribution graphs as Space Shooter!",
+    "stargazerCount": 934,
+    "forkCount": 76,
+    "updatedAt": "2026-11-14T22:50:22Z",
+    "pushedAt": "2026-10-10T21:38:45Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-10-06T02:43:26Z",
+              "messageHeadline": "Merge pull request #42 from czl9707/dependabot/uv/main/typer-0.26.8"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "releases": {
+      "nodes": [
+        {
+          "tagName": "v2.0.5",
+          "publishedAt": "2026-08-12T02:03:52Z"
+        }
+      ]
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": ".python-version",
+          "type": "blob"
+        },
+        {
+          "name": "CLAUDE.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "action.yml",
+          "type": "blob"
+        },
+        {
+          "name": "app",
+          "type": "tree"
+        },
+        {
+          "name": "example.gif",
+          "type": "blob"
+        },
+        {
+          "name": "pyproject.toml",
+          "type": "blob"
+        },
+        {
+          "name": "src",
+          "type": "tree"
+        },
+        {
+          "name": "tests",
+          "type": "tree"
+        },
+        {
+          "name": "uv.lock",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/x0rzavi/github-readme-terminal",
+    "nameWithOwner": "x0rzavi/github-readme-terminal",
+    "description": "✨ Elevate your GitHub Profile ReadMe with Minimalistic Retro Terminal GIFs 🚀",
+    "stargazerCount": 768,
+    "forkCount": 38,
+    "updatedAt": "2026-11-16T21:29:21Z",
+    "pushedAt": "2024-11-08T03:31:51Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2024-11-08T03:31:51Z",
+              "messageHeadline": "Update Code of Conduct reference (#16)"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 4,
+      "nodes": [
+        {
+          "title": "Add Color Scheme: Solarized",
+          "updatedAt": "2026-06-10T02:38:14Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": "CODE_OF_CONDUCT.md",
+          "type": "blob"
+        },
+        {
+          "name": "CONTRIBUTING.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "docs",
+          "type": "tree"
+        },
+        {
+          "name": "gifos",
+          "type": "tree"
+        },
+        {
+          "name": "poetry.lock",
+          "type": "blob"
+        },
+        {
+          "name": "pyproject.toml",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/YuheshPandian/ICONIC",
+    "nameWithOwner": "YuheshPandian/ICONIC",
+    "description": "⚡A developer-oriented library of sleek, bubble-shaped skill icons designed for GitHub READMEs, portfolios, and resumes.",
+    "stargazerCount": 618,
+    "forkCount": 24,
+    "updatedAt": "2026-11-11T03:05:59Z",
+    "pushedAt": "2026-08-07T14:34:00Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-08-08T02:58:06Z",
+              "messageHeadline": "Renamed davinici_resolve to davinci_resolve => To fix failure of icon…"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 1,
+      "nodes": [
+        {
+          "title": "[Icon Request] Adobe Software Design Tools",
+          "updatedAt": "2025-08-15T18:50:07Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": "CONTRIBUTING.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "api",
+          "type": "tree"
+        },
+        {
+          "name": "assets",
+          "type": "tree"
+        },
+        {
+          "name": "icon-templates",
+          "type": "tree"
+        },
+        {
+          "name": "icons",
+          "type": "tree"
+        },
+        {
+          "name": "requirements.txt",
+          "type": "blob"
+        },
+        {
+          "name": "scripts",
+          "type": "tree"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/vinimlo/galaxy-profile",
+    "nameWithOwner": "vinimlo/galaxy-profile",
+    "description": "Your GitHub profile, reimagined as a galaxy. Auto-generated SVG cards with stars, constellations, and cosmic stats.",
+    "stargazerCount": 488,
+    "forkCount": 216,
+    "updatedAt": "2026-11-12T11:33:29Z",
+    "pushedAt": "2026-09-30T18:53:38Z",
+    "licenseInfo": {
+      "spdxId": "GPL-3.0"
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-09-30T18:47:48Z",
+              "messageHeadline": "Merge pull request #5 from vinimlo/atlas"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "releases": {
+      "nodes": [
+        {
+          "tagName": "v2.0.0",
+          "publishedAt": "2026-09-30T18:53:40Z"
+        }
+      ]
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": "CHANGELOG.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "Makefile",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "README.profile.md",
+          "type": "blob"
+        },
+        {
+          "name": "assets",
+          "type": "tree"
+        },
+        {
+          "name": "config.example.yml",
+          "type": "blob"
+        },
+        {
+          "name": "generator",
+          "type": "tree"
+        },
+        {
+          "name": "pytest.ini",
+          "type": "blob"
+        },
+        {
+          "name": "requirements-dev.txt",
+          "type": "blob"
+        },
+        {
+          "name": "requirements-fonts.txt",
+          "type": "blob"
+        },
+        {
+          "name": "requirements.txt",
+          "type": "blob"
+        },
+        {
+          "name": "tests",
+          "type": "tree"
+        },
+        {
+          "name": "tools",
+          "type": "tree"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/MartinHeinz/MartinHeinz",
+    "nameWithOwner": "MartinHeinz/MartinHeinz",
+    "description": "My GitHub Profile README. Don't just fork, star it, so others can find it too! 👀",
+    "stargazerCount": 443,
+    "forkCount": 989,
+    "updatedAt": "2026-10-30T20:02:04Z",
+    "pushedAt": "2026-11-16T05:25:04Z",
+    "licenseInfo": null,
+    "primaryLanguage": null,
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-11-16T05:25:03Z",
+              "messageHeadline": "dummy commit to keep the repository active, see https://git.io/Jtm4V"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 1,
+      "nodes": [
+        {
+          "title": "Shields.io & simple icons with dot in name",
+          "updatedAt": "2021-06-07T10:40:30Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "linkedin-3-16.png",
+          "type": "blob"
+        },
+        {
+          "name": "readme_header.png",
+          "type": "blob"
+        },
+        {
+          "name": "wave.gif",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/KasRoudra/KasRoudra",
+    "nameWithOwner": "KasRoudra/KasRoudra",
+    "description": "My awesome Readme.md",
+    "stargazerCount": 350,
+    "forkCount": 22,
+    "updatedAt": "2026-11-17T04:16:06Z",
+    "pushedAt": "2026-03-18T10:23:51Z",
+    "licenseInfo": null,
+    "primaryLanguage": null,
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-03-18T10:23:50Z",
+              "messageHeadline": "Update README.md"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 5,
+      "nodes": [
+        {
+          "title": ".",
+          "updatedAt": "2026-03-17T16:22:55Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": "KasRoudra.md",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/Igorcbraz/GitAscii",
+    "nameWithOwner": "Igorcbraz/GitAscii",
+    "description": "Create amazing GitHub profile READMEs with a visual editor, customizable widgets, real-time preview, and custom export.",
+    "stargazerCount": 335,
+    "forkCount": 17,
+    "updatedAt": "2026-11-18T12:59:49Z",
+    "pushedAt": "2026-10-30T02:11:20Z",
+    "licenseInfo": {
+      "spdxId": "GPL-3.0"
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-10-30T02:06:55Z",
+              "messageHeadline": "Merge pull request #245 from Igorcbraz/release-please--branches--main…"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 3,
+      "nodes": [
+        {
+          "title": "[Widget]: ASCII Motion Carousel",
+          "updatedAt": "2026-11-14T04:13:18Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": [
+        {
+          "tagName": "v2.4.1",
+          "publishedAt": "2026-10-30T02:11:20Z"
+        }
+      ]
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".agents",
+          "type": "tree"
+        },
+        {
+          "name": ".commitlintrc.json",
+          "type": "blob"
+        },
+        {
+          "name": ".editorconfig",
+          "type": "blob"
+        },
+        {
+          "name": ".env.example",
+          "type": "blob"
+        },
+        {
+          "name": ".gitattributes",
+          "type": "blob"
+        },
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": ".husky",
+          "type": "tree"
+        },
+        {
+          "name": ".impeccable",
+          "type": "tree"
+        },
+        {
+          "name": ".lintstagedrc.json",
+          "type": "blob"
+        },
+        {
+          "name": ".npmrc",
+          "type": "blob"
+        },
+        {
+          "name": ".nvmrc",
+          "type": "blob"
+        },
+        {
+          "name": ".prettierignore",
+          "type": "blob"
+        },
+        {
+          "name": ".prettierrc",
+          "type": "blob"
+        },
+        {
+          "name": ".release-please-manifest.json",
+          "type": "blob"
+        },
+        {
+          "name": ".storybook",
+          "type": "tree"
+        },
+        {
+          "name": ".vscode",
+          "type": "tree"
+        },
+        {
+          "name": "AGENTS.md",
+          "type": "blob"
+        },
+        {
+          "name": "CHANGELOG.md",
+          "type": "blob"
+        },
+        {
+          "name": "CLAUDE.md",
+          "type": "blob"
+        },
+        {
+          "name": "CODE_OF_CONDUCT.md",
+          "type": "blob"
+        },
+        {
+          "name": "CONTRIBUTING.md",
+          "type": "blob"
+        },
+        {
+          "name": "COVERAGE.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "PRODUCT.md",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "SECURITY.md",
+          "type": "blob"
+        },
+        {
+          "name": "TESTING.md",
+          "type": "blob"
+        },
+        {
+          "name": "action",
+          "type": "tree"
+        },
+        {
+          "name": "analytics.md",
+          "type": "blob"
+        },
+        {
+          "name": "design.md",
+          "type": "blob"
+        },
+        {
+          "name": "docs",
+          "type": "tree"
+        },
+        {
+          "name": "e2e",
+          "type": "tree"
+        },
+        {
+          "name": "emails",
+          "type": "tree"
+        },
+        {
+          "name": "eslint.config.mjs",
+          "type": "blob"
+        },
+        {
+          "name": "next.config.ts",
+          "type": "blob"
+        },
+        {
+          "name": "package-lock.json",
+          "type": "blob"
+        },
+        {
+          "name": "package.json",
+          "type": "blob"
+        },
+        {
+          "name": "playwright.cache.config.ts",
+          "type": "blob"
+        },
+        {
+          "name": "playwright.config.ts",
+          "type": "blob"
+        },
+        {
+          "name": "postcss.config.mjs",
+          "type": "blob"
+        },
+        {
+          "name": "public",
+          "type": "tree"
+        },
+        {
+          "name": "release-please-config.json",
+          "type": "blob"
+        },
+        {
+          "name": "scripts",
+          "type": "tree"
+        },
+        {
+          "name": "sentry.edge.config.ts",
+          "type": "blob"
+        },
+        {
+          "name": "sentry.server.config.ts",
+          "type": "blob"
+        },
+        {
+          "name": "skills-lock.json",
+          "type": "blob"
+        },
+        {
+          "name": "src",
+          "type": "tree"
+        },
+        {
+          "name": "theme.css",
+          "type": "blob"
+        },
+        {
+          "name": "tsconfig.json",
+          "type": "blob"
+        },
+        {
+          "name": "vite.config.ts",
+          "type": "blob"
+        },
+        {
+          "name": "vitest.config.ts",
+          "type": "blob"
+        },
+        {
+          "name": "vitest.db.config.ts",
+          "type": "blob"
+        },
+        {
+          "name": "vitest.shims.d.ts",
+          "type": "blob"
+        },
+        {
+          "name": "wrangler.jsonc",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/haidang666/awesome-tool-for-readme-profile",
+    "nameWithOwner": "haidang666/awesome-tool-for-readme-profile",
+    "description": "Things you can add to your GitHub profile README",
+    "stargazerCount": 314,
+    "forkCount": 41,
+    "updatedAt": "2026-11-18T07:31:43Z",
+    "pushedAt": "2026-11-03T07:57:23Z",
+    "licenseInfo": {
+      "spdxId": "Unlicense"
+    },
+    "primaryLanguage": null,
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-11-03T07:57:23Z",
+              "messageHeadline": "Merge pull request #17 from haidang666/readme-cleanup-links-and-struc…"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 1,
+      "nodes": [
+        {
+          "title": "Broken links report",
+          "updatedAt": "2026-11-16T14:30:37Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".lycheeignore",
+          "type": "blob"
+        },
+        {
+          "name": "CONTRIBUTING.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/whiteSHADOW1234/TypingSVG",
+    "nameWithOwner": "whiteSHADOW1234/TypingSVG",
+    "description": "A More Powerful Typing SVG Generator—multi-line & blank-space formatting, multiple cursor styles, customizable delete speed, and more.",
+    "stargazerCount": 309,
+    "forkCount": 22,
+    "updatedAt": "2026-11-14T23:42:46Z",
+    "pushedAt": "2025-10-23T09:43:08Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2025-10-23T09:42:59Z",
+              "messageHeadline": "feat: Replace s/char with char/s"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": "CODE_OF_CONDUCT.md",
+          "type": "blob"
+        },
+        {
+          "name": "CONTRIBUTING.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "eslint.config.mjs",
+          "type": "blob"
+        },
+        {
+          "name": "next.config.ts",
+          "type": "blob"
+        },
+        {
+          "name": "package-lock.json",
+          "type": "blob"
+        },
+        {
+          "name": "package.json",
+          "type": "blob"
+        },
+        {
+          "name": "postcss.config.mjs",
+          "type": "blob"
+        },
+        {
+          "name": "public",
+          "type": "tree"
+        },
+        {
+          "name": "src",
+          "type": "tree"
+        },
+        {
+          "name": "tsconfig.json",
+          "type": "blob"
+        },
+        {
+          "name": "typing-svg.svg",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/zumrudu-anka/zumrudu-anka",
+    "nameWithOwner": "zumrudu-anka/zumrudu-anka",
+    "description": "🐲 GitHub Profile Readme",
+    "stargazerCount": 295,
+    "forkCount": 553,
+    "updatedAt": "2026-10-26T13:05:29Z",
+    "pushedAt": "2026-04-26T13:16:16Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": null,
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-04-26T13:16:15Z",
+              "messageHeadline": "Add files via upload"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": "INFORMATION.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "images",
+          "type": "tree"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/gitranks/gitranks-ui",
+    "nameWithOwner": "gitranks/gitranks-ui",
+    "description": "GitHub rankings, analytics and README badges for developers, repositories and organizations.",
+    "stargazerCount": 270,
+    "forkCount": 9,
+    "updatedAt": "2026-11-18T11:23:08Z",
+    "pushedAt": "2026-11-18T12:56:21Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-11-18T12:56:21Z",
+              "messageHeadline": "Merge pull request #329 from gitranks/fix/unsung-hero-badge-builder"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 1,
+      "nodes": [
+        {
+          "title": "Raise PR_FETCH_LIMIT from 3 to 5 (not before 2026-11-24)",
+          "updatedAt": "2026-10-15T17:13:03Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".claude",
+          "type": "tree"
+        },
+        {
+          "name": ".dockerignore",
+          "type": "blob"
+        },
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": ".graphqlrc.yml",
+          "type": "blob"
+        },
+        {
+          "name": ".npmrc",
+          "type": "blob"
+        },
+        {
+          "name": ".vscode",
+          "type": "tree"
+        },
+        {
+          "name": "AGENTS.md",
+          "type": "blob"
+        },
+        {
+          "name": "CLAUDE.md",
+          "type": "blob"
+        },
+        {
+          "name": "DESIGN.md",
+          "type": "blob"
+        },
+        {
+          "name": "Dockerfile",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "app",
+          "type": "tree"
+        },
+        {
+          "name": "auth.config.ts",
+          "type": "blob"
+        },
+        {
+          "name": "auth.ts",
+          "type": "blob"
+        },
+        {
+          "name": "badge",
+          "type": "tree"
+        },
+        {
+          "name": "biome.json",
+          "type": "blob"
+        },
+        {
+          "name": "codegen.ts",
+          "type": "blob"
+        },
+        {
+          "name": "components.json",
+          "type": "blob"
+        },
+        {
+          "name": "components",
+          "type": "tree"
+        },
+        {
+          "name": "design",
+          "type": "tree"
+        },
+        {
+          "name": "docker-compose.yml",
+          "type": "blob"
+        },
+        {
+          "name": "eslint.config.mjs",
+          "type": "blob"
+        },
+        {
+          "name": "graphql",
+          "type": "tree"
+        },
+        {
+          "name": "guides",
+          "type": "tree"
+        },
+        {
+          "name": "lib",
+          "type": "tree"
+        },
+        {
+          "name": "next.config.ts",
+          "type": "blob"
+        },
+        {
+          "name": "package.json",
+          "type": "blob"
+        },
+        {
+          "name": "pnpm-lock.yaml",
+          "type": "blob"
+        },
+        {
+          "name": "postcss.config.mjs",
+          "type": "blob"
+        },
+        {
+          "name": "proxy-learn-visitors.spec.ts",
+          "type": "blob"
+        },
+        {
+          "name": "proxy-packages-gate.spec.ts",
+          "type": "blob"
+        },
+        {
+          "name": "proxy.spec.ts",
+          "type": "blob"
+        },
+        {
+          "name": "proxy.ts",
+          "type": "blob"
+        },
+        {
+          "name": "public",
+          "type": "tree"
+        },
+        {
+          "name": "scripts",
+          "type": "tree"
+        },
+        {
+          "name": "tsconfig.json",
+          "type": "blob"
+        },
+        {
+          "name": "types",
+          "type": "tree"
+        },
+        {
+          "name": "utils",
+          "type": "tree"
+        },
+        {
+          "name": "vitest.config.mts",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/ouuan/ouuan",
+    "nameWithOwner": "ouuan/ouuan",
+    "description": "A profile README with 269 stars and 195 forks 🌟",
+    "stargazerCount": 269,
+    "forkCount": 195,
+    "updatedAt": "2026-11-18T12:47:43Z",
+    "pushedAt": "2026-11-18T03:30:02Z",
+    "licenseInfo": {
+      "spdxId": "Apache-2.0"
+    },
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-11-18T03:30:00Z",
+              "messageHeadline": "Update top followers"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": "AWESOME-STARS.md",
+          "type": "blob"
+        },
+        {
+          "name": "CVE.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "src",
+          "type": "tree"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/Raymo111/Raymo111",
+    "nameWithOwner": "Raymo111/Raymo111",
+    "description": "My awesome profile README",
+    "stargazerCount": 266,
+    "forkCount": 445,
+    "updatedAt": "2026-11-14T20:56:49Z",
+    "pushedAt": "2026-11-12T04:00:19Z",
+    "licenseInfo": {
+      "spdxId": "GPL-3.0"
+    },
+    "primaryLanguage": {
+      "name": "R"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-11-12T04:00:18Z",
+              "messageHeadline": ":zap: Update README with the recent activity"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 2,
+      "nodes": [
+        {
+          "title": "broken visitors image link",
+          "updatedAt": "2026-05-20T10:20:03Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "intro.gif",
+          "type": "blob"
+        },
+        {
+          "name": "socials",
+          "type": "tree"
+        },
+        {
+          "name": "tweet.png",
+          "type": "blob"
+        },
+        {
+          "name": "twitter.R",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/roypriyanshu02/awesome-github-profile-readme",
+    "nameWithOwner": "roypriyanshu02/awesome-github-profile-readme",
+    "description": "Get inspired to make your GitHub Profile stand out! Check out our gallery of Impressive Profile READMEs and take your profile to the next level.",
+    "stargazerCount": 200,
+    "forkCount": 44,
+    "updatedAt": "2026-11-16T08:23:45Z",
+    "pushedAt": "2026-11-16T13:18:36Z",
+    "licenseInfo": {
+      "spdxId": "NOASSERTION"
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-11-16T13:18:25Z",
+              "messageHeadline": "chore(data): sync profile data [skip ci]"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".agents",
+          "type": "tree"
+        },
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": ".husky",
+          "type": "tree"
+        },
+        {
+          "name": ".spelunk",
+          "type": "tree"
+        },
+        {
+          "name": "CONTRIBUTING.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "site",
+          "type": "tree"
+        },
+        {
+          "name": "skills-lock.json",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/blackcater/blackcater",
+    "nameWithOwner": "blackcater/blackcater",
+    "description": "Using Node.js to generate my Github profile readme automatically.",
+    "stargazerCount": 196,
+    "forkCount": 114,
+    "updatedAt": "2026-10-21T16:46:09Z",
+    "pushedAt": "2026-11-12T10:02:13Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2025-01-19T05:06:47Z",
+              "messageHeadline": "Daily: update README.md"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 2,
+      "nodes": [
+        {
+          "title": "Dependency Dashboard",
+          "updatedAt": "2026-11-12T10:02:11Z"
+        }
+      ]
+    },
+    "releases": {
+      "nodes": [
+        {
+          "tagName": "v1.0.4",
+          "publishedAt": "2021-05-04T08:38:56Z"
+        }
+      ]
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": "CHANGELOG.md",
+          "type": "blob"
+        },
+        {
+          "name": "HOW-TO-USE.md",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "config.json",
+          "type": "blob"
+        },
+        {
+          "name": "images",
+          "type": "tree"
+        },
+        {
+          "name": "main.js",
+          "type": "blob"
+        },
+        {
+          "name": "package.json",
+          "type": "blob"
+        },
+        {
+          "name": "renovate.json",
+          "type": "blob"
+        },
+        {
+          "name": "scripts",
+          "type": "tree"
+        },
+        {
+          "name": "yarn.lock",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/pedrocatalao/github-cool-readme",
+    "nameWithOwner": "pedrocatalao/github-cool-readme",
+    "description": "Animated SVG stats cards for your GitHub profile README, counting private and organization work. Runs as a GitHub Action, no server.",
+    "stargazerCount": 190,
+    "forkCount": 13,
+    "updatedAt": "2026-11-18T12:20:09Z",
+    "pushedAt": "2026-11-15T23:24:10Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-11-15T23:22:41Z",
+              "messageHeadline": "Merge pull request #21 from pedrocatalao/fast-start"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "releases": {
+      "nodes": [
+        {
+          "tagName": "v1.8.1",
+          "publishedAt": "2026-11-15T23:24:08Z"
+        }
+      ]
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "action.yml",
+          "type": "blob"
+        },
+        {
+          "name": "examples",
+          "type": "tree"
+        },
+        {
+          "name": "package-lock.json",
+          "type": "blob"
+        },
+        {
+          "name": "package.json",
+          "type": "blob"
+        },
+        {
+          "name": "preview",
+          "type": "tree"
+        },
+        {
+          "name": "scripts",
+          "type": "tree"
+        },
+        {
+          "name": "setup.sh",
+          "type": "blob"
+        },
+        {
+          "name": "setup",
+          "type": "tree"
+        },
+        {
+          "name": "src",
+          "type": "tree"
+        },
+        {
+          "name": "tests",
+          "type": "tree"
+        },
+        {
+          "name": "tsconfig.json",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/Aveek-Saha/GitHub-Profile-Badges",
+    "nameWithOwner": "Aveek-Saha/GitHub-Profile-Badges",
+    "description": "🛡 Clean badges for your GitHub Profile Readme",
+    "stargazerCount": 188,
+    "forkCount": 12,
+    "updatedAt": "2026-11-09T00:01:28Z",
+    "pushedAt": "2026-11-16T00:01:42Z",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    },
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-11-16T00:01:22Z",
+              "messageHeadline": "chore: Update badges"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": ".gitignore",
+          "type": "blob"
+        },
+        {
+          "name": "LICENSE",
+          "type": "blob"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "badges",
+          "type": "tree"
+        },
+        {
+          "name": "data",
+          "type": "tree"
+        },
+        {
+          "name": "index.js",
+          "type": "blob"
+        },
+        {
+          "name": "package-lock.json",
+          "type": "blob"
+        },
+        {
+          "name": "package.json",
+          "type": "blob"
+        },
+        {
+          "name": "src",
+          "type": "tree"
+        },
+        {
+          "name": "utils.js",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  },
+  {
+    "url": "https://github.com/Coordinate-Cat/Coordinate-Cat",
+    "nameWithOwner": "Coordinate-Cat/Coordinate-Cat",
+    "description": "Please don't fork it. using lowlighter/metrics to retrieve and display information from github.  Check the information in the tool author repository or raw.",
+    "stargazerCount": 169,
+    "forkCount": 43,
+    "updatedAt": "2026-11-12T12:13:20Z",
+    "pushedAt": "2026-11-18T12:12:43Z",
+    "licenseInfo": null,
+    "primaryLanguage": null,
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {
+              "committedDate": "2026-11-18T12:12:43Z",
+              "messageHeadline": "Update bottom.svg - [Skip GitHub Action]"
+            }
+          ]
+        }
+      }
+    },
+    "issues": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "releases": {
+      "nodes": []
+    },
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "type": "tree"
+        },
+        {
+          "name": "README.md",
+          "type": "blob"
+        },
+        {
+          "name": "asuka.gif",
+          "type": "blob"
+        },
+        {
+          "name": "bigass.svg",
+          "type": "blob"
+        },
+        {
+          "name": "bottom.svg",
+          "type": "blob"
+        }
+      ]
+    },
+    "readmePresent": true
+  }
+]

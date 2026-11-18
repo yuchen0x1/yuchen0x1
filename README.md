@@ -50,7 +50,7 @@
 
 ## <img src="./assets/mark.svg" width="10" height="10" alt="" /> 03 · PROJECTS
 
-截至 **2026-11-18**，共 **31 个公开仓库 · 30 个项目**（不含本主页，含 2 个 Fork 与 2 个已归档项目）。项目状态与主要语言按 GitHub 公开信息整理。
+截至 **2026-11-18**，共 **34 个公开仓库 · 33 个项目**（不含本主页，含 3 个 Fork）。项目状态与主要语言按 GitHub 公开信息整理。
 
 ### <img src="./assets/mark.svg" width="8" height="8" alt="" /> AI 与智能工具
 
@@ -162,6 +162,24 @@
     <td valign="top"><code>Rust</code></td>
     <td valign="top" align="right">● 未归档</td>
   </tr>
+  <tr>
+    <td valign="top"><a href="https://github.com/yuchen0x1/LUMORA-Camera"><b>LUMORA Camera</b></a></td>
+    <td valign="top">Android 本地摄影应用：手动拍摄、胶片预设与非破坏性照片编辑；当前 APK 为调试签名测试版</td>
+    <td valign="top"><code>Kotlin</code></td>
+    <td valign="top" align="right">● 未归档</td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="https://github.com/yuchen0x1/VoxMaster-AI"><b>VoxMaster AI</b></a></td>
+    <td valign="top">Windows 本地喊麦调音工作站：测量驱动调音、音高与尾音编辑、可选人声分离及多轨混音</td>
+    <td valign="top"><code>Python</code></td>
+    <td valign="top" align="right">● 未归档</td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="https://github.com/yuchen0x1/XiaFlow"><b>匣流 XiaFlow</b></a></td>
+    <td valign="top">Windows 文件压缩与归档管理器：批量处理、自动备份、文件校验与任务调度</td>
+    <td valign="top"><code>C#</code></td>
+    <td valign="top" align="right">● 未归档</td>
+  </tr>
 </table>
 
 ### <img src="./assets/mark.svg" width="8" height="8" alt="" /> 业务与运营工具
@@ -231,6 +249,12 @@
     <td valign="top"><code>TypeScript</code></td>
     <td valign="top" align="right">● 未归档</td>
   </tr>
+  <tr>
+    <td valign="top"><a href="https://github.com/yuchen0x1/CodeDoctor"><b>CodeDoctor</b></a></td>
+    <td valign="top">Windows 离线代码质量体检：静态分析、架构关系、历史报告与治理提示词</td>
+    <td valign="top"><code>Rust</code></td>
+    <td valign="top" align="right">● 未归档</td>
+  </tr>
 </table>
 
 ### <img src="./assets/mark.svg" width="8" height="8" alt="" /> Fork 项目
@@ -248,24 +272,11 @@
     <td valign="top"><code>TypeScript</code></td>
     <td valign="top" align="right">⑂ Fork</td>
   </tr>
-</table>
-
-### <img src="./assets/mark.svg" width="8" height="8" alt="" /> 已归档项目
-
-以下项目已停止维护，源码与历史版本保留供查阅。
-
-<table>
   <tr>
-    <td width="20%" valign="top"><a href="https://github.com/yuchen0x1/Codex-Remote-Bridge"><b>Codex-Remote-Bridge</b></a><br /><sub><a href="https://github.com/yuchen0x1/Codex-Remote-Bridge/releases/latest">最新发行</a></sub></td>
-    <td valign="top">手机与电脑 Codex Desktop 的本地桥接；v4.2.0 为最终版本，已停止维护</td>
-    <td width="14%" valign="top"><code>JavaScript</code></td>
-    <td width="14%" valign="top" align="right">○ 已归档</td>
-  </tr>
-  <tr>
-    <td valign="top"><a href="https://github.com/yuchen0x1/Qzone-Archive"><b>Qzone-Archive</b></a><br /><sub><a href="https://github.com/yuchen0x1/Qzone-Archive/releases/latest">最新发行</a></sub></td>
-    <td valign="top">本地 QQ 空间归档工具：动态、相册与互动记录备份；v1.3.5 为最后版本，已停止维护</td>
-    <td valign="top"><code>Rust</code></td>
-    <td valign="top" align="right">○ 已归档</td>
+    <td valign="top"><a href="https://github.com/yuchen0x1/arco-design"><b>arco-design</b></a></td>
+    <td valign="top">Arco Design React 组件库 Fork</td>
+    <td valign="top"><code>未检测到</code></td>
+    <td valign="top" align="right">⑂ Fork</td>
   </tr>
 </table>
 
@@ -279,7 +290,7 @@
 
 <table>
   <tr>
-    <td width="33%" valign="top"><code>Go · Rust · Java · Python · TypeScript · JavaScript · Dart · PHP · C#</code></td>
+    <td width="33%" valign="top"><code>Go · Rust · Java · Python · TypeScript · JavaScript · Dart · PHP · C# · Kotlin</code></td>
     <td width="34%" valign="top"><code>Vue · React · Spring Boot · Laravel · Electron · Tauri · Flutter · Capacitor · .NET · WPF</code></td>
     <td width="33%" valign="top"><code>Tailwind CSS · Vite · Express · Socket.IO · PostgreSQL · Redis · MCP · Docker · PWA</code></td>
   </tr>

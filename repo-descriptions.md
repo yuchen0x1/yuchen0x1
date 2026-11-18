@@ -1,6 +1,6 @@
 # 公开仓库索引
 
-截至 **2026-11-17**，共 **28 个公开仓库**：27 个项目（含 2 个 Fork、2 个已归档项目）及本主页。
+截至 **2026-11-18**，共 **34 个公开仓库**：33 个项目（含 3 个 Fork）及本主页。
 
 状态依据 GitHub 的归档与 Fork 标记，主要语言为 GitHub 检测结果；功能与平台以各仓库当前 README 为准。
 
@@ -28,6 +28,11 @@
 | [**Scan-the-computer-for-viruses**](https://github.com/yuchen0x1/Scan-the-computer-for-viruses) | Windows 安全管家：接入 Microsoft Defender，提供安全检查、系统维护与本地报告 | `C#` | Windows | 未归档 |
 | [**Doomsday-Survival-Guide**](https://github.com/yuchen0x1/Doomsday-Survival-Guide) | 离线优先的生存知识检索与物资管理系统，提供图鉴、清单与计算器 | `TypeScript` | Web / PWA / Windows / Android | 未归档 |
 | [**GitHub-Achievement-Hub**](https://github.com/yuchen0x1/GitHub-Achievement-Hub) | GitHub 成就勋章百科：获取条件、等级门槛、可信来源与进度追踪 | `TypeScript` | Web / Windows；移动外壳为实验性 | 未归档 |
+| [**SubtitleFlow**](https://github.com/yuchen0x1/SubtitleFlow) | Chrome 和 Edge 双语字幕扩展，支持网页原生字幕、字幕文件、跟随播放的字幕层，以及可选的 Whisper 语音识别和翻译 | `TypeScript` | Chrome / Edge 扩展 | 未归档 |
+| [**authenticator-desk**](https://github.com/yuchen0x1/authenticator-desk) | Windows 离线验证码工具，支持 TOTP、HOTP 与本地加密备份 | `Rust` | Windows | 未归档 |
+| [**LUMORA-Camera**](https://github.com/yuchen0x1/LUMORA-Camera) | Android 本地摄影应用：手动拍摄、胶片预设与非破坏性照片编辑；当前 APK 为调试签名测试版 | `Kotlin` | Android | 未归档 |
+| [**VoxMaster-AI**](https://github.com/yuchen0x1/VoxMaster-AI) | Windows 本地喊麦调音工作站：测量驱动调音、音高与尾音编辑、可选人声分离及多轨混音 | `Python` | Windows | 未归档 |
+| [**XiaFlow**](https://github.com/yuchen0x1/XiaFlow) | Windows 文件压缩与归档管理器：批量处理、自动备份、文件校验与任务调度 | `C#` | Windows | 未归档 |
 
 ### 业务与运营工具
 
@@ -51,6 +56,8 @@
 | 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
 |---|---|---|---|---|
 | [**OpenWrt-Flashing-Guide-RE-CP02**](https://github.com/yuchen0x1/OpenWrt-Flashing-Guide-RE-CP02) | 京东云无线宝 RE-CP-02 刷 OpenWrt 图文教程、自制 LuCI 应用与 OTA 更新源 | `JavaScript` | 文档 / 路由器 | 未归档 |
+| [**CodeDoctor**](https://github.com/yuchen0x1/CodeDoctor) | Windows 离线代码质量体检：静态分析、架构关系、历史报告与治理提示词 | `Rust` | Windows | 未归档 |
+| [**yuchen0x1.github.io**](https://github.com/yuchen0x1/yuchen0x1.github.io) | 中英双语开发者作品集，展示公开项目、仓库排行、提交动态和开发时间线 | `TypeScript` | Web | 未归档 |
 
 ### Fork 项目
 
@@ -58,13 +65,7 @@
 |---|---|---|---|---|
 | [**GFPGAN**](https://github.com/yuchen0x1/GFPGAN) | GFPGAN 维护版：兼容现代 PyTorch 与 torchvision 的真实人脸修复，支持 CPU 与纯 PyTorch 回退 | `Python` | Python / 图像修复 | Fork |
 | [**themes**](https://github.com/yuchen0x1/themes) | Radix Themes 组件库 Fork：面向快速开发、易维护与可访问性的 React 组件库 | `TypeScript` | React / UI 组件库 | Fork |
-
-### 已归档项目
-
-| 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
-|---|---|---|---|---|
-| [**Codex-Remote-Bridge**](https://github.com/yuchen0x1/Codex-Remote-Bridge) | 手机与电脑 Codex Desktop 的本地桥接；v4.2.0 为最终版本，已停止维护 | `JavaScript` | Windows / macOS / Android / 浏览器 | 已归档 |
-| [**Qzone-Archive**](https://github.com/yuchen0x1/Qzone-Archive) | 本地 QQ 空间归档工具：动态、相册与互动记录备份；v1.3.5 为最后版本，已停止维护 | `Rust` | 桌面应用 | 已归档 |
+| [**arco-design**](https://github.com/yuchen0x1/arco-design) | Arco Design React 组件库 Fork | `未检测到` | React / UI 组件库 | Fork |
 
 ### 个人主页
 
