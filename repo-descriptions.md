@@ -11,14 +11,14 @@
 | [**Novel-Writer-master**](https://github.com/yuchen0x1/Novel-Writer-master) | AI 小说写作桌面软件：本地知识库、大纲人物卡与从章节创作到审稿修稿的工作流 | `TypeScript` | Windows / macOS | 未归档 |
 | [**aa-browser**](https://github.com/yuchen0x1/aa-browser) | 为 Agent 而生的桌面浏览器：MCP 接入、结构化快照与网络抓包 | `TypeScript` | Windows 桌面 | 未归档 |
 | [**mind-bench**](https://github.com/yuchen0x1/mind-bench) | 本地 AI 模型评测工作台：多模型对比、规则评分、AI 裁判与评测报告 | `JavaScript` | 本地 Web | 未归档 |
-| [**PROJECT-NEXUS**](https://github.com/yuchen0x1/PROJECT-NEXUS) | Windows AI 仓库运营工作台：仓库监控与开发流程管理；当前为开发预览版 | `JavaScript` | Windows | 未归档 |
+| [**PROJECT-NEXUS**](https://github.com/yuchen0x1/PROJECT-NEXUS) | Windows AI 仓库运营工作台：9 中心导航、仓库监控与受控自动运维；v2.0.0 为正式版 | `JavaScript` | Windows | 未归档 |
 | [**sub3api-relay**](https://github.com/yuchen0x1/sub3api-relay) | AI API 网关与管理平台：多供应商中转、账号调度、用量计费与运维监控 | `Go` | Web；附实验性桌面控制台 | 未归档 |
 
 ### 桌面与移动应用
 
 | 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
 |---|---|---|---|---|
-| [**apkstart**](https://github.com/yuchen0x1/apkstart) | Windows 安卓应用运行器：APK 双击安装、独立窗口运行、运行时管理与在线更新 | `JavaScript` | Windows x64 | 未归档 |
+| [**apkstart**](https://github.com/yuchen0x1/apkstart) | 安卓应用运行器：APK 双击安装、独立窗口运行、运行时管理与在线更新 | `JavaScript` | Windows / Linux | 未归档 |
 | [**HongGuo-PC**](https://github.com/yuchen0x1/HongGuo-PC) | 红果短剧 Windows 桌面端：搜索、播放、下载、追剧与合并导出（GPL-3.0 二次开发版） | `JavaScript` | Windows x64 | 未归档 |
 | [**Gitee-Android**](https://github.com/yuchen0x1/Gitee-Android) | Gitee 非官方安卓客户端：仓库动态、代码浏览、Issue 回复与 PR 审阅 | `Dart` | Android | 未归档 |
 | [**LINUX-DO**](https://github.com/yuchen0x1/LINUX-DO) | LINUX DO 非官方 Android 客户端：话题、发帖回复、私信通知、书签与代理设置 | `Dart` | Android | 未归档 |
@@ -39,14 +39,14 @@
 | 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
 |---|---|---|---|---|
 | [**Xianyu-Assistant**](https://github.com/yuchen0x1/Xianyu-Assistant) | 闲鱼卖家运营控制台：多账号、商品消息、自动回复发货与卡密库存，电脑手机均可用浏览器访问 | `Java` | Web / 自托管 | 未归档 |
-| [**AI-QQ-Bot**](https://github.com/yuchen0x1/AI-QQ-Bot) | QBot 多账号 QQ 机器人平台：官方机器人与 OneBot 兼容通道、AI 对话、群管理与自动审核 | `Python` | Web / Linux 服务器 | 未归档 |
+| [**AI-QQ-Bot**](https://github.com/yuchen0x1/AI-QQ-Bot) | QBot 多账号 QQ 机器人平台：接入 QQ 开放平台官方机器人，支持多账号隔离、AI 对话、定时任务与插件扩展 | `Python` | Web / Linux 服务器 | 未归档 |
 
 ### 自托管服务
 
 | 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
 |---|---|---|---|---|
 | [**JukeboxRoom**](https://github.com/yuchen0x1/JukeboxRoom) | 多人音乐房间与个人音乐工作区：点歌队列、播放进度同步、歌词与聊天 | `TypeScript` | Web / Windows；Android 独立播放器 | 未归档 |
-| [**Short-Video-Analysis**](https://github.com/yuchen0x1/Short-Video-Analysis) | 短视频解析与下载工具：视频、图集、封面与作者信息，支持自托管及 HTTP API | `PHP` | Web / 桌面 / 移动 / HTTP API | 未归档 |
+| [**Short-Video-Analysis**](https://github.com/yuchen0x1/Short-Video-Analysis) | 短视频解析与下载工具：12 个平台解析视频、图集、封面与作者信息，PHP 网页版含版本化 HTTP API | `PHP` | PHP Web / Windows x64 / HTTP API | 未归档 |
 | [**Xray-server-management-panel**](https://github.com/yuchen0x1/Xray-server-management-panel) | Xray 服务器管理面板：入站订阅、多节点同步、路由规则、流量监控与多渠道告警 | `Go` | Web / Docker | 未归档 |
 | [**baidu-tieba-yunqiandao**](https://github.com/yuchen0x1/baidu-tieba-yunqiandao) | 百度贴吧云签到：计划任务签到、失败复签、凭据健康检查与通知推送 | `PHP` | Web / Docker | 未归档 |
 | [**Family-Genealogy-of-Hundreds-of-Clans**](https://github.com/yuchen0x1/Family-Genealogy-of-Hundreds-of-Clans) | 中华姓氏文化与家族族谱平台：姓氏知识库、家族树、亲属关系图与 GEDCOM 数据导入导出 | `TypeScript` | Web / 自托管 | 未归档 |
