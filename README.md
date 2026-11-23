@@ -342,5 +342,5 @@
 ---
 
 <p align="center">
-  <sub>Designed for clarity · Built for the long run</sub>
+  <sub>Designed for clarity · Built for the long run · <a href="./CHANGELOG.md">更新记录</a> · <a href="./docs/maintenance.md">维护说明</a></sub>
 </p>
