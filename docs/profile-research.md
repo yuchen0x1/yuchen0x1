@@ -1,6 +1,14 @@
 # GitHub Profile 生态调研与取舍
 
-2026-11-18 快照。使用 GitHub 仓库搜索与 GraphQL 读取 30 个与 Profile README 直接或相邻的公开仓库；原始元数据见 [JSON 快照](profile-research-2026-11-18.json)。快照记录 Star、Fork、最后提交、最新 Release、许可证、语言、README 是否存在、根目录和开放 Issue 数及最新标题；这些值会变化，空值表示接口未返回。README 只用于阅读，不在快照中复制第三方原文。列表按搜索结果排序，Star 排序不能代替质量判断。
+2026-11-23 复核。2026-11-18 快照仍保留作为历史证据；本次另外核对了 GitHub 公开 API 返回的 33 个个人账号仓库、`Indifference-Project` 组织的 3 个迁移归档仓库，以及各项目当前 README、Release 和许可证。快照记录 Star、Fork、最后提交、最新 Release、许可证、语言、README 是否存在、根目录和开放 Issue 数及最新标题；这些值会变化，空值表示接口未返回。README 只用于阅读，不在快照中复制第三方原文。列表按搜索结果排序，Star 排序不能代替质量判断。
+
+## 本轮事实更正
+
+- `themes`、`Qzone-Archive`、`Codex-Remote-Bridge` 已迁移到 [Indifference-Project](https://github.com/Indifference-Project)，其中 `themes` 为已归档 Fork；个人账号 URL 会重定向或返回 404，不能继续当作个人仓库计数。
+- 个人账号当前公开仓库为 33 个（含本主页），主页项目表为 32 个；加上 3 个组织归档项目后，索引覆盖 36 个公开仓库、35 个项目。
+- `LUMORA-Camera` 当前公开稳定版为 v2.1.7，README 明确区分正式签名 APK 与历史调试签名版本；主页不再把它写成“调试签名测试版”。
+- `Base64-encode-encoding` 的当前 README 明确是 Windows x64 桌面版及跨平台命令行版，不是独立 Web / PWA 产品；主页描述已按这一边界收紧。
+- `Doomsday-Survival-Guide`、`JukeboxRoom`、`GitHub-Achievement-Hub` 和 `Short-Video-Analysis` 的平台描述以各自 README 的实际交付矩阵为准，不把源码、开发构建或待验证设备写成已发布产品。
 
 | 仓库 | 关系 | 本次可用的参考点与取舍 |
 |---|---|---|

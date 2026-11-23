@@ -1,6 +1,6 @@
 # 公开仓库索引
 
-截至 **2026-11-18**，共 **34 个公开仓库**：33 个项目（含 3 个 Fork）及本主页。
+截至 **2026-11-23**，个人账号有 **33 个公开仓库**：32 个项目（含 2 个 Fork）及本主页；另有 3 个项目已迁移到 `Indifference-Project` 组织并归档。本索引合计覆盖 36 个公开仓库。
 
 状态依据 GitHub 的归档与 Fork 标记，主要语言为 GitHub 检测结果；功能与平台以各仓库当前 README 为准。
 
@@ -22,7 +22,7 @@
 | [**HongGuo-PC**](https://github.com/yuchen0x1/HongGuo-PC) | 红果短剧 Windows 桌面端：搜索、播放、下载、追剧与合并导出（GPL-3.0 二次开发版） | `JavaScript` | Windows x64 | 未归档 |
 | [**Gitee-Android**](https://github.com/yuchen0x1/Gitee-Android) | Gitee 非官方安卓客户端：仓库动态、代码浏览、Issue 回复与 PR 审阅 | `Dart` | Android | 未归档 |
 | [**LINUX-DO**](https://github.com/yuchen0x1/LINUX-DO) | LINUX DO 非官方 Android 客户端：话题、发帖回复、私信通知、书签与代理设置 | `Dart` | Android | 未归档 |
-| [**Base64-encode-encoding**](https://github.com/yuchen0x1/Base64-encode-encoding) | 跨端离线工具集：Base64 编解码等日常操作，数据保存在本机 | `JavaScript` | Web / PWA / Windows；附 macOS / Android / iOS 工程 | 未归档 |
+| [**Base64-encode-encoding**](https://github.com/yuchen0x1/Base64-encode-encoding) | 极客工具箱：离线开发者工具集，内置 21 款工具，数据在本机处理 | `JavaScript` | Windows x64 桌面；Windows / Linux / macOS 命令行 | 未归档 |
 | [**Audio-Studio**](https://github.com/yuchen0x1/Audio-Studio) | 音频处理工具：格式转换、批量处理、剪辑合并、元数据与封面编辑 | `TypeScript` | Web / Windows | 未归档 |
 | [**Internet-Speed-Test**](https://github.com/yuchen0x1/Internet-Speed-Test) | Windows 网络测速与诊断：多协议测速、网络质量分析、网卡监控与历史报告 | `Rust` | Windows | 未归档 |
 | [**Scan-the-computer-for-viruses**](https://github.com/yuchen0x1/Scan-the-computer-for-viruses) | Windows 安全管家：接入 Microsoft Defender，提供安全检查、系统维护与本地报告 | `C#` | Windows | 未归档 |
@@ -59,12 +59,19 @@
 | [**CodeDoctor**](https://github.com/yuchen0x1/CodeDoctor) | Windows 离线代码质量体检：静态分析、架构关系、历史报告与治理提示词 | `Rust` | Windows | 未归档 |
 | [**yuchen0x1.github.io**](https://github.com/yuchen0x1/yuchen0x1.github.io) | 中英双语开发者作品集，展示公开项目、仓库排行、提交动态和开发时间线 | `TypeScript` | Web | 未归档 |
 
+### 组织归档项目
+
+| 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
+|---|---|---|---|---|
+| [**Qzone-Archive**](https://github.com/Indifference-Project/Qzone-Archive) | QQ 空间本地归档工具：动态、照片、视频与互动记录保存到 SQLite，并支持离线导出 | `Rust` | 本地桌面 | 已归档 |
+| [**Codex-Remote-Bridge**](https://github.com/Indifference-Project/Codex-Remote-Bridge) | 手机与电脑 Codex Desktop 的本地桥接；最终版本源码与安装包留作查阅 | `JavaScript` | 本地桥接 | 已归档 |
+| [**themes**](https://github.com/Indifference-Project/themes) | Radix Themes 组件库 Fork：面向快速开发、易维护与可访问性的 React 组件库 | `TypeScript` | React / UI 组件库 | 已归档 |
+
 ### Fork 项目
 
 | 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
 |---|---|---|---|---|
 | [**GFPGAN**](https://github.com/yuchen0x1/GFPGAN) | GFPGAN 维护版：兼容现代 PyTorch 与 torchvision 的真实人脸修复，支持 CPU 与纯 PyTorch 回退 | `Python` | Python / 图像修复 | Fork |
-| [**themes**](https://github.com/yuchen0x1/themes) | Radix Themes 组件库 Fork：面向快速开发、易维护与可访问性的 React 组件库 | `TypeScript` | React / UI 组件库 | Fork |
 | [**arco-design**](https://github.com/yuchen0x1/arco-design) | Arco Design React 组件库 Fork | `未检测到` | React / UI 组件库 | Fork |
 
 ### 个人主页
