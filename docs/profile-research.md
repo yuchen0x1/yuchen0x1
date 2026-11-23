@@ -10,6 +10,24 @@
 - `Base64-encode-encoding` 的当前 README 明确是 Windows x64 桌面版及跨平台命令行版，不是独立 Web / PWA 产品；主页描述已按这一边界收紧。
 - `Doomsday-Survival-Guide`、`JukeboxRoom`、`GitHub-Achievement-Hub` 和 `Short-Video-Analysis` 的平台描述以各自 README 的实际交付矩阵为准，不把源码、开发构建或待验证设备写成已发布产品。
 
+## UI 生态复核与取舍
+
+本仓库没有 Web 应用运行时，GitHub 只渲染 Markdown、原生 HTML 表格和本地 SVG。因此本轮没有为了“接入组件库”而引入 React、Tailwind 或第三方动态卡片；继续维护黑金设计 Token、原生表格和可审计的本地 SVG，能减少外部请求、供应链风险和窄屏渲染漂移。
+
+截至 2026-11-23，实际核对了以下维护中的生态项目公开元数据：
+
+| 生态 | 公开证据（截至本轮） | 对本仓库的取舍 |
+|---|---|---|
+| [shadcn/ui](https://github.com/shadcn-ui/ui) | MIT，约 128k Stars，持续提交；以可复制的 Tailwind/Radix 组件源码为核心 | 适合应用仓库，不适合 GitHub Profile 的静态 Markdown；不引入 |
+| [Radix Primitives](https://github.com/radix-ui/primitives) / [Radix Themes](https://github.com/radix-ui/themes) | Radix 生态强调无障碍原语与主题；本账号的 `themes` Fork 已迁移并归档 | 记录迁移事实，不复制 Fork 代码或把归档 Fork 当作活跃产品 |
+| [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | MIT，约 98k Stars，持续维护 | 没有构建链和 CSS 运行时，不增加依赖 |
+| [Motion](https://github.com/motiondivision/motion) | MIT，约 35k Stars，提供 React/原生动画能力 | SVG 横幅已有轻量动画；不为个人主页增加脚本动效 |
+| [Lucide](https://github.com/lucide-icons/lucide) | 图标库，约 26k Stars；线性图标风格统一 | Profile 只保留 3 个本地 SVG 装饰资产，避免外部图标请求 |
+| [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats) / [lowlighter/metrics](https://github.com/lowlighter/metrics) | 动态统计卡片生态成熟，但依赖第三方服务或 Actions 生成 | 不添加会随请求失败、缓存或账号权限变化的动态卡片 |
+| [simple-icons](https://github.com/simple-icons/simple-icons) | CC0 品牌 SVG 集合，约 26k Stars | 当前文字技术栈比堆徽章更易核实，暂不增加品牌图标墙 |
+
+结论：本轮 UI 升级落在现有 SVG 横幅、信息层级、表格宽度和链接可审计性，而不是引入不适合当前媒介的组件依赖。后续若作品集 Web 应用需要复用视觉 Token，优先评估 Radix + Tailwind；那属于独立应用的技术选型，不应反向改造 Profile README。
+
 | 仓库 | 关系 | 本次可用的参考点与取舍 |
 |---|---|---|
 | [abhisheknaiidu/awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme) | 展示参考 | 主页实例目录；继续保持本项目自己的视觉与文案。 |
