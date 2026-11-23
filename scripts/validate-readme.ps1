@@ -45,7 +45,7 @@ foreach ($tag in [regex]::Matches($readme, '(?s)<!--.*?-->|</?(?<name>[A-Za-z][A
 }
 if ($tagStack.Count -gt 0) { throw "Unclosed HTML tags: $($tagStack -join ', ')" }
 
-$projectLinkPattern = '<a\b[^>]*\bhref\s*=\s*["'']https://github\.com/yuchen0x1/(?<slug>[A-Za-z0-9_.-]+)/?["''][^>]*>'
+$projectLinkPattern = '<a\b[^>]*\bhref\s*=\s*["'']https://github\.com/(?<owner>yuchen0x1|Indifference-Project)/(?<slug>[A-Za-z0-9_.-]+)/?["''][^>]*>'
 $projectRows = [System.Collections.Generic.List[object]]::new()
 $seenSlugs = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
 $statusLabels = @('● 未归档', '⑂ Fork', '○ 已归档')
@@ -57,11 +57,13 @@ foreach ($row in [regex]::Matches($readme, '(?s)<tr\b[^>]*>(?<content>.*?)</tr\s
     if (-not [regex]::IsMatch($cells[0].Groups['content'].Value, $projectLinkPattern)) {
         throw 'The repository link must be in the first project cell.'
     }
+    $owner = $links[0].Groups['owner'].Value
     $slug = $links[0].Groups['slug'].Value
-    if ($slug -ieq 'yuchen0x1' -or -not $seenSlugs.Add($slug)) { throw "Duplicate project or profile repository in project rows: $slug" }
+    $key = "$owner/$slug"
+    if (($owner -ieq 'yuchen0x1' -and $slug -ieq 'yuchen0x1') -or -not $seenSlugs.Add($key)) { throw "Duplicate project or profile repository in project rows: $key" }
     $status = Get-CellText $cells[3].Groups['content'].Value
     if ($status -notin $statusLabels) { throw "Invalid status for $($slug): $status" }
-    $projectRows.Add([pscustomobject]@{ Slug = $slug; Status = $status })
+    $projectRows.Add([pscustomobject]@{ Owner = $owner; Slug = $slug; Key = $key; Status = $status })
 }
 if ($projectRows.Count -eq 0 -or $projectRows.Count -ne [regex]::Matches($readme, $projectLinkPattern).Count) {
     throw 'All project repository links must be in valid project table rows.'
@@ -141,13 +143,13 @@ foreach ($label in $expectedMetrics.Keys) {
 # The curated Markdown index must cover exactly the same repositories as the profile.
 $indexPath = Join-Path $readmeRoot 'repo-descriptions.md'
 $index = Get-Content -LiteralPath $indexPath -Raw -Encoding UTF8
-$indexSlugs = @([regex]::Matches($index, '\]\(https://github\.com/yuchen0x1/(?<slug>[A-Za-z0-9_.-]+)\)') | ForEach-Object { $_.Groups['slug'].Value })
+$indexSlugs = @([regex]::Matches($index, '\]\(https://github\.com/(?<owner>yuchen0x1|Indifference-Project)/(?<slug>[A-Za-z0-9_.-]+)\)') | ForEach-Object { "$($_.Groups['owner'].Value)/$($_.Groups['slug'].Value)" })
 $uniqueIndexSlugs = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
 foreach ($slug in $indexSlugs) {
     if (-not $uniqueIndexSlugs.Add($slug)) { throw "Duplicate repository in repo-descriptions.md: $slug" }
 }
-$missingFromIndex = @($projectRows | Where-Object { -not $uniqueIndexSlugs.Contains($_.Slug) } | ForEach-Object Slug)
-$extraInIndex = @($indexSlugs | Where-Object { $_ -ine 'yuchen0x1' -and -not $seenSlugs.Contains($_) })
+$missingFromIndex = @($projectRows | Where-Object { -not $uniqueIndexSlugs.Contains($_.Key) } | ForEach-Object Key)
+$extraInIndex = @($indexSlugs | Where-Object { $_ -ine 'yuchen0x1/yuchen0x1' -and -not $seenSlugs.Contains($_) })
 if ($missingFromIndex.Count -gt 0 -or $extraInIndex.Count -gt 0) {
     throw "Repository index differs from README. Missing: $($missingFromIndex -join ', '); extra: $($extraInIndex -join ', ')."
 }
@@ -172,25 +174,40 @@ if ($CheckLinks) {
         }
         $repositories = @($response.Content | ConvertFrom-Json)
         foreach ($repository in $repositories) {
-            if (-not $repository.private) { $publicRepositories[$repository.name] = $repository }
+            if (-not $repository.private) { $publicRepositories["yuchen0x1/$($repository.name)"] = $repository }
         }
         $page++
     } while ($repositories.Count -eq 100)
 
-    if (-not $publicRepositories.ContainsKey('yuchen0x1')) { throw 'The public profile repository was not returned by GitHub.' }
+    $organizationRepositories = @{}
+    $organizationUrl = 'https://api.github.com/orgs/Indifference-Project/repos?type=all&sort=full_name&per_page=100'
+    $organizationResponse = Invoke-WebRequest -Uri $organizationUrl -Headers $apiHeaders -TimeoutSec 20 -SkipHttpErrorCheck
+    if ($organizationResponse.StatusCode -lt 200 -or $organizationResponse.StatusCode -ge 300) {
+        throw "GitHub organization repository listing failed with HTTP $($organizationResponse.StatusCode)."
+    }
+    foreach ($repository in @($organizationResponse.Content | ConvertFrom-Json)) {
+        if (-not $repository.private) { $organizationRepositories[$repository.name] = $repository }
+    }
+    $trackedOrganizationRepos = @('Codex-Remote-Bridge', 'Qzone-Archive', 'themes')
+    foreach ($name in $trackedOrganizationRepos) {
+        if (-not $organizationRepositories.ContainsKey($name)) { throw "Tracked organization repository is missing: Indifference-Project/$name" }
+        $publicRepositories["Indifference-Project/$name"] = $organizationRepositories[$name]
+    }
+
+    if (-not $publicRepositories.ContainsKey('yuchen0x1/yuchen0x1')) { throw 'The public profile repository was not returned by GitHub.' }
     foreach ($project in $projectRows) {
-        if (-not $publicRepositories.ContainsKey($project.Slug)) { throw "Project is missing from GitHub's public repository list: $($project.Slug)" }
-        $repository = $publicRepositories[$project.Slug]
-        if ($repository.disabled) { throw "GitHub repository is disabled: $($project.Slug)" }
+        if (-not $publicRepositories.ContainsKey($project.Key)) { throw "Project is missing from GitHub's public repository list: $($project.Key)" }
+        $repository = $publicRepositories[$project.Key]
+        if ($repository.disabled) { throw "GitHub repository is disabled: $($project.Key)" }
         $expectedStatus = if ($repository.archived) { '○ 已归档' } elseif ($repository.fork) { '⑂ Fork' } else { '● 未归档' }
         if ($project.Status -cne $expectedStatus) {
-            throw "GitHub status mismatch for $($project.Slug): '$($project.Status)' shown, '$expectedStatus' expected."
+            throw "GitHub status mismatch for $($project.Key): '$($project.Status)' shown, '$expectedStatus' expected."
         }
     }
-    $missingProjects = @($publicRepositories.Keys | Where-Object { $_ -ine 'yuchen0x1' -and -not $seenSlugs.Contains($_) } | Sort-Object)
+    $missingProjects = @($publicRepositories.Keys | Where-Object { $_ -ine 'yuchen0x1/yuchen0x1' -and -not $seenSlugs.Contains($_) } | Sort-Object)
     if ($missingProjects.Count -gt 0) { throw "Public repositories missing from README: $($missingProjects -join ', ')" }
     if ($publicRepositories.Count -ne $expectedMetrics.REPOSITORIES) {
-        throw "Public repository count mismatch: $($publicRepositories.Count) live, $($expectedMetrics.REPOSITORIES) shown."
+        throw "Tracked public repository count mismatch: $($publicRepositories.Count) live, $($expectedMetrics.REPOSITORIES) shown."
     }
 }
 
