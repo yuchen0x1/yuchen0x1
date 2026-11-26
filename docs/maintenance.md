@@ -21,7 +21,7 @@
 ## 更新步骤
 
 1. 从 GitHub 公开仓库列表和各仓库 README、Release 核对新增、迁移和归档状态。描述只写已公开证实的功能；调试版须注明。
-2. 同步 `README.md` 与 `repo-descriptions.md`。调整 `assets/profile-banner.svg` 的仓库、项目、语言与 Fork 数字，并同时更新两处“个人账号/本索引”叙述计数。
+2. 同步 `README.md` 与 `repo-descriptions.md`。调整 `assets/profile-banner.svg` 的仓库、项目、语言与 Fork 数字，同时更新两处“个人账号/本索引”叙述计数，并递增 README 中横幅 URL 的 `?v=` 参数，避免浏览器和 GitHub 图片缓存继续显示旧数字。
 3. 核对两个文件的主要语言与状态是否一致；语言以 GitHub 仓库 API 的 `language` 为准，未检测到时写 `未检测到`。
 4. 运行 `pwsh -NoProfile -File scripts/validate-readme.ps1 -CheckLinks`。此命令依赖 GitHub API；无网络或限流时另行运行不带 `-CheckLinks` 的结构校验，并将在线覆盖标为未验证。
 5. 提交与推送后检查 Actions 实际结论以及 GitHub 个人主页渲染。每周定时任务失败时按日志补充公开证据后人工修订，不自动覆盖编辑过的项目描述。项目迁移到组织时，将其加入校验脚本追踪清单并在 README 使用组织 URL。
