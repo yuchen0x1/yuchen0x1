@@ -16,6 +16,7 @@ jobs:
   snapshot:
     name: Capture public repository facts
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
@@ -26,10 +27,11 @@ jobs:
       - name: Capture public repository metadata
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/sync-public-index.py
+        run: python scripts/sync-public-index.py --output-dir "${{ runner.temp }}/public-index-snapshot"
       - name: Upload dated snapshot
         uses: actions/upload-artifact@v7
         with:
           name: public-index-snapshot
-          path: docs/public-index-*.json
+          path: ${{ runner.temp }}/public-index-snapshot/public-index-*.json
+          if-no-files-found: error
           retention-days: 90

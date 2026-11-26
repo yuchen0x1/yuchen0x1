@@ -142,15 +142,45 @@ foreach ($label in $expectedMetrics.Keys) {
     if ($actual -ne $expectedMetrics[$label]) { throw "Banner $label mismatch: $actual shown, $($expectedMetrics[$label]) expected." }
 }
 
+# The accessible description must agree with the visible metrics and content date.
+$bannerDescriptions = @($bannerXml.SelectNodes("/*[local-name()='svg']/*[local-name()='desc']"))
+if ($bannerDescriptions.Count -ne 1) { throw 'Banner must contain exactly one accessible description.' }
+$bannerDescription = $bannerDescriptions[0].InnerText
+$descriptionMetrics = @{
+    REPOSITORIES = 'indexed public repositories'
+    PROJECTS = 'projects'
+    FORKS = 'active forks'
+    DOMAINS = 'domains'
+    LANGUAGES = 'languages'
+}
+foreach ($label in $descriptionMetrics.Keys) {
+    $metricMatches = [regex]::Matches($bannerDescription, '\b(?<count>\d+)\s+' + [regex]::Escape($descriptionMetrics[$label]) + '\b')
+    if ($metricMatches.Count -ne 1 -or [int]$metricMatches[0].Groups['count'].Value -ne $expectedMetrics[$label]) {
+        throw "Banner description $label does not match its visible metric."
+    }
+}
+$readmeDate = [regex]::Match($readme, '截至\s*\*\*(?<date>\d{4}-\d{2}-\d{2})\*\*')
+$bannerDate = [regex]::Match($bannerDescription, '\bUpdated\s+(?<date>\d{4}-\d{2}-\d{2})\b')
+if (-not $readmeDate.Success -or -not $bannerDate.Success -or $bannerDate.Groups['date'].Value -cne $readmeDate.Groups['date'].Value) {
+    throw 'Banner description date does not match the README content date.'
+}
+[void][datetime]::ParseExact($readmeDate.Groups['date'].Value, 'yyyy-MM-dd', [System.Globalization.CultureInfo]::InvariantCulture)
+
 # Narrative totals drift independently of the banner; verify both README sentences.
 $personalSummary = [regex]::Match($readme, '个人账号有\s*\*\*(?<repos>\d+)\s*个公开仓库\s*·\s*(?<projects>\d+)\s*个项目\*\*（含\s*(?<forks>\d+)\s*个 Fork）')
 $indexSummary = [regex]::Match($readme, '本页索引共\s*\*\*(?<repos>\d+)\s*个公开仓库\s*·\s*(?<projects>\d+)\s*个项目\*\*')
 if (-not $personalSummary.Success -or -not $indexSummary.Success) { throw 'README project summary counts are missing.' }
 $personalProjects = @($projectRows | Where-Object Owner -ieq 'yuchen0x1').Count
+$personalForkLabels = @($projectRows | Where-Object { $_.Owner -ieq 'yuchen0x1' -and $_.Status -eq '⑂ Fork' }).Count
+$personalArchived = @($projectRows | Where-Object { $_.Owner -ieq 'yuchen0x1' -and $_.Status -eq '○ 已归档' }).Count
+$personalForks = [int]$personalSummary.Groups['forks'].Value
+# Archived rows hide their fork flag; the online API check below resolves that ambiguity.
+if ($personalForks -lt $personalForkLabels -or $personalForks -gt $personalForkLabels + $personalArchived) {
+    throw "README personal forks summary is outside the possible range: $personalForks shown, $personalForkLabels to $($personalForkLabels + $personalArchived) expected."
+}
 $summaryChecks = @(
     @{ Name = 'personal repositories'; Actual = [int]$personalSummary.Groups['repos'].Value; Expected = $personalProjects + 1 },
     @{ Name = 'personal projects'; Actual = [int]$personalSummary.Groups['projects'].Value; Expected = $personalProjects },
-    @{ Name = 'personal forks'; Actual = [int]$personalSummary.Groups['forks'].Value; Expected = $forkCount },
     @{ Name = 'index repositories'; Actual = [int]$indexSummary.Groups['repos'].Value; Expected = $projectRows.Count + 1 },
     @{ Name = 'index projects'; Actual = [int]$indexSummary.Groups['projects'].Value; Expected = $projectRows.Count }
 )
@@ -217,7 +247,7 @@ if (-not $indexPersonalSummary.Success -or -not $indexTotalSummary.Success) { th
 $indexSummaryChecks = @(
     @{ Name = 'personal repositories'; Actual = [int]$indexPersonalSummary.Groups['repos'].Value; Expected = $personalProjects + 1 },
     @{ Name = 'personal projects'; Actual = [int]$indexPersonalSummary.Groups['projects'].Value; Expected = $personalProjects },
-    @{ Name = 'personal forks'; Actual = [int]$indexPersonalSummary.Groups['forks'].Value; Expected = $forkCount },
+    @{ Name = 'personal forks'; Actual = [int]$indexPersonalSummary.Groups['forks'].Value; Expected = $personalForks },
     @{ Name = 'indexed repositories'; Actual = [int]$indexTotalSummary.Groups['repos'].Value; Expected = $projectRows.Count + 1 }
 )
 foreach ($check in $indexSummaryChecks) {
@@ -233,32 +263,40 @@ if ($CheckLinks) {
     }
     if (-not [string]::IsNullOrWhiteSpace($healthCheckToken)) { $apiHeaders['Authorization'] = "Bearer $healthCheckToken" }
 
+    function Get-PublicRepositoryPages([string]$ApiBase) {
+        $result = [System.Collections.Generic.List[object]]::new()
+        $page = 1
+        do {
+            if ($page -gt 100) { throw 'Repository pagination exceeded 100 pages.' }
+            $response = Invoke-WebRequest -Uri "$ApiBase&page=$page" -Headers $apiHeaders -TimeoutSec 20 -SkipHttpErrorCheck
+            if ($response.StatusCode -lt 200 -or $response.StatusCode -ge 300) {
+                throw "GitHub public repository listing failed with HTTP $($response.StatusCode), page $page."
+            }
+            $repositories = $response.Content | ConvertFrom-Json -NoEnumerate
+            if ($repositories -isnot [array]) { throw "GitHub repository listing must be a JSON array, page $page." }
+            foreach ($repository in $repositories) {
+                if ($null -eq $repository -or [string]::IsNullOrWhiteSpace($repository.name) -or $repository.private -isnot [bool]) {
+                    throw "GitHub repository listing contains an invalid repository, page $page."
+                }
+                if (-not $repository.private) { $result.Add($repository) }
+            }
+            $page++
+        } while ($repositories.Count -eq 100)
+        return ,$result.ToArray()
+    }
+
     $publicRepositories = @{}
-    $page = 1
-    do {
-        if ($page -gt 100) { throw 'Repository pagination exceeded 100 pages.' }
-        $apiUrl = "https://api.github.com/users/yuchen0x1/repos?type=owner&sort=full_name&per_page=100&page=$page"
-        $response = Invoke-WebRequest -Uri $apiUrl -Headers $apiHeaders -TimeoutSec 20 -SkipHttpErrorCheck
-        if ($response.StatusCode -lt 200 -or $response.StatusCode -ge 300) {
-            throw "GitHub public repository listing failed with HTTP $($response.StatusCode), page $page."
-        }
-        $repositoryPayload = $response.Content | ConvertFrom-Json
-        $repositories = @($repositoryPayload)
-        foreach ($repository in $repositories) {
-            if (-not $repository.private) { $publicRepositories["yuchen0x1/$($repository.name)"] = $repository }
-        }
-        $page++
-    } while ($repositories.Count -eq 100)
+    foreach ($repository in (Get-PublicRepositoryPages 'https://api.github.com/users/yuchen0x1/repos?type=owner&sort=full_name&per_page=100')) {
+        $publicRepositories["yuchen0x1/$($repository.name)"] = $repository
+    }
+    $livePersonalForks = @($publicRepositories.Values | Where-Object fork -eq $true).Count
+    if ($personalForks -ne $livePersonalForks) {
+        throw "GitHub personal forks summary mismatch: $personalForks shown, $livePersonalForks expected (including archived forks)."
+    }
 
     $organizationRepositories = @{}
-    $organizationUrl = 'https://api.github.com/orgs/Indifference-Project/repos?type=all&sort=full_name&per_page=100'
-    $organizationResponse = Invoke-WebRequest -Uri $organizationUrl -Headers $apiHeaders -TimeoutSec 20 -SkipHttpErrorCheck
-    if ($organizationResponse.StatusCode -lt 200 -or $organizationResponse.StatusCode -ge 300) {
-        throw "GitHub organization repository listing failed with HTTP $($organizationResponse.StatusCode)."
-    }
-    $organizationPayload = $organizationResponse.Content | ConvertFrom-Json
-    foreach ($repository in @($organizationPayload)) {
-        if (-not $repository.private) { $organizationRepositories[$repository.name] = $repository }
+    foreach ($repository in (Get-PublicRepositoryPages 'https://api.github.com/orgs/Indifference-Project/repos?type=public&sort=full_name&per_page=100')) {
+        $organizationRepositories[$repository.name] = $repository
     }
     $trackedOrganizationRepos = @('Codex-Remote-Bridge', 'Qzone-Archive', 'themes')
     foreach ($name in $trackedOrganizationRepos) {

@@ -5,6 +5,7 @@ facts used to review that copy, including repositories migrated to the
 Indifference-Project organization.
 """
 
+import argparse
 import json
 import os
 import sys
@@ -37,10 +38,27 @@ def github_json(url):
 
 def list_repositories(owner, organization=False):
     if organization:
-        url = f"https://api.github.com/orgs/{owner}/repos?type=all&sort=full_name&per_page=100"
+        url = f"https://api.github.com/orgs/{owner}/repos?type=public&sort=full_name&per_page=100"
     else:
         url = f"https://api.github.com/users/{owner}/repos?type=owner&sort=full_name&per_page=100"
-    return github_json(url)
+    repositories = []
+    page = 1
+    while True:
+        batch = github_json(f"{url}&page={page}")
+        if not isinstance(batch, list) or any(
+            not isinstance(repository, dict)
+            or not isinstance(repository.get("name"), str)
+            or not repository["name"]
+            or not isinstance(repository.get("private"), bool)
+            for repository in batch
+        ):
+            raise RuntimeError(f"Invalid repository listing for {owner}, page {page}")
+        repositories.extend(batch)
+        if len(batch) < 100:
+            return repositories
+        if page >= 100:
+            raise RuntimeError(f"Repository listing for {owner} exceeded the 100-page safety limit")
+        page += 1
 
 
 def repository_record(repository, owner):
@@ -62,7 +80,15 @@ def repository_record(repository, owner):
     }
 
 
-def main():
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=Path(__file__).resolve().parent.parent / "docs",
+        help="Directory for the dated JSON snapshot (default: docs)",
+    )
+    args = parser.parse_args(argv)
     personal = {
         repo["name"]: repository_record(repo, "yuchen0x1")
         for repo in list_repositories("yuchen0x1")
@@ -73,9 +99,15 @@ def main():
         for repo in list_repositories("Indifference-Project", organization=True)
         if not repo.get("private") and repo["name"] in TRACKED_ORGANIZATION_REPOSITORIES
     }
+    missing = TRACKED_ORGANIZATION_REPOSITORIES - organization.keys()
+    if missing:
+        raise RuntimeError(
+            "Tracked public organization repositories are missing: " + ", ".join(sorted(missing))
+        )
     records = [personal[name] for name in sorted(personal)]
     records.extend(organization[name] for name in sorted(organization))
-    destination = Path(__file__).resolve().parent.parent / "docs" / f"public-index-{date.today().isoformat()}.json"
+    args.output_dir.mkdir(parents=True, exist_ok=True)
+    destination = args.output_dir / f"public-index-{date.today().isoformat()}.json"
     destination.write_text(json.dumps(records, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Saved {len(records)} public repository records to {destination}")
 
