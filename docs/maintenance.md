@@ -9,7 +9,7 @@
 | 公开仓库覆盖 | 37 个索引仓库（34 个个人账号仓库含本主页，3 个组织归档仓库），36 个项目，2 个个人 Fork + 1 个组织归档 Fork | 2026-11-26 GitHub 用户/组织仓库 API 与 `-CheckLinks` 校验 |
 | 本地结构校验 | 通过 | `pwsh -NoProfile -File scripts/validate-readme.ps1`（含叙述计数、语言和索引一致性） |
 | 在线覆盖校验 | 通过 | `pwsh -NoProfile -File scripts/validate-readme.ps1 -CheckLinks`（含组织迁移仓库与主要语言） |
-| 远程 CI | 历史失败已修复 | 2026-11-23 定时任务因新仓库 `github-project-health-inspector` 未收录而失败；本次同步后由推送触发复核 |
+| 远程 CI | 通过 | 2026-11-23 定时任务因新仓库 `github-project-health-inspector` 未收录而失败；2026-11-26 索引同步后推送校验通过（37 个仓库、36 个项目） |
 | 定期监测 | 已配置 | 每周一 03:17 UTC 检查公开仓库覆盖、状态、语言、索引与横幅 |
 | 竞品元数据扫描 | 已配置 | 每月 1 日 04:43 UTC 保存 30 个相关仓库的公开元数据为 Actions artifact；人工评估后再改动产品 |
 | 公开索引快照 | 已更新 | 2026-11-26 快照覆盖个人账号与组织归档仓库；脚本不会覆盖人工文案 |
