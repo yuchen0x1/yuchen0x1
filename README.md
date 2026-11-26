@@ -1,4 +1,4 @@
-<img src="./assets/profile-banner.svg?v=0.2.0" alt="YUCHEN0X1 — independent builder" width="100%" />
+<img src="./assets/profile-banner.svg" alt="YUCHEN0X1 — independent builder" width="100%" />
 
 <img src="./assets/gold-rule.svg" alt="" width="100%" />
 
