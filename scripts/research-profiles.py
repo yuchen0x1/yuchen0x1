@@ -3,6 +3,7 @@
 Requires Python 3 and GITHUB_TOKEN. Writes a dated JSON snapshot; never edits README.
 """
 
+import argparse
 import json
 import os
 import sys
@@ -12,7 +13,7 @@ from datetime import date
 from pathlib import Path
 
 
-def github(url, payload=None):
+def github(url, payload=None, method=None):
     token = os.environ.get("GITHUB_TOKEN")
     if not token:
         raise RuntimeError("GITHUB_TOKEN is required for GitHub API research")
@@ -26,15 +27,34 @@ def github(url, payload=None):
             "User-Agent": "profile-readme-research",
             "X-GitHub-Api-Version": "2022-11-28",
         },
+        method=method,
     )
     with urllib.request.urlopen(request, timeout=30) as response:
-        return json.load(response)
+        return None if method == "HEAD" else json.load(response)
 
 
-def main():
+def readme_present(full_name):
+    try:
+        github(f"https://api.github.com/repos/{full_name}/readme", method="HEAD")
+    except urllib.error.HTTPError as error:
+        if error.code == 404:
+            return False
+        raise
+    return True
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=Path(__file__).resolve().parent.parent / "docs",
+        help="Directory for the dated JSON snapshot (default: docs)",
+    )
+    args = parser.parse_args(argv)
     search = github(
         "https://api.github.com/search/repositories?"
-        "q=topic%3Agithub-profile-readme%20stars%3A%3E50%20archived%3Afalse"
+        "q=topic%3Agithub-profile-readme%20stars%3A%3E50%20archived%3Afalse%20is%3Apublic"
         "&sort=stars&order=desc&per_page=30"
     )
     repositories = search.get("items", [])
@@ -51,7 +71,6 @@ def main():
             "issues(states:OPEN,first:1,orderBy:{field:UPDATED_AT,direction:DESC}){totalCount nodes{title updatedAt}} "
             "releases(first:1,orderBy:{field:CREATED_AT,direction:DESC}){nodes{tagName publishedAt}} "
             "object(expression:\"HEAD:\"){... on Tree{entries{name type}}} "
-            "readme:object(expression:\"HEAD:README.md\"){... on Blob{text}}"
             "}"
         )
     result = github("https://api.github.com/graphql", {"query": "query{" + " ".join(fields) + "}"})
@@ -62,10 +81,10 @@ def main():
         repo = result["data"].get(f"r{index}")
         if repo is None:
             raise RuntimeError(f"Missing repository at position {index}")
-        readme = (repo.pop("readme") or {}).get("text") or ""
-        repo["readmePresent"] = bool(readme)
+        repo["readmePresent"] = readme_present(repo["nameWithOwner"])
         output.append(repo)
-    destination = Path(__file__).resolve().parent.parent / "docs" / f"profile-research-{date.today().isoformat()}.json"
+    args.output_dir.mkdir(parents=True, exist_ok=True)
+    destination = args.output_dir / f"profile-research-{date.today().isoformat()}.json"
     destination.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Saved {len(output)} GitHub profile references to {destination}")
 

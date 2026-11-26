@@ -6,7 +6,8 @@
   <b>冷漠不是神</b> &nbsp;·&nbsp; 独立开发者<br />
   <a href="https://github.com/yuchen0x1"><b>GitHub</b></a> &nbsp;·&nbsp;
   <a href="https://gitee.com/yuchen0x1"><b>Gitee</b></a> &nbsp;·&nbsp;
-  <a href="https://lenmo.top"><b>lenmo.top</b></a>
+  <a href="https://lenmo.top"><b>lenmo.top</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/yuchen0x1/yuchen0x1/releases/latest"><b>最新更新</b></a>
 </p>
 
 ---

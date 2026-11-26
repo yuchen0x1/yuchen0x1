@@ -15,6 +15,7 @@ permissions:
 jobs:
   research:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
@@ -23,9 +24,10 @@ jobs:
       - name: Collect public profile references
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/research-profiles.py
+        run: python scripts/research-profiles.py --output-dir "${{ runner.temp }}/profile-landscape"
       - uses: actions/upload-artifact@v7
         with:
           name: profile-landscape
-          path: docs/profile-research-*.json
+          path: ${{ runner.temp }}/profile-landscape/profile-research-*.json
+          if-no-files-found: error
           retention-days: 30
