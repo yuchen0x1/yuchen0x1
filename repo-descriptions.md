@@ -1,6 +1,6 @@
 # 公开仓库索引
 
-截至 **2026-11-23**，个人账号有 **33 个公开仓库**：32 个项目（含 2 个 Fork）及本主页；另有 3 个项目已迁移到 `Indifference-Project` 组织并归档。本索引合计覆盖 36 个公开仓库。
+截至 **2026-11-26**，个人账号有 **34 个公开仓库**：33 个项目（含 2 个 Fork）及本主页；另有 3 个项目已迁移到 `Indifference-Project` 组织并归档。本索引合计覆盖 37 个公开仓库。
 
 状态依据 GitHub 的归档与 Fork 标记，主要语言为 GitHub 检测结果；功能与平台以各仓库当前 README 为准。
 
@@ -9,9 +9,9 @@
 | 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
 |---|---|---|---|---|
 | [**Novel-Writer-master**](https://github.com/yuchen0x1/Novel-Writer-master) | AI 小说写作桌面软件：本地知识库、大纲人物卡与从章节创作到审稿修稿的工作流 | `TypeScript` | Windows / macOS | 未归档 |
-| [**aa-browser**](https://github.com/yuchen0x1/aa-browser) | 为 Agent 而生的桌面浏览器：MCP 接入、结构化快照与网络抓包 | `TypeScript` | Windows 桌面 | 未归档 |
+| [**aa-browser**](https://github.com/yuchen0x1/aa-browser) | 为 Agent 而生的桌面浏览器：MCP 接入、结构化快照与网络抓包 | `JavaScript` | Windows 桌面 | 未归档 |
 | [**mind-bench**](https://github.com/yuchen0x1/mind-bench) | 本地 AI 模型评测工作台：多模型对比、规则评分、AI 裁判与评测报告 | `JavaScript` | 本地 Web | 未归档 |
-| [**PROJECT-NEXUS**](https://github.com/yuchen0x1/PROJECT-NEXUS) | Windows AI 仓库运营工作台：9 中心导航、仓库监控与受控自动运维；v2.0.0 为正式版 | `JavaScript` | Windows | 未归档 |
+| [**PROJECT-NEXUS**](https://github.com/yuchen0x1/PROJECT-NEXUS) | Windows AI 仓库运营工作台：9 中心导航、仓库监控与受控自动运维；v2.1.1 为正式版 | `JavaScript` | Windows | 未归档 |
 | [**sub3api-relay**](https://github.com/yuchen0x1/sub3api-relay) | AI API 网关与管理平台：多供应商中转、账号调度、用量计费与运维监控 | `Go` | Web；附实验性桌面控制台 | 未归档 |
 
 ### 桌面与移动应用
@@ -30,7 +30,7 @@
 | [**GitHub-Achievement-Hub**](https://github.com/yuchen0x1/GitHub-Achievement-Hub) | GitHub 成就勋章百科：获取条件、等级门槛、可信来源与进度追踪 | `TypeScript` | Web / Windows；移动外壳为实验性 | 未归档 |
 | [**SubtitleFlow**](https://github.com/yuchen0x1/SubtitleFlow) | Chrome 和 Edge 双语字幕扩展，支持网页原生字幕、字幕文件、跟随播放的字幕层，以及可选的 Whisper 语音识别和翻译 | `TypeScript` | Chrome / Edge 扩展 | 未归档 |
 | [**authenticator-desk**](https://github.com/yuchen0x1/authenticator-desk) | Windows 离线验证码工具，支持 TOTP、HOTP 与本地加密备份 | `Rust` | Windows | 未归档 |
-| [**LUMORA-Camera**](https://github.com/yuchen0x1/LUMORA-Camera) | Android 本地摄影应用：手动拍摄、胶片预设与非破坏性照片编辑；当前 APK 为调试签名测试版 | `Kotlin` | Android | 未归档 |
+| [**LUMORA-Camera**](https://github.com/yuchen0x1/LUMORA-Camera) | Android 本地摄影应用：手动拍摄、胶片预设与非破坏性照片编辑；v2.1.8 为正式签名稳定版 | `Kotlin` | Android | 未归档 |
 | [**VoxMaster-AI**](https://github.com/yuchen0x1/VoxMaster-AI) | Windows 本地喊麦调音工作站：测量驱动调音、音高与尾音编辑、可选人声分离及多轨混音 | `Python` | Windows | 未归档 |
 | [**XiaFlow**](https://github.com/yuchen0x1/XiaFlow) | Windows 文件压缩与归档管理器：批量处理、自动备份、文件校验与任务调度 | `C#` | Windows | 未归档 |
 
@@ -57,6 +57,7 @@
 |---|---|---|---|---|
 | [**OpenWrt-Flashing-Guide-RE-CP02**](https://github.com/yuchen0x1/OpenWrt-Flashing-Guide-RE-CP02) | 京东云无线宝 RE-CP-02 刷 OpenWrt 图文教程、自制 LuCI 应用与 OTA 更新源 | `JavaScript` | 文档 / 路由器 | 未归档 |
 | [**CodeDoctor**](https://github.com/yuchen0x1/CodeDoctor) | Windows 离线代码质量体检：静态分析、架构关系、历史报告与治理提示词 | `Rust` | Windows | 未归档 |
+| [**github-project-health-inspector**](https://github.com/yuchen0x1/github-project-health-inspector) | GitHub 项目体检 WorkBuddy Skill：采集仓库、依赖与安全证据，输出 20 章节报告并通过自带校验器 | `Python` | WorkBuddy Skill / CLI | 未归档 |
 | [**yuchen0x1.github.io**](https://github.com/yuchen0x1/yuchen0x1.github.io) | 中英双语开发者作品集，展示公开项目、仓库排行、提交动态和开发时间线 | `TypeScript` | Web | 未归档 |
 
 ### 组织归档项目
@@ -72,7 +73,7 @@
 | 仓库 | 一句话定位 | 主要语言 | 形态 | 状态 |
 |---|---|---|---|---|
 | [**GFPGAN**](https://github.com/yuchen0x1/GFPGAN) | GFPGAN 维护版：兼容现代 PyTorch 与 torchvision 的真实人脸修复，支持 CPU 与纯 PyTorch 回退 | `Python` | Python / 图像修复 | Fork |
-| [**arco-design**](https://github.com/yuchen0x1/arco-design) | Arco Design React 组件库 Fork | `未检测到` | React / UI 组件库 | Fork |
+| [**arco-design**](https://github.com/yuchen0x1/arco-design) | Arco Design React 组件库 Fork | `TypeScript` | React / UI 组件库 | Fork |
 
 ### 个人主页
 

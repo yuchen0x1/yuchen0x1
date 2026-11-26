@@ -88,12 +88,12 @@
   </g>
 
   <text x="962" y="248" fill="#6E7480" font-family="'Cascadia Mono',Consolas,ui-monospace,monospace" font-size="12" letter-spacing="3">EST. 2026</text>
-  <text x="962" y="278" fill="#6E7480" font-family="'Cascadia Mono',Consolas,ui-monospace,monospace" font-size="12" letter-spacing="3">36 REPOSITORIES</text>
+  <text x="962" y="278" fill="#6E7480" font-family="'Cascadia Mono',Consolas,ui-monospace,monospace" font-size="12" letter-spacing="3">37 REPOSITORIES</text>
 
   <line x1="72" y1="356" x2="1146" y2="356" stroke="url(#gold)" stroke-width="1" />
 
   <g font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif">
-    <text x="72" y="404" fill="#E8C87A" font-size="34" font-weight="800">35</text>
+    <text x="72" y="404" fill="#E8C87A" font-size="34" font-weight="800">36</text>
     <text x="122" y="404" fill="#7E838C" font-size="12" font-weight="600" letter-spacing="4">PROJECTS</text>
 
     <line x1="300" y1="372" x2="300" y2="414" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1" />
