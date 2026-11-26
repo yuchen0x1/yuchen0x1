@@ -75,7 +75,7 @@
   </tr>
   <tr>
     <td valign="top"><a href="https://github.com/yuchen0x1/PROJECT-NEXUS"><b>PROJECT NEXUS</b></a><br /><sub><a href="https://github.com/yuchen0x1/PROJECT-NEXUS/releases/latest">最新发行</a></sub></td>
-    <td valign="top">Windows AI 仓库运营工作台：仓库监控与开发流程管理；当前为开发预览版</td>
+    <td valign="top">Windows AI 仓库运营工作台：9 中心导航、仓库监控与受控自动运维；v2.0.0 为正式版</td>
     <td valign="top"><code>JavaScript</code></td>
     <td valign="top" align="right">● 未归档</td>
   </tr>
@@ -92,7 +92,7 @@
 <table>
   <tr>
     <td width="20%" valign="top"><a href="https://github.com/yuchen0x1/apkstart"><b>ApkStart</b></a><br /><sub><a href="https://github.com/yuchen0x1/apkstart/releases/latest">最新发行</a></sub></td>
-    <td valign="top">Windows 安卓应用运行器：APK 双击安装、独立窗口运行、运行时管理与在线更新</td>
+    <td valign="top">Windows / Linux 安卓应用运行器：APK 双击安装、独立窗口运行、运行时管理与在线更新</td>
     <td width="14%" valign="top"><code>JavaScript</code></td>
     <td width="14%" valign="top" align="right">● 未归档</td>
   </tr>
@@ -193,7 +193,7 @@
   </tr>
   <tr>
     <td valign="top"><a href="https://github.com/yuchen0x1/AI-QQ-Bot"><b>AI-QQ-Bot</b></a><br /><sub><a href="https://github.com/yuchen0x1/AI-QQ-Bot/releases/latest">最新发行</a></sub></td>
-    <td valign="top">QBot 多账号 QQ 机器人平台：官方机器人与 OneBot 兼容通道、AI 对话、群管理与自动审核</td>
+    <td valign="top">QBot 多账号 QQ 机器人平台：接入 QQ 开放平台官方机器人，支持多账号隔离、AI 对话、定时任务与插件扩展</td>
     <td valign="top"><code>Python</code></td>
     <td valign="top" align="right">● 未归档</td>
   </tr>
@@ -210,7 +210,7 @@
   </tr>
   <tr>
     <td valign="top"><a href="https://github.com/yuchen0x1/Short-Video-Analysis"><b>Short-Video-Analysis</b></a><br /><sub><a href="https://github.com/yuchen0x1/Short-Video-Analysis/releases/latest">最新发行</a></sub></td>
-    <td valign="top">短视频解析与下载工具：视频、图集、封面与作者信息，支持自托管及 HTTP API</td>
+    <td valign="top">短视频解析与下载工具：解析视频、图集、封面与作者信息，支持 PHP 网页版与版本化 HTTP API</td>
     <td valign="top"><code>PHP</code></td>
     <td valign="top" align="right">● 未归档</td>
   </tr>
