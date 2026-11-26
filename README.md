@@ -50,7 +50,7 @@
 
 ## <img src="./assets/mark.svg" width="10" height="10" alt="" /> 03 · PROJECTS
 
-截至 **2026-11-23**，个人账号有 **33 个公开仓库 · 32 个项目**（含 2 个 Fork）；另有 3 个已迁移到 `Indifference-Project` 组织的公开归档项目。本页索引共 **36 个公开仓库 · 35 个项目**，项目状态与主要语言按 GitHub 公开信息整理。
+截至 **2026-11-26**，个人账号有 **34 个公开仓库 · 33 个项目**（含 2 个 Fork）；另有 3 个已迁移到 `Indifference-Project` 组织的公开归档项目。本页索引共 **37 个公开仓库 · 36 个项目**，项目状态与主要语言按 GitHub 公开信息整理。
 
 ### <img src="./assets/mark.svg" width="8" height="8" alt="" /> AI 与智能工具
 
@@ -64,7 +64,7 @@
   <tr>
     <td valign="top"><a href="https://github.com/yuchen0x1/aa-browser"><b>aa-browser</b></a><br /><sub><a href="https://github.com/yuchen0x1/aa-browser/releases/latest">最新发行</a></sub></td>
     <td valign="top">为 Agent 而生的桌面浏览器：MCP 接入、结构化快照与网络抓包</td>
-    <td valign="top"><code>TypeScript</code></td>
+    <td valign="top"><code>JavaScript</code></td>
     <td valign="top" align="right">● 未归档</td>
   </tr>
   <tr>
@@ -75,7 +75,7 @@
   </tr>
   <tr>
     <td valign="top"><a href="https://github.com/yuchen0x1/PROJECT-NEXUS"><b>PROJECT NEXUS</b></a><br /><sub><a href="https://github.com/yuchen0x1/PROJECT-NEXUS/releases/latest">最新发行</a></sub></td>
-    <td valign="top">Windows AI 仓库运营工作台：9 中心导航、仓库监控与受控自动运维；v2.0.0 为正式版</td>
+    <td valign="top">Windows AI 仓库运营工作台：9 中心导航、仓库监控与受控自动运维；v2.1.1 为正式版</td>
     <td valign="top"><code>JavaScript</code></td>
     <td valign="top" align="right">● 未归档</td>
   </tr>
@@ -164,7 +164,7 @@
   </tr>
   <tr>
     <td valign="top"><a href="https://github.com/yuchen0x1/LUMORA-Camera"><b>LUMORA Camera</b></a><br /><sub><a href="https://github.com/yuchen0x1/LUMORA-Camera/releases/latest">最新发行</a></sub></td>
-    <td valign="top">Android 本地摄影应用：手动拍摄、胶片预设与非破坏性照片编辑；v2.1.7 为正式签名稳定版</td>
+    <td valign="top">Android 本地摄影应用：手动拍摄、胶片预设与非破坏性照片编辑；v2.1.8 为正式签名稳定版</td>
     <td valign="top"><code>Kotlin</code></td>
     <td valign="top" align="right">● 未归档</td>
   </tr>
@@ -210,7 +210,7 @@
   </tr>
   <tr>
     <td valign="top"><a href="https://github.com/yuchen0x1/Short-Video-Analysis"><b>Short-Video-Analysis</b></a><br /><sub><a href="https://github.com/yuchen0x1/Short-Video-Analysis/releases/latest">最新发行</a></sub></td>
-    <td valign="top">短视频解析与下载工具：解析视频、图集、封面与作者信息，支持 PHP 网页版与版本化 HTTP API</td>
+    <td valign="top">短视频解析与下载工具：覆盖 12 个平台，支持 PHP 网页版、Windows 客户端与版本化 HTTP API</td>
     <td valign="top"><code>PHP</code></td>
     <td valign="top" align="right">● 未归档</td>
   </tr>
@@ -255,6 +255,12 @@
     <td valign="top"><code>Rust</code></td>
     <td valign="top" align="right">● 未归档</td>
   </tr>
+  <tr>
+    <td valign="top"><a href="https://github.com/yuchen0x1/github-project-health-inspector"><b>Project Health Inspector</b></a><br /><sub><a href="https://github.com/yuchen0x1/github-project-health-inspector/releases/latest">最新发行</a></sub></td>
+    <td valign="top">GitHub 项目体检 WorkBuddy Skill：采集仓库、依赖与安全证据，输出 20 章节报告并通过自带校验器</td>
+    <td valign="top"><code>Python</code></td>
+    <td valign="top" align="right">● 未归档</td>
+  </tr>
 </table>
 
 ### <img src="./assets/mark.svg" width="8" height="8" alt="" /> 组织归档项目
@@ -294,7 +300,7 @@
   <tr>
     <td valign="top"><a href="https://github.com/yuchen0x1/arco-design"><b>arco-design</b></a></td>
     <td valign="top">Arco Design React 组件库 Fork</td>
-    <td valign="top"><code>未检测到</code></td>
+    <td valign="top"><code>TypeScript</code></td>
     <td valign="top" align="right">⑂ Fork</td>
   </tr>
 </table>

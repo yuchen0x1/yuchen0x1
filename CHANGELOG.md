@@ -1,12 +1,26 @@
 # 更新记录
 
-## [0.1.2] - 2026-11-23
+## [0.2.0] - 2026-11-26
+
+### 新增
+
+- 索引新增 `github-project-health-inspector`（WorkBuddy Skill，v1.0.0），同步主页、仓库索引与横幅计数。
+- 校验脚本新增 README 叙述计数、`repo-descriptions.md` 语言/状态一致性和 GitHub 主要语言核验；新增仓库或语言变化会让 CI 给出明确错误。
 
 ### 修复
 
-- 更正 PROJECT NEXUS 为 v2.0.0 正式版，不再标注开发预览。
-- 更正 AI-QQ-Bot 只接入 QQ 开放平台官方机器人，删除不存在的 OneBot 通道描述。
-- 更正 ApkStart 同时支持 Windows 与 Linux，短视频工具仅提供 PHP 网页版与 Windows x64 客户端。
+- 更正 PROJECT NEXUS 为正式版（v2.0.0 起，当前 v2.1.1），不再标注开发预览。
+- 更正 AI-QQ-Bot 仅接入 QQ 开放平台官方机器人，删除不存在的 OneBot 通道描述。
+- 更正 ApkStart 同时支持 Windows 与 Linux。
+- 更正 Short-Video-Analysis 为覆盖 12 个平台，提供 PHP 网页版、Windows 客户端与版本化 HTTP API。
+- 更正 LUMORA Camera 为 v2.1.8 正式签名稳定版，并同步索引中的签名状态。
+- 同步 aa-browser 与 arco-design 的 GitHub 主要语言。
+- 修复 2026-11-23 定时校验因新仓库未收录而失败的问题。
+
+### 维护
+
+- 更新公开仓库索引快照与维护基线：34 个个人公开仓库、3 个组织归档仓库，共 37 个索引仓库、36 个项目。
+- 校验脚本改为显式枚举 JSON 数组，避免不同 PowerShell 版本的行为差异；脚本以 UTF-8 BOM 保存，保证中文状态标签正确解析。
 
 ## [0.1.1] - 2026-11-23
 

@@ -1,4 +1,4 @@
-param(
+﻿param(
     [string]$ReadmePath = (Join-Path $PSScriptRoot '../README.md'),
     [switch]$CheckLinks
 )
@@ -63,7 +63,9 @@ foreach ($row in [regex]::Matches($readme, '(?s)<tr\b[^>]*>(?<content>.*?)</tr\s
     if (($owner -ieq 'yuchen0x1' -and $slug -ieq 'yuchen0x1') -or -not $seenSlugs.Add($key)) { throw "Duplicate project or profile repository in project rows: $key" }
     $status = Get-CellText $cells[3].Groups['content'].Value
     if ($status -notin $statusLabels) { throw "Invalid status for $($slug): $status" }
-    $projectRows.Add([pscustomobject]@{ Owner = $owner; Slug = $slug; Key = $key; Status = $status })
+    $language = Get-CellText $cells[2].Groups['content'].Value
+    if ([string]::IsNullOrWhiteSpace($language)) { throw "Missing primary language for $($slug)" }
+    $projectRows.Add([pscustomobject]@{ Owner = $owner; Slug = $slug; Key = $key; Language = $language; Status = $status })
 }
 if ($projectRows.Count -eq 0 -or $projectRows.Count -ne [regex]::Matches($readme, $projectLinkPattern).Count) {
     throw 'All project repository links must be in valid project table rows.'
@@ -140,6 +142,22 @@ foreach ($label in $expectedMetrics.Keys) {
     if ($actual -ne $expectedMetrics[$label]) { throw "Banner $label mismatch: $actual shown, $($expectedMetrics[$label]) expected." }
 }
 
+# Narrative totals drift independently of the banner; verify both README sentences.
+$personalSummary = [regex]::Match($readme, '个人账号有\s*\*\*(?<repos>\d+)\s*个公开仓库\s*·\s*(?<projects>\d+)\s*个项目\*\*（含\s*(?<forks>\d+)\s*个 Fork）')
+$indexSummary = [regex]::Match($readme, '本页索引共\s*\*\*(?<repos>\d+)\s*个公开仓库\s*·\s*(?<projects>\d+)\s*个项目\*\*')
+if (-not $personalSummary.Success -or -not $indexSummary.Success) { throw 'README project summary counts are missing.' }
+$personalProjects = @($projectRows | Where-Object Owner -ieq 'yuchen0x1').Count
+$summaryChecks = @(
+    @{ Name = 'personal repositories'; Actual = [int]$personalSummary.Groups['repos'].Value; Expected = $personalProjects + 1 },
+    @{ Name = 'personal projects'; Actual = [int]$personalSummary.Groups['projects'].Value; Expected = $personalProjects },
+    @{ Name = 'personal forks'; Actual = [int]$personalSummary.Groups['forks'].Value; Expected = $forkCount },
+    @{ Name = 'index repositories'; Actual = [int]$indexSummary.Groups['repos'].Value; Expected = $projectRows.Count + 1 },
+    @{ Name = 'index projects'; Actual = [int]$indexSummary.Groups['projects'].Value; Expected = $projectRows.Count }
+)
+foreach ($check in $summaryChecks) {
+    if ($check.Actual -ne $check.Expected) { throw "README $($check.Name) summary mismatch: $($check.Actual) shown, $($check.Expected) expected." }
+}
+
 # The curated Markdown index must cover exactly the same repositories as the profile.
 $indexPath = Join-Path $readmeRoot 'repo-descriptions.md'
 $index = Get-Content -LiteralPath $indexPath -Raw -Encoding UTF8
@@ -152,6 +170,58 @@ $missingFromIndex = @($projectRows | Where-Object { -not $uniqueIndexSlugs.Conta
 $extraInIndex = @($indexSlugs | Where-Object { $_ -ine 'yuchen0x1/yuchen0x1' -and -not $seenSlugs.Contains($_) })
 if ($missingFromIndex.Count -gt 0 -or $extraInIndex.Count -gt 0) {
     throw "Repository index differs from README. Missing: $($missingFromIndex -join ', '); extra: $($extraInIndex -join ', ')."
+}
+
+# The index repeats project status and language; reject rows that drift from the README.
+$indexProfileRows = 0
+$indexTableRows = 0
+foreach ($line in ($index -split "\r?\n")) {
+    $indexLink = [regex]::Match($line, '^\|\s*\[[^\]]+\]\(https://github\.com/(?<owner>yuchen0x1|Indifference-Project)/(?<slug>[A-Za-z0-9_.-]+)\)')
+    if (-not $indexLink.Success) { continue }
+    $indexTableRows++
+    $key = "$($indexLink.Groups['owner'].Value)/$($indexLink.Groups['slug'].Value)"
+    $indexCells = @($line.Trim().Trim('|').Split('|'))
+    if ($indexCells.Count -ne 5) { throw "Index row must have five columns: $key" }
+    $indexLanguageMatch = [regex]::Match($indexCells[2], '`(?<language>[^`]+)`')
+    if (-not $indexLanguageMatch.Success) { throw "Index row is missing a primary language: $key" }
+    $indexLanguage = $indexLanguageMatch.Groups['language'].Value
+    $indexStatus = $indexCells[4].Trim()
+    if ($key -ieq 'yuchen0x1/yuchen0x1') {
+        $indexProfileRows++
+        if ($indexLanguage -cne 'PowerShell' -or $indexStatus -cne '未归档') {
+            throw "Profile index row has unexpected language or status: $indexLanguage / $indexStatus"
+        }
+        continue
+    }
+    $readmeProject = $projectRows | Where-Object { $_.Key -ieq $key } | Select-Object -First 1
+    if ($null -eq $readmeProject) { throw "Index row has no README project: $key" }
+    $expectedIndexStatus = switch ($readmeProject.Status) {
+        '● 未归档' { '未归档' }
+        '⑂ Fork' { 'Fork' }
+        '○ 已归档' { '已归档' }
+    }
+    if ($indexLanguage -cne $readmeProject.Language) {
+        throw "Index language mismatch for $($key): $indexLanguage shown, $($readmeProject.Language) expected."
+    }
+    if ($indexStatus -cne $expectedIndexStatus) {
+        throw "Index status mismatch for $($key): $indexStatus shown, $expectedIndexStatus expected."
+    }
+}
+if ($indexProfileRows -ne 1 -or $indexTableRows -ne $projectRows.Count + 1) {
+    throw "Index row coverage mismatch: $indexTableRows indexed rows, $($projectRows.Count + 1) expected."
+}
+
+$indexPersonalSummary = [regex]::Match($index, '个人账号有\s*\*\*(?<repos>\d+)\s*个公开仓库\*\*：(?<projects>\d+)\s*个项目（含\s*(?<forks>\d+)\s*个 Fork）')
+$indexTotalSummary = [regex]::Match($index, '本索引合计覆盖\s*(?<repos>\d+)\s*个公开仓库')
+if (-not $indexPersonalSummary.Success -or -not $indexTotalSummary.Success) { throw 'Index summary counts are missing.' }
+$indexSummaryChecks = @(
+    @{ Name = 'personal repositories'; Actual = [int]$indexPersonalSummary.Groups['repos'].Value; Expected = $personalProjects + 1 },
+    @{ Name = 'personal projects'; Actual = [int]$indexPersonalSummary.Groups['projects'].Value; Expected = $personalProjects },
+    @{ Name = 'personal forks'; Actual = [int]$indexPersonalSummary.Groups['forks'].Value; Expected = $forkCount },
+    @{ Name = 'indexed repositories'; Actual = [int]$indexTotalSummary.Groups['repos'].Value; Expected = $projectRows.Count + 1 }
+)
+foreach ($check in $indexSummaryChecks) {
+    if ($check.Actual -ne $check.Expected) { throw "Index $($check.Name) summary mismatch: $($check.Actual) shown, $($check.Expected) expected." }
 }
 
 if ($CheckLinks) {
@@ -172,7 +242,8 @@ if ($CheckLinks) {
         if ($response.StatusCode -lt 200 -or $response.StatusCode -ge 300) {
             throw "GitHub public repository listing failed with HTTP $($response.StatusCode), page $page."
         }
-        $repositories = @($response.Content | ConvertFrom-Json)
+        $repositoryPayload = $response.Content | ConvertFrom-Json
+        $repositories = @($repositoryPayload)
         foreach ($repository in $repositories) {
             if (-not $repository.private) { $publicRepositories["yuchen0x1/$($repository.name)"] = $repository }
         }
@@ -185,7 +256,8 @@ if ($CheckLinks) {
     if ($organizationResponse.StatusCode -lt 200 -or $organizationResponse.StatusCode -ge 300) {
         throw "GitHub organization repository listing failed with HTTP $($organizationResponse.StatusCode)."
     }
-    foreach ($repository in @($organizationResponse.Content | ConvertFrom-Json)) {
+    $organizationPayload = $organizationResponse.Content | ConvertFrom-Json
+    foreach ($repository in @($organizationPayload)) {
         if (-not $repository.private) { $organizationRepositories[$repository.name] = $repository }
     }
     $trackedOrganizationRepos = @('Codex-Remote-Bridge', 'Qzone-Archive', 'themes')
@@ -202,6 +274,10 @@ if ($CheckLinks) {
         $expectedStatus = if ($repository.archived) { '○ 已归档' } elseif ($repository.fork) { '⑂ Fork' } else { '● 未归档' }
         if ($project.Status -cne $expectedStatus) {
             throw "GitHub status mismatch for $($project.Key): '$($project.Status)' shown, '$expectedStatus' expected."
+        }
+        $expectedLanguage = if ([string]::IsNullOrWhiteSpace($repository.language)) { '未检测到' } else { $repository.language }
+        if ($project.Language -cne $expectedLanguage) {
+            throw "GitHub language mismatch for $($project.Key): '$($project.Language)' shown, '$expectedLanguage' expected."
         }
     }
     $missingProjects = @($publicRepositories.Keys | Where-Object { $_ -ine 'yuchen0x1/yuchen0x1' -and -not $seenSlugs.Contains($_) } | Sort-Object)
