@@ -17,3 +17,5 @@ pwsh -NoProfile -File scripts/validate-readme.ps1 -CheckLinks
 ```
 
 快照用于审阅证据，不会自动修改 `README.md`、`repo-descriptions.md` 或横幅。发布前应人工确认项目描述、平台范围与 Release 链接，再提交同步变更。
+
+校验脚本会核对 README 与索引中的仓库数量、主要语言和归档状态；快照与文案不一致时，先查公开证据，再人工修订文案。
